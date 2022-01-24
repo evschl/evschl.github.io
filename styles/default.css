@@ -21,6 +21,11 @@ main {
     margin-right: auto;
 }
 
+ul {
+    text-align: center;
+    list-style: inside;
+}
+
 a:link {
     color:#bbffd4;
     background-color: transparent;
