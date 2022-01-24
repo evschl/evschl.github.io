@@ -5,6 +5,10 @@ body {
     background-color: #284b63;
 }
 
+nav {
+    color:#353535
+}
+
 header {
     font-family: Georgia, serif;
     text-align: center;
