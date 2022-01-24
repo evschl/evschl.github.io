@@ -9,3 +9,9 @@ header {
     text-align: center;
     color: #10e84a;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
