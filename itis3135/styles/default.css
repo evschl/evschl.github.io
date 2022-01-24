@@ -10,6 +10,10 @@ header {
     color: #10e84a;
 }
 
+figure {
+    text-align: center;
+}
+
 .center {
     display: block;
     margin-left: auto;
