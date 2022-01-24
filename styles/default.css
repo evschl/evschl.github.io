@@ -5,8 +5,8 @@ header {
 }
 
 main {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 800px;
+    margin-right: 800px;
 }
 
 body {
@@ -17,6 +17,12 @@ body {
 
 footer {
     text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a:link {
