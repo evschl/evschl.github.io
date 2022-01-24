@@ -20,3 +20,15 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+
+a:link {
+    color:#aae6c0;
+}
+
+a:visited {
+    color:#5aa174;
+}
+
+a:hover {
+    color:#3cc26d;
+}
