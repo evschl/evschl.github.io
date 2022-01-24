@@ -23,12 +23,18 @@ main {
 
 a:link {
     color:#aae6c0;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:visited {
     color:#5aa174;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:hover {
     color:#3cc26d;
+    background-color: transparent;
+    text-decoration: none;
 }
