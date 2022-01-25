@@ -1,0 +1,44 @@
+header {
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #5fc37a;
+}
+
+main {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: #f3c95e;
+    background-color: #284b63;
+}
+
+footer {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link {
+    color:#bbffd4;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color:#62af7e;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#3cc26d;
+    background-color: transparent;
+    text-decoration: none;
+}
