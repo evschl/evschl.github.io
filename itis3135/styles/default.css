@@ -30,11 +30,11 @@ footer {
 }
 
 table tr:nth-child(even) {
-    background-color: aquamarine;
+    background-color: #77b6ea;
 }
 
 table tr:nth-child(odd) {
-    background-color: blanchedalmond;
+    background-color: #5e92bd;
 }
 
 table tr, td {
