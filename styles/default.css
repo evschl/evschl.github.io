@@ -29,6 +29,10 @@ footer {
     margin-right: auto;
 }
 
+table th, td {
+    border: 2px solid black;
+}
+
 a:link {
     color:#bbffd4;
     background-color: transparent;
