@@ -29,7 +29,15 @@ footer {
     margin-right: auto;
 }
 
-table th, td {
+table tr:nth-child(even) {
+    background-color: aquamarine;
+}
+
+table tr:nth-child(odd) {
+    background-color: blanchedalmond;
+}
+
+table tr, td {
     border: 2px solid black;
 }
 
