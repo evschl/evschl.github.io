@@ -39,6 +39,7 @@ table tr:nth-child(odd) {
 
 table tr, td {
     border: 2px solid black;
+    color: #0a0903;
 }
 
 th {
