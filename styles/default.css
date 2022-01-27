@@ -29,8 +29,13 @@ footer {
     margin-right: auto;
 }
 
-table th, td {
+table td {
     border: 2px solid black;
+}
+
+th {
+    border: 2px solid black;
+    color: #0a0903;
 }
 
 a:link {
