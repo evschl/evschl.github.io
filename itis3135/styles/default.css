@@ -42,6 +42,9 @@ table tr, td {
     color: #0a0903;
 }
 
+button {
+    background-color: #3c6e71;
+}
 th {
     border: 2px solid black;
     color: #0a0903;
