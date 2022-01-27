@@ -29,7 +29,7 @@ footer {
     margin-right: auto;
 }
 
-table td {
+table th, td {
     border: 2px solid black;
 }
 
