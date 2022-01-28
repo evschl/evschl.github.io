@@ -50,6 +50,10 @@ input[type=text] {
     font-style: italic;
 }
 
+::placeholder {
+    color: #E7E7E7;
+}
+
 button {
     border-radius: 2px;
     background-color: #3c6e71;
