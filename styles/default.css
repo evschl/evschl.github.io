@@ -29,8 +29,32 @@ footer {
     margin-right: auto;
 }
 
-table td {
+table tr:nth-child(even) {
+    background-color: #77b6ea;
+}
+
+table tr:nth-child(odd) {
+    background-color: #5e92bd;
+}
+
+table tr, td {
     border: 2px solid black;
+    color: #0a0903;
+}
+
+form input {
+    border: 2px;
+    border-radius: 2px;
+    color: white;
+    background-color: #3c6e71;
+    font-style: italic;
+}
+
+button {
+    border-radius: 2px;
+    background-color: #3c6e71;
+    color: white;
+    font-style: italic;
 }
 
 th {
