@@ -1,0 +1,24 @@
+/*
+Coolors palette: https://coolors.co/palette/011638-b49082-98473e-dff8eb-214e34
+*/
+
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #214e34;
+}
+
+main {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    color: #dff8eb;
+    background-color: #b49082;
+}
+
+footer {
+    text-align: center;
+}
