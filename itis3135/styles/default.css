@@ -44,7 +44,9 @@ table tr, td {
 
 button {
     background-color: #3c6e71;
+    color: #e6f6f7;
 }
+
 th {
     border: 2px solid black;
     color: #0a0903;
