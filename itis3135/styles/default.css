@@ -42,7 +42,7 @@ table tr, td {
     color: #0a0903;
 }
 
-form input {
+input[type=text] {
     border: 2px;
     border-radius: 2px;
     color: white;
