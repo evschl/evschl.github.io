@@ -53,7 +53,7 @@ form input {
 button {
     border-radius: 2px;
     background-color: #3c6e71;
-    color: white;
+    color: white !important;
     font-style: italic;
 }
 
