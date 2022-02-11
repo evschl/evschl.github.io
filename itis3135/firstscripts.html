@@ -62,10 +62,14 @@
                     }
 
                     function areWeOpen() {
-
+                        if (hour < 17 && hour > 8) {
+                            print("Open!");
+                        } else {
+                            print("Currently Closed");
+                        }
                     }
 
-                    function displayEstimate() {
+                    function timeEstimate() {
                         var numDays = 0;
                         
                         for (var i=0; i < numPages; ++i) {
