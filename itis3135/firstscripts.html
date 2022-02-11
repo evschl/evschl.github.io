@@ -46,7 +46,9 @@
                     }
 
                     function greetUser() {
-                        print("Schlee Services welcomes you, " + userName + "!\nWe're glad you're doing " + feeling + "!");
+                        var userName = document.getElementById("name");
+                        var userFeeling = document.getElementById("feeling");
+                        var fullGreeting = "Schlee Services welcomes you, " + userName + "!\nWe're glad you're feeling " + userFeeling;
                     }
 
                     function randomSalamander() {
@@ -79,10 +81,6 @@
                         numDays *= lvlComplexity;
                     }
 
-                    function priceEstimate() {
-
-                    }
-
                 </script>
                 
                 <span style="text-align:center">
@@ -100,9 +98,12 @@
                             <span id='time'></span>
                         </span>
                     </h3>
+                    <br>
 
-
-                    <button onclick=greetUser();>Submit</button>
+                    Name: 
+                    <input type="text" id="name" value="Name">
+                    <input type="text" id="feeling" value="How are you feeling?">
+                    <button type="button" onclick=greetUser()>Submit!</button>
                 </span>
             </main>
 
