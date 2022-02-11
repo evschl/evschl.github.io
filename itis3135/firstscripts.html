@@ -116,8 +116,8 @@
 
                     function timeEstimate() 
                     {
-                        var numPages = document.getElementById("pages").value;
-                        var lvlComplexity = getElementById("complexity").value;
+                        var numPages = parseInt(document.getElementById("pages"));
+                        var lvlComplexity = parseInt(getElementById("complexity"));
 
                         var numDays = lvlComplexity * numPages;
                         document.getElementById('finalEstimate').innerHTML = numDays;
