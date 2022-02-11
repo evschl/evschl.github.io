@@ -49,7 +49,7 @@
                         var userName = document.getElementById("name");
                         var userFeeling = document.getElementById("feeling");
                         var fullGreeting = "Schlee Services welcomes you, " + userName + "!\nWe're glad you're feeling " + userFeeling;
-                        println(fullGreeting);
+                        document.getElementById("displayText").innerHTML = fullGreeting;
                     }
 
                     function randomSalamander() {
@@ -105,6 +105,7 @@
                     <input type="text" id="name" value="Name">
                     <input type="text" id="feeling" value="How are you feeling?">
                     <button type="button" onclick=greetUser()>Submit!</button>
+                    <p id="displayText"></p>
                 </span>
 
                 <br><br>
