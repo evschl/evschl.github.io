@@ -34,18 +34,6 @@
             </header>
 
             <main>
-                <span style="text-align:center">
-                    <h2>
-                        🦎 Schlee Services, Inc. 🦎
-                        <br>
-                        Date and Time:
-                        <br>
-                        <script type="text/javascript">
-                            timer();
-                        </script>
-                    </h2>
-                </span>
-
                 <script type="text/javascript">
                     function timer() {
                         var today = new Date();
@@ -53,9 +41,19 @@
                         var time = today.getHours() + ":" + today.getMinutes();
                         var date_time = date + ' ' + time;
                         document.getElementById('time').innerHTML = date_time;
-                        setInterval(timer, 1000);
+                        setInterval(timer, 100);
                     }
                 </script>
+                
+                <span style="text-align:center">
+                    <h2>
+                        🦎 Schlee Services, Inc. 🦎
+                        <br>
+                        Date and Time:
+                        <br>
+                        <body onload="timer()">
+                    </h2>
+                </span>
             </main>
 
             <footer>
