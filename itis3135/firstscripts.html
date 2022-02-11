@@ -73,10 +73,10 @@
                         var close = new Date();
                         close.setHours(17, 0, 0);
 
-                        if (today <= open && today >= close) {
-                            document.getElementById('openClose').innerHTML = "Closed";
-                        } else {
+                        if (today >= open && today <= close) {
                             document.getElementById('openClose').innerHTML = "Open";
+                        } else {
+                            document.getElementById('openClose').innerHTML = "Closed";
                         }
                     }
 
