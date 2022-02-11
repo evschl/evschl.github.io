@@ -38,7 +38,7 @@
                     function timer() {
                         var today = new Date();
                         var date = today.getMonth() + "/" + today.getDate() + '/' + today.getFullYear();
-                        var time = today.getHours() + ":" + today.getMinutes();
+                        var time = today.getHours() + ":" + today.getMinutes() + today.getSeconds();
                         var date_time = date + ' ' + time;
                         document.getElementById('time').innerHTML = date_time;
                         setInterval(timer, 1000);
