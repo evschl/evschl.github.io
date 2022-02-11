@@ -83,8 +83,10 @@
                     function randomSalamander() 
                     {
                         var rand = Math.random();
-                        var salamander = "";
+                        /* var salamander = ""; */
+                        document.getElementById('generatedSalamander').innerHTML = rand;
 
+                        /*
                         if ((rand % 10) <= 2) 
                         {
                             salamander = "Jefferson Salamander";
@@ -94,6 +96,7 @@
                             salamander = "Northern Dusky Salamander";
                         }
                         document.getElementById('generatedSalamander').innerHTML = salamander;
+                        */
                     }
 
                     function areWeOpen() 
