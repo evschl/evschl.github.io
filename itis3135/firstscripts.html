@@ -36,7 +36,8 @@
             <main>
                 <script type="text/javascript">
                     
-                    function timer() {
+                    function timer() 
+                    {
                         var today = new Date();
                         var date = (today.getMonth() + 1) + "/" + today.getDate() + '/' + today.getFullYear();
                         var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -45,18 +46,21 @@
                         setInterval(timer, 1000);
                     }
 
-                    function greetUser() {
+                    function greetUser() 
+                    {
                         var userName = document.getElementById("name").value;
                         var userFeeling = document.getElementById("feeling").value;
                         var fullGreeting = "Schlee Services welcomes you, " + userName + "!\nWe're glad you're feeling " + userFeeling + "!";
                         document.getElementById('displayUserInfo').innerHTML = fullGreeting;
                     }
 
-                    function randomSalamander() {
+                    function randomSalamander() 
+                    {
                         var rand = Math.random();
                         var salamander = "";
 
-                        if ((rand % 10) <= 2) {
+                        if ((rand % 10) <= 2) 
+                        {
                             salamander = "Jefferson Salamander";
                         } else if ((rand % 10) > 2 && (rand % 10) < 8) {
                             salamander = "Spotted Salamander";
@@ -66,21 +70,26 @@
                         document.getElementById('generatedSalamander').innerHTML = salamander;
                     }
 
-                    function areWeOpen() {
+                    function areWeOpen() 
+                    {
                         var today = new Date();
                         var open = new Date();
                         open.setHours(9, 0, 0);
                         var close = new Date();
                         close.setHours(17, 0, 0);
 
-                        if (today >= open && today <= close) {
+                        if (today >= open && today <= close) 
+                        {
                             document.getElementById('openClose').innerHTML = "Open";
-                        } else {
+                        } 
+                        else 
+                        {
                             document.getElementById('openClose').innerHTML = "Closed";
                         }
                     }
 
-                    function timeEstimate() {
+                    function timeEstimate() 
+                    {
                         var numDays = 0;
                         var numPages = document.getElementById("pages").value;
                         var lvlComplexity = getElementById("complexity").value;
@@ -88,8 +97,6 @@
                         numDays = lvlComplexity * numPages;
                         document.getElementById('finalEstimate').innerHTML = numDays;
                     }
-
-                    function
 
                 </script>
                 
