@@ -84,12 +84,8 @@
                         var numDays = 0;
                         var numPages = document.getElementById("pages").value;
                         var lvlComplexity = getElementById("complexity").value;
-                        
-                        for (var i=0; i < numPages; ++i) {
-                            numDays += 1;
-                        }
 
-                        numDays *= lvlComplexity;
+                        numDays = lvlComplexity * numPages;
                         document.getElementById('finalEstimate').innerHTML = numDays;
                     }
 
