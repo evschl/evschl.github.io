@@ -83,20 +83,17 @@
                     function randomSalamander() 
                     {
                         var rand = Math.floor(Math.random() * 8);
-                        /* var salamander = ""; */
-                        document.getElementById('generatedSalamander').innerHTML = rand;
+                        var salamander = "";
 
-                        /*
-                        if ((rand % 10) <= 2) 
+                        if (rand < 3) 
                         {
                             salamander = "Jefferson Salamander";
-                        } else if ((rand % 10) > 2 && (rand % 10) < 8) {
+                        } else if (rand >= 3 && rand <= 5) {
                             salamander = "Spotted Salamander";
                         } else {
                             salamander = "Northern Dusky Salamander";
                         }
                         document.getElementById('generatedSalamander').innerHTML = salamander;
-                        */
                     }
 
                     function areWeOpen() 
