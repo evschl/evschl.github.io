@@ -116,7 +116,7 @@
 
                     function timeEstimate() 
                     {
-                        var numPages = parseInt(document.getElementById("pages"));
+                        var numPages = +document.getElementById("pages").value;
                         document.getElementById('finalEstimate').innerHTML = numPages;
 
                         /*
