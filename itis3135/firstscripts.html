@@ -72,7 +72,7 @@
                         var close = new Date();
                         close.setHours(5, 0, 0);
 
-                        if (today >= open && today <= close) {
+                        if (today > open && today < close) {
                             document.getElementById('openClose').innerHTML = "Open";
                         } else {
                             document.getElementById('openClose').innerHTML = "Closed";
