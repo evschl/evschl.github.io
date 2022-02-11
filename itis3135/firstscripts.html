@@ -49,19 +49,20 @@
                         var userName = document.getElementById("name").value;
                         var userFeeling = document.getElementById("feeling").value;
                         var fullGreeting = "Schlee Services welcomes you, " + userName + "!\nWe're glad you're feeling " + userFeeling;
-                        document.getElementById("displayText").innerHTML = fullGreeting;
+                        document.getElementById("displayUserInfo").innerHTML = fullGreeting;
                     }
 
                     function randomSalamander() {
-                        var mander = Math.random();
+                        var rand = Math.random();
 
-                        if ((mander % 10) <= 2) {
-                            println("Jefferson Salamander");
-                        } else if ((mander % 10 > 2) && ((mander % 10) < 6)) {
-                            println("Spotted Salamander");
+                        if ((rand % 10) <= 2) {
+                            salamander = "Jefferson Salamander";
+                        } else if ((rand % 10 > 2) && ((rand % 10) < 6)) {
+                            salamander = "Spotted Salamander";
                         } else {
-                            println("Northern Dusky Salamander");
+                            salamander = "Northern Dusky Salamander";
                         }
+                        document.getElementById("generatedSalamander").innerHTML = salamander;
                     }
 
                     function areWeOpen() {
@@ -104,11 +105,14 @@
 
                 Please input the following information: <br>
                 <input type="text" id="name" placeholder="Name"> <br>
-                <input type="text" id="feeling" placeholder="How are you feeling?">
+                <input type="text" id="feeling" placeholder="How are you feeling?"> <br>
                 <button type="button" onclick=greetUser()>Submit!</button>
-                <p id="displayText"></p>
-
+                <p id="displayUserInfo"></p>
                 <br><br>
+
+                Click to generate a random salamander!
+                <button type="button" onclick=randomSalamander()>Salamander</button>
+                <p id="generatedSalamander"></p>
             </main>
 
             <footer>
