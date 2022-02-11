@@ -49,26 +49,26 @@
                         var userName = document.getElementById("name");
                         var userFeeling = document.getElementById("feeling");
                         var fullGreeting = "Schlee Services welcomes you, " + userName + "!\nWe're glad you're feeling " + userFeeling;
-                        print(fullGreeting);
+                        println(fullGreeting);
                     }
 
                     function randomSalamander() {
                         var mander = Math.random();
 
                         if ((mander % 10) <= 2) {
-                            print("Jefferson Salamander");
+                            println("Jefferson Salamander");
                         } else if ((mander % 10 > 2) && ((mander % 10) < 6)) {
-                            print("Spotted Salamander");
+                            println("Spotted Salamander");
                         } else {
-                            print("Northern Dusky Salamander");
+                            println("Northern Dusky Salamander");
                         }
                     }
 
                     function areWeOpen() {
                         if (hour < 17 && hour > 8) {
-                            print("Open!");
+                            println("Open!");
                         } else {
-                            print("Currently Closed");
+                            println("Currently Closed");
                         }
                     }
 
@@ -106,6 +106,8 @@
                     <input type="text" id="feeling" value="How are you feeling?">
                     <button type="button" onclick=greetUser()>Submit!</button>
                 </span>
+
+                <br><br>
             </main>
 
             <footer>
