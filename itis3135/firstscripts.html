@@ -48,7 +48,7 @@
                     function greetUser() {
                         var userName = document.getElementById("name").value;
                         var userFeeling = document.getElementById("feeling").value;
-                        var fullGreeting = "Schlee Services welcomes you, " + userName + "!\nWe're glad you're feeling " + userFeeling;
+                        var fullGreeting = "Schlee Services welcomes you, " + userName + "!\nWe're glad you're feeling " + userFeeling + "!";
                         document.getElementById('displayUserInfo').innerHTML = fullGreeting;
                     }
 
@@ -106,8 +106,8 @@
                 </span>
 
                 Please input the following information: <br>
-                <input type="text" id="name" placeholder="Name"> <br>
-                <input type="text" id="feeling" placeholder="How are you feeling?"> <br>
+                <input type="text" id="name" placeholder="Name"><br>
+                <input type="text" id="feeling" placeholder="How are you feeling?"><br>
                 <button type="button" onclick=greetUser()>Submit!</button>
                 <p id="displayUserInfo"></p>
                 <br><br>
