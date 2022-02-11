@@ -102,7 +102,7 @@
                         var open = new Date();
                         open.setHours(9, 0, 0);
                         var close = new Date();
-                        close.setHours(17, 0, 0);
+                        close.setHours(17, 0, 0);-
 
                         if (today >= open && today <= close) 
                         {
@@ -116,7 +116,7 @@
 
                     function timeEstimate() 
                     {
-                        var numPages = +document.getElementById("pages").value;
+                        var numPages = +document.getElementById("pages");
                         var lvlComplexity = +document.getElementById("complexity");
 
                         var numDays = lvlComplexity * numPages;
