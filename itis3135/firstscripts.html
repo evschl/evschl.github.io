@@ -66,9 +66,13 @@
                     }
 
                     function areWeOpen() {
-                        var hour = new Date();
+                        var today = new Date();
+                        var open = new Date();
+                        open.setHours(9, 0, 0);
+                        var close = new Date();
+                        close.setHours(5, 0, 0);
 
-                        if ((hour.getHours() < 16) && (hour.getHours() > 8)) {
+                        if (today >= open && today <= close) {
                             document.getElementById('openClose').innerHTML = "Open";
                         } else {
                             document.getElementById('openClose').innerHTML = "Closed";
