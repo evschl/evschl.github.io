@@ -90,11 +90,10 @@
 
                     function timeEstimate() 
                     {
-                        var numDays = 0;
                         var numPages = document.getElementById("pages").value;
                         var lvlComplexity = getElementById("complexity").value;
 
-                        numDays = lvlComplexity * numPages;
+                        let numDays = lvlComplexity * numPages;
                         document.getElementById('finalEstimate').innerHTML = numDays;
                     }
 
