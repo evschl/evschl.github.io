@@ -83,7 +83,7 @@
                     function timeEstimate() {
                         var numDays = 0;
                         var numPages = document.getElementById("pages").value;
-                        var lvlComplexity = getElementById('')
+                        var lvlComplexity = getElementById("complexity").value;
                         
                         for (var i=0; i < numPages; ++i) {
                             numDays += 1;
@@ -133,7 +133,7 @@
                 Need a rough estimate for how long your project will take for us to complete?
                 Enter the level of complexity (1-5) you think it will be, and the number of pages on your site (max 30):
                 <input type="number" id="pages" name="pages" min="1" max="30"><br>
-                <input type="number" id="complexity" name="pages" min="1" max="5">
+                <input type="number" id="complexity" name="complexity" min="1" max="5"><br>
                 
                 <button type="button" onclick=timeEstimate()>Estimate</button>
                 <p id="finalEstimate"></p>
