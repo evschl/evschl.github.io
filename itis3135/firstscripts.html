@@ -23,7 +23,7 @@
                      | 
                     <a href="https://webpages.charlotte.edu/eschlee/" target="_blank">[Charlotte Home]</a>
                      | 
-                    <span style="color: #F0EFF4">[Brand Homepage]</span>
+                    <a href="brand-emerald-salamanders.html" target="_blank">[Brand Homepage]</span>
                      | 
                     <a href="website-evaluations.html" target="_blank">[Website Evaluations]</a>
                      | 
@@ -34,16 +34,25 @@
             </header>
 
             <main>
-                <h2>🦎 Schlee Services, Inc. 🦎</h2>
+                <span style="text-align:center">
+                    <h2>
+                        🦎 Schlee Services, Inc. 🦎
+                        <br>
+                        Date and Time:
+                        <br>
+                        <span id="time"></span>
+                    </h2>
+                </span>
 
                 <script type="text/javascript">
-                    
-                    
-                    var today = new Date();
-                    var date = today.getMonth() + "/" + today.getDate() + '/' + today.getFullYear();
-                    var time = today.getHours() + ":" + today.getMinutes();
-                    var date_time = date + ' ' + time;
-                    document.getElementById("p1").innerHTML;
+                    function timer() {
+                        var today = new Date();
+                        var date = today.getMonth() + "/" + today.getDate() + '/' + today.getFullYear();
+                        var time = today.getHours() + ":" + today.getMinutes();
+                        var date_time = date + ' ' + time;
+                        document.getElementById('time').innerHTML = date_time;
+                    }
+                    setInterval(updateTime, 1000);
                 </script>
             </main>
 
