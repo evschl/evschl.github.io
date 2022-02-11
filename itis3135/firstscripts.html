@@ -44,7 +44,27 @@
                         setInterval(timer, 1000);
                     }
 
+                    function greetUser() {
 
+                    }
+
+                    function randomSalamander() {
+                        var mander = Math.random();
+
+                        if ((mander % 10) <= 2) {
+                            print("Jefferson Salamander");
+                        } else if ((mander % 10 > 2) && ((mander % 10) < 6)) {
+                            print("Spotted Salamander");
+                        } else {
+                            print("Northern Dusky Salamander");
+                        }
+                    }
+
+                    function areWeOpen() {
+                        var open = new Date();
+                        
+                        if ((open.getHours !< 18) && (open.getHours !> 8)
+                    }
                 </script>
                 
                 <span style="text-align:center">
@@ -62,6 +82,9 @@
                             <span id='time'></span>
                         </span>
                     </h3>
+
+
+                    <button onclick=greetUser();>Submit</button>
                 </span>
             </main>
 
