@@ -131,24 +131,11 @@
                 <br>
 
                 Need a rough estimate for how long your project will take for us to complete?
-                Enter the level of complexity (1-5) you think it will be, and the number of pages on your site:
-                <input type="text" id="pages" placeholder="# of pages"><br>
-                <div>
-                    <input id="one" type="radio" name="complexity" value="one">
-                </div>
-                <div>    
-                    <input id="two" type="radio" name="complexity" value="two">
-                </div>
-                <div>
-                    <input id="three" type="radio" name="complexity" value="three">
-                </div>
-                <div>
-                    <input id="four" type="radio" name="complexity" value="four">
-                </div>
-                <div>
-                    <input id="five" type="radio" name="complexity" value="five">
-                </div>
-                    <button type="button" onclick=timeEstimate()>Estimate</button>
+                Enter the level of complexity (1-5) you think it will be, and the number of pages on your site (max 30):
+                <input type="number" id="pages" name="pages" min="1" max="30"><br>
+                <input type="number" id="complexity" name="pages" min="1" max="5">
+                
+                <button type="button" onclick=timeEstimate()>Estimate</button>
                 <p id="finalEstimate"></p>
             </main>
 
