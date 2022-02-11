@@ -49,7 +49,7 @@
                         var userName = document.getElementById("name").value;
                         var userFeeling = document.getElementById("feeling").value;
                         var fullGreeting = "Schlee Services welcomes you, " + userName + "!\nWe're glad you're feeling " + userFeeling;
-                        document.getElementById("displayUserInfo").innerHTML = fullGreeting;
+                        document.getElementById('displayUserInfo').innerHTML = fullGreeting;
                     }
 
                     function randomSalamander() {
@@ -62,14 +62,16 @@
                         } else {
                             salamander = "Northern Dusky Salamander";
                         }
-                        document.getElementById("generatedSalamander").innerHTML = salamander;
+                        document.getElementById('generatedSalamander').innerHTML = salamander;
                     }
 
                     function areWeOpen() {
-                        if (hour < 17 && hour > 8) {
-                            println("Open!");
+                        var hour = new Date();
+
+                        if ((hour.getHours().value < 16) && (hour.getHours().value > 8)) {
+                            document.getElementById('openClose').innerHTML = "Open";
                         } else {
-                            println("Currently Closed");
+                            document.getElementById('openClose').innerHTML = "Closed";
                         }
                     }
 
@@ -113,6 +115,12 @@
                 Click to generate a random salamander!
                 <button type="button" onclick=randomSalamander()>Salamander</button>
                 <p id="generatedSalamander"></p>
+                <br><br>
+
+                Are we open right now? Click this button to find out!
+                <button type="button" onclick=areWeOpen()>Are we open?</button>;
+                <p id="openClose"></p>
+                <br><br>
             </main>
 
             <footer>
