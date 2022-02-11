@@ -68,10 +68,10 @@
                     function areWeOpen() {
                         var hour = new Date();
 
-                        if ((hour.getHours().value > 16) && (hour.getHours().value < 8)) {
-                            document.getElementById('openClose').innerHTML = "Closed";
-                        } else {
+                        if ((hour.getHours() < 16) && (hour.getHours() > 8)) {
                             document.getElementById('openClose').innerHTML = "Open";
+                        } else {
+                            document.getElementById('openClose').innerHTML = "Closed";
                         }
                     }
 
