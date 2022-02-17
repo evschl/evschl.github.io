@@ -26,6 +26,8 @@
                     <a href="website-evaluations.html">[Website Evaluations]</a>
                      | 
                     <span style="color:#0a0903">[JavaScripts Page]</span>
+                     | 
+                    <a href="whosthatpolygon.html">[Polygon Namer]</a>
                 </nav>
                 <h1>Evan Schlee 🦎 ITIS-3135</h1>
 
@@ -119,7 +121,7 @@
                         var numPages = +document.getElementById("pages").value;
                         var lvlComplexity = +document.getElementById("complexity").value;
 
-                        document.getElementById('finalEstimate').innerHTML = (numPages + lvlComplexity);
+                        document.getElementById('finalEstimate').innerHTML = (numPages * lvlComplexity);
                         /*
                         var numDays = lvlComplexity * numPages;
                         document.getElementById('finalEstimate').innerHTML = numDays;
