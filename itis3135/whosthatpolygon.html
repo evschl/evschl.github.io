@@ -91,7 +91,7 @@
                                 nameShape = "Decagon";
                                 break;
                             default:
-                                getShape(validateEntry(parseFloat(prompt("ERROR: Not sure how you got here, but please try entering a different number."))));
+                                nameShape = getShape(validateEntry(parseFloat(prompt("ERROR: Not sure how you got here, but please try entering a different number."))));
                         }
 
                         return nameShape;
@@ -104,17 +104,17 @@
                         
                         if (typeof numToCheck != number)
                         {
-                            validateEntry(parseFloat(prompt("ERROR: The data type you entered was not a number. Please try again.")))
+                            numToCheck = validateEntry(parseFloat(prompt("ERROR: The data type you entered was not a number. Please try again.")))
                         }
 
                         if (numToCheck < 3) 
                         {
-                            validateEntry(parseFloat(prompt("ERROR: There are no polygons with " + numToCheck + " sides. Please try again.")));
+                            numToCheck = validateEntry(parseFloat(prompt("ERROR: There are no polygons with " + numToCheck + " sides. Please try again.")));
                         }
 
                         if (numToCheck > 10)
                         {
-                            validateEntry(parseFloat(prompt("ERROR: There are polygons with more than 10 sides, but I don't feel like adding any more to this program. Please try again.")));
+                            numToCheck = validateEntry(parseFloat(prompt("ERROR: There are polygons with more than 10 sides, but I don't feel like adding any more to this program. Please try again.")));
                         }
 
                         return numToCheck;
