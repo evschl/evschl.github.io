@@ -108,6 +108,15 @@
                         
                         // The egregious code above stays until I can figure out how to determine whether numToCheck is a number or not.
                         /*
+                        
+                        /* THIS DOES NOT WORK!!
+                        if (typeof numToCheck != 'number')
+                        {
+                            numToCheck
+                        }
+                        */
+                        
+                        /* THIS WORKS!!
                         if (numToCheck < 3) 
                         {
                             numToCheck = validateEntry(parseFloat(prompt("ERROR: There are no polygons with " + numToCheck + " sides. Please try again.")));
