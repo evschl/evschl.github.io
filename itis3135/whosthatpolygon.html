@@ -102,7 +102,7 @@
                         numToCheck = Math.round(numToCheck);
                         numToCheck = Math.abs(numToCheck);
                         
-                        if (typeof numToCheck != number)
+                        if (typeof numToCheck != 'number')
                         {
                             numToCheck = validateEntry(parseFloat(prompt("ERROR: The data type you entered was not a number. Please try again.")))
                         }
