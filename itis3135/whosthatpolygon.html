@@ -101,11 +101,13 @@
                     {
                         numToCheck = Math.round(Math.abs(numToCheck));
                         
-                        if (typeof numToCheck != 'number')
+                        if (numToCheck != 3 || numToCheck != 4 || numToCheck != 5 || numToCheck != 6 || numToCheck != 7 || numToCheck != 8 || numToCheck != 9 || numToCheck != 10)
                         {
-                            numToCheck = validateEntry(parseFloat(prompt("ERROR: The data type you entered was not a number. Please try again.")))
+                            numToCheck = validateEntry(parseFloat(prompt("ERROR: Please make sure you enter a number, and that it's between 3 and 10, inclusive.")))
                         }
-
+                        
+                        // The egregious code above stays until I can figure out how to determine whether numToCheck is a number or not.
+                        /*
                         if (numToCheck < 3) 
                         {
                             numToCheck = validateEntry(parseFloat(prompt("ERROR: There are no polygons with " + numToCheck + " sides. Please try again.")));
@@ -115,6 +117,7 @@
                         {
                             numToCheck = validateEntry(parseFloat(prompt("ERROR: There are polygons with more than 10 sides, but I don't feel like adding any more to this program. Please try again.")));
                         }
+                        */
 
                         return numToCheck;
                     }
