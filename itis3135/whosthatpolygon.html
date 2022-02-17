@@ -29,7 +29,7 @@
                      |
                     <span style="color:#0a0903">[Polygon Namer]</span>
                 </nav>
-                <h1>Evan Schlee 🦎 ITIS-3135 🦎 Polygon Namer</h1>
+                <h1>Evan Schlee 🦎 ITIS-3135</h1>
 
             </header>
 
@@ -99,8 +99,7 @@
 
                     function validateEntry(numToCheck) 
                     {
-                        numToCheck = Math.round(numToCheck);
-                        numToCheck = Math.abs(numToCheck);
+                        numToCheck = Math.round(Math.abs(numToCheck));
                         
                         if (typeof numToCheck != 'number')
                         {
@@ -124,7 +123,16 @@
                 
                 <span style="text-align:center">
                     <h2>
-                        🦎 Schlee Services, Inc. 🦎
+                        🦎 Polygon Namer 🦎
+                    </h2>
+
+                    <figure>
+                        <img src="images/Polygons.jpg" alt="polygons" class="center">
+                        <figcaption style="text-align: center"><i>^ Polygons with their respective names ^</i></figcaption>
+                    </figure>
+
+                    <h2>
+                        Reload the page to find the name of a new polygon!
                     </h2>
 
                     <br><br>
