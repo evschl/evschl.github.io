@@ -37,8 +37,8 @@
                 <script type="text/javascript">
                     
                     var takeNum = parseFloat(prompt("Ayo man i love these goobas"));
-                    Math.round(takeNum);
-                    Math.abs(takeNum);
+                    takeNum = Math.round(takeNum);
+                    takeNum = Math.abs(takeNum);
                     alert(takeNum);
 
                     /* If Math.abs() doesn't work
@@ -49,7 +49,7 @@
                     */
 
                     /* if Math.round() doesn't work
-                    if (takeNum % 1 > 0.49999) 
+                    if (takeNum % 1 > 0.499999999) 
                     {
                         takeNum = takeNum - (takeNum % 1) + 1;
                     } 
