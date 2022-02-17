@@ -37,11 +37,64 @@
                 <script type="text/javascript">
                     
                     var takeNum = parseFloat(prompt("Ayo man i love these goobas"));
-                    alert(getShape(takeNum));
+                    Math.round(takeNum);
+                    Math.abs(takeNum);
+                    alert(takeNum);
 
-                    function getShape(int num) 
+                    /* If Math.abs() doesn't work
+                    if (takeNum < 0)
                     {
-                        case (num = 1)
+                        takeNum *= -1;
+                    }
+                    */
+
+                    /* if Math.round() doesn't work
+                    if (takeNum % 1 > 0.49999) 
+                    {
+                        takeNum = takeNum - (takeNum % 1) + 1;
+                    } 
+                    else 
+                    {
+                        takeNum = takeNum - (takeNum % 1);
+                    }
+                    */
+
+                    function getShape(numShape) 
+                    {
+                        switch (numShape) 
+                        {
+                            case 1:
+                                break;
+                            case 2:
+                                arguments;
+                                break;
+                            case 3:
+                                arguments;
+                                break;
+                            case 4:
+                                arguments;
+                                break;
+                            case 5:
+                                arguments;
+                                break;
+                            case 6:
+                                arguments;
+                                break;
+                            case 7:
+                                arguments;
+                                break;
+                            case 8:
+                                arguments;
+                                break;
+                            case 9:
+                                arguments;
+                                break;
+                            case 10:
+                                arguments;
+                                break;
+                            default:
+                                alert(parseFloat(prompt("ERROR: Number must be between 1 and 10")));
+                        }
 
                         return nameShape
                     }
