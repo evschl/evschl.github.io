@@ -37,9 +37,10 @@
                 <script type="text/javascript">
                     
                     var takeNum = parseFloat(prompt("Ayo man i love these goobas"));
-                    takeNum = Math.round(takeNum);
-                    takeNum = Math.abs(takeNum);
-                    alert(takeNum);
+                    takeNum = validateEntry(takeNum);
+
+                    var nameOfPolygon = getShape(takeNum);
+                    alert("The polygon with " + takeNum + " sides is called a " + nameOfPolygon + ".")
 
                     /* If Math.abs() doesn't work
                     if (takeNum < 0)
@@ -61,47 +62,62 @@
 
                     function getShape(numShape) 
                     {
+                        var nameShape = "Yomamagon";
+                        
                         switch (numShape) 
                         {
-                            case 1:
-                                break;
-                            case 2:
-                                arguments;
-                                break;
                             case 3:
-                                arguments;
+                                nameShape = "Triangle";
                                 break;
                             case 4:
-                                arguments;
+                                nameShape = "Quadrilateral";
                                 break;
                             case 5:
-                                arguments;
+                                nameShape = "Pentagon";
                                 break;
                             case 6:
-                                arguments;
+                                nameShape = "Hexagon";
                                 break;
                             case 7:
-                                arguments;
+                                nameShape = "Heptagon";
                                 break;
                             case 8:
-                                arguments;
+                                nameShape = "Octagon";
                                 break;
                             case 9:
-                                arguments;
+                                nameShape = "Nonagon";
                                 break;
                             case 10:
-                                arguments;
+                                nameShape = "Decagon";
                                 break;
                             default:
-                                alert(parseFloat(prompt("ERROR: Number must be between 1 and 10")));
+                                getShape(validateEntry(parseFloat(prompt("ERROR: Not sure how you got here, but please try entering a different number."))));
                         }
 
-                        return nameShape
+                        return nameShape;
                     }
 
-                    function randomSalamander() 
+                    function validateEntry(numToCheck) 
                     {
+                        numToCheck = Math.round(numToCheck);
+                        numToCheck = Math.abs(numToCheck);
                         
+                        if (typeof numToCheck != number)
+                        {
+                            validateEntry(parseFloat(prompt("ERROR: The data type you entered was not a number. Please try again.")))
+                        }
+
+                        if (numToCheck < 3) 
+                        {
+                            validateEntry(parseFloat(prompt("ERROR: There are no polygons with " + numToCheck + " sides. Please try again.")));
+                        }
+
+                        if (numToCheck > 10)
+                        {
+                            validateEntry(parseFloat(prompt("ERROR: There are polygons with more than 10 sides, but I don't feel like adding any more to this program. Please try again.")));
+                        }
+
+                        return numToCheck;
                     }
 
                 </script>
