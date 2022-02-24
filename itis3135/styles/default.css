@@ -74,6 +74,11 @@ input[type=text]
     display: grid;
 }
 
+.calculator
+{
+    overflow: hidden;
+}
+
 button 
 {
     border-radius: 2px;
