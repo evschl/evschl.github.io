@@ -42,7 +42,7 @@
                     
                     function addNum(addToString) 
                     {
-                        displayNum = 10(displayNum) + addToString;
+                        document.getElementById("displayNum") = 10(displayNum) + addToString;
                     }
                 </script>
                 
@@ -52,7 +52,18 @@
                     </h2>
                 </span>
                 
+                <button type="button" onclick=addNum(0)>0</button>
+                <button type="button" onclick=addNum(1)>1</button>
+                <button type="button" onclick=addNum(2)>2</button>
+                <button type="button" onclick=addNum(3)>3</button>
+                <button type="button" onclick=addNum(4)>4</button>
                 <button type="button" onclick=addNum(5)>5</button>
+                <button type="button" onclick=addNum(6)>6</button>
+                <button type="button" onclick=addNum(7)>7</button>
+                <button type="button" onclick=addNum(8)>8</button>
+                <button type="button" onclick=addNum(9)>9</button>
+
+                <p id="displayNum"></p>
 
             </main>
 
