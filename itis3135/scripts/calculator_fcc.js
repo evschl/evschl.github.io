@@ -1,7 +1,3 @@
-const calculator = document.querySelector('.calculator');
-const keys = calculator.querySelector('.calculator_keys');
-const display = document.querySelector('.calculator_display');
-
 const calculate = (n1, operator, n2) => 
 {
     let result = '';
@@ -25,6 +21,10 @@ const calculate = (n1, operator, n2) =>
 
     return result;
 }
+
+const calculator = document.querySelector('.calculator');
+const keys = calculator.querySelector('.calculator_keys');
+const display = document.querySelector('.calculator_display');
 
 keys.addEventListener('click', e => 
 {
