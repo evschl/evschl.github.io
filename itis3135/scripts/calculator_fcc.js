@@ -34,6 +34,9 @@ keys.addEventListener('click', e =>
         const action = key.dataset.action;
         const keyContent = key.textContent;
         const displayedNum = display.textContent;
+        const previousKeyType = calculator.dataset.previousKeyType;
+
+        Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'));
 
         if (!action) 
         {
@@ -49,6 +52,13 @@ keys.addEventListener('click', e =>
             console.log('number key!');
         }
 
+        if (action === 'decimal')
+        {
+            display.textContent = displayedNum + '.';
+            
+            console.log('decimal key!');
+        }
+
         if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide')
         {
             key.classList.add('is-depressed');
@@ -60,17 +70,11 @@ keys.addEventListener('click', e =>
             console.log('operator key!');
         }
 
-        if (action === 'decimal')
-        {
-            display.textContent = displayedNum + '.';
-            
-            console.log('decimal key!');
-        }
-
         if (action === 'clear')
         {
             console.log('clear key!');
         }
+
 
         if (action === 'calculate')
         {
@@ -82,8 +86,5 @@ keys.addEventListener('click', e =>
 
             console.log('equal key!');
         }
-
-        Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'));
-
     }
 })
