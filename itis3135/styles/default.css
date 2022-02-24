@@ -64,7 +64,12 @@ input[type=text]
     color: #E7E7E7;
 }
 
-.calculator_keys
+.calculator__keys
+{
+    display: grid;
+}
+
+.calculator__display
 {
     display: grid;
 }
