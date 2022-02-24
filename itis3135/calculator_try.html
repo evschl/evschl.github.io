@@ -39,17 +39,64 @@
                 <script type="text/javascript">
                     
                     var displayNum = '0';
+                    var oldNum = 0.0;
+                    var operator = 'none';
+                    var inFunctOperator = 'none'
                     
                     function addNum(addToString) 
                     {
-                        displayNum = displayNum + toString(addToString);
+                        if (displayNum == '0') {
+                            displayNum = displayNum + toString(addToString);
+                        } 
+                        else
+                        {
+                            displayNum = toString(addToString);
+                        }
+
                         document.getElementById("toDisplay").innerHTML = displayNum;
                     }
 
-                    /*
-                    function addition()
+                    function operation(operationToPerform)
                     {
-                        
+                        switch (operationToPerform)
+                        {
+                            case 0:
+                                prompt("You didn't select an operator");
+                                break;
+                            case 1:
+                                oldNum = parseFloat(document.getElementById("toDisplay").value);
+                                document.getElementById("toDisplay") = '0';
+                                inFunctOperator = 'addition';
+                                break;
+                            case 2:
+                                oldNum = parseFloat(document.getElementById("toDisplay").value);
+                                document.getElementById("toDisplay") = '0';
+                                inFunctOperator = 'subtraction';
+                                break;
+                            case 3:
+                                oldNum = parseFloat(document.getElementById("toDisplay").value);
+                                document.getElementById("toDisplay") = '0';
+                                inFunctOperator = 'multiplication';
+                                break;
+                            case 4:
+                                oldNum = parseFloat(document.getElementById("toDisplay").value);
+                                document.getElementById("toDisplay") = '0';
+                                inFunctOperator = 'division';
+                                break;
+                            case 5:
+                                switch (inFunctOperator)
+                                {
+                                    case 'addition':
+                                        break;
+                                    case 'subtraction':
+                                        break;
+                                    case 'multiplication':
+                                        break;
+                                    case 'division':
+                                        document.getElementById("toDisplay") = oldNum * parseFloat(displayNum);
+                                        break;
+                                }
+                        }
                     }
 
                     function subtraction()
@@ -66,7 +113,19 @@
                     {
 
                     }
-                    */
+
+                    function equals()
+                    {
+                        switch (operator)
+                        {
+                            case 'none':
+                                prompt("You didn't select an operator")
+                                break;
+                            case 'addition':
+                                document.getElementById("toDisplay") = oldNum + parseFloat(displayNum);
+                                break;
+                        }
+                    }
                 </script>
                 
                 <span style="text-align:center">
@@ -86,12 +145,12 @@
                 <button type="button" onclick=addNum(8)>8</button>
                 <button type="button" onclick=addNum(9)>9</button>
                 <br>
-                <button type="button" onclick=addition()>+</button>
-                <button type="button" onclick=subtraction()>-</button>
-                <button type="button" onclick=multiplication()>X</button>
-                <button type="button" onclick=division()>/</button>
+                <button type="button" onclick=operation(1)>+</button>
+                <button type="button" onclick=operation(2)>-</button>
+                <button type="button" onclick=operation(3)>X</button>
+                <button type="button" onclick=operation(4)>/</button>
                 <br>
-                <button type="button" onclick=equals()>=</button>
+                <button type="button" onclick=operation(5)>=</button>
 
                 <p id="toDisplay"></p>
 
