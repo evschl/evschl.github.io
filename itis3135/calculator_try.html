@@ -38,11 +38,11 @@
             <main>
                 <script type="text/javascript">
                     
-                    var displayNum = 0;
+                    var displayNum = toString(0);
                     
                     function addNum(addToString) 
                     {
-                        displayNum += toString(addToString);
+                        displayNum = displayNum + toString(addToString);
                         document.getElementById("toDisplay").innerHTML = displayNum;
                     }
 
