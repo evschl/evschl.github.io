@@ -40,93 +40,80 @@
             <main>
                 <script type="text/javascript">
                     
-                    var displayNum = '0';
-                    var oldNum = 0.0;
-                    var operator = 'none';
-                    var inFunctOperator = 'none'
-                    
-                    function addNum(addToString) 
-                    {
-                        if (displayNum == '0') {
-                            displayNum = displayNum + toString(addToString);
-                        } 
-                        else
-                        {
-                            displayNum = toString(addToString);
-                        }
+                    const calculator = document.querySelector('.calculator');
+                    const keys = calculator.querySelector('.calculator_keys');
 
-                        document.getElementById("toDisplay").innerHTML = displayNum;
-                    }
-
-                    function operation(operationToPerform)
+                    keys.addEventListener('click', e => 
                     {
-                        switch (operationToPerform)
+                        if (e.target.matches('button'))
                         {
-                            case 0:
-                                prompt("You didn't select an operator");
-                                break;
-                            case 1:
-                                oldNum = parseFloat(document.getElementById("toDisplay").value);
-                                document.getElementById("toDisplay") = '0';
-                                inFunctOperator = 'addition';
-                                break;
-                            case 2:
-                                oldNum = parseFloat(document.getElementById("toDisplay").value);
-                                document.getElementById("toDisplay") = '0';
-                                inFunctOperator = 'subtraction';
-                                break;
-                            case 3:
-                                oldNum = parseFloat(document.getElementById("toDisplay").value);
-                                document.getElementById("toDisplay") = '0';
-                                inFunctOperator = 'multiplication';
-                                break;
-                            case 4:
-                                oldNum = parseFloat(document.getElementById("toDisplay").value);
-                                document.getElementById("toDisplay") = '0';
-                                inFunctOperator = 'division';
-                                break;
-                            case 5:
-                                switch (inFunctOperator)
+                            const key = e.target;
+                            const action = key.dataset.action;
+
+                            if (!action) 
+                            {
+                                console.log('number key!');
+                            }
+
+                            if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide')
+                            {
+                                console.log('operator key!');
+                                
+                                if (action === 'decimal')
                                 {
-                                    case 'addition':
-                                        break;
-                                    case 'subtraction':
-                                        break;
-                                    case 'multiplication':
-                                        break;
-                                    case 'division':
-                                        document.getElementById("toDisplay") = oldNum * parseFloat(displayNum);
-                                        break;
+                                    console.log('decimal key!');
                                 }
+
+                                if (action === 'clear')
+                                {
+                                    console.log('clear key!')
+                                }
+
+                                if (action === 'calculate')
+                                {
+                                    console.log('equal key!')
+                                }
+                            }
                         }
-                    }
+                    })
+
                 </script>
                 
                 <span style="text-align:center">
                     <h2>
-                        🦎 Calculator Try 🦎
+                        🦎 Calculator Following Tutorial 🦎
                     </h2>
                 </span>
-                
-                <button type="button" onclick=addNum(0)>0</button>
-                <button type="button" onclick=addNum(1)>1</button>
-                <button type="button" onclick=addNum(2)>2</button>
-                <button type="button" onclick=addNum(3)>3</button>
-                <button type="button" onclick=addNum(4)>4</button>
-                <button type="button" onclick=addNum(5)>5</button>
-                <button type="button" onclick=addNum(6)>6</button>
-                <button type="button" onclick=addNum(7)>7</button>
-                <button type="button" onclick=addNum(8)>8</button>
-                <button type="button" onclick=addNum(9)>9</button>
-                <br>
-                <button type="button" onclick=operation(1)>+</button>
-                <button type="button" onclick=operation(2)>-</button>
-                <button type="button" onclick=operation(3)>X</button>
-                <button type="button" onclick=operation(4)>/</button>
-                <br>
-                <button type="button" onclick=operation(5)>=</button>
 
-                <p id="toDisplay"></p>
+                <div class="calculator">
+
+                    <div class="calculator_display">0
+
+                    </div>
+
+                    <div class="calculator_keys">
+                        <button class="key_operator" data-action="add">+</button>
+                        <button class="key_operator" data-action="subtract">-</button>
+                        <button class="key_operator" data-action="multiply">&times;</button>
+                        <button class="key_operator" data-action="divide">÷</button>
+
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>0</button>
+
+                        <button data-action="decimal">.</button>
+                        <button data-action="clear">AC</button>
+                        <button class="key_equal" data-action="calculate">=</button>
+                    </div>
+
+                </div>
 
             </main>
 

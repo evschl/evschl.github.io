@@ -2,47 +2,56 @@
 Coolors palette: https://coolors.co/palette/f3c95e-5fc37a-0a0903-3c6e71-284b63
 */
 
-header {
+header 
+{
     font-family: Georgia, serif;
     text-align: center;
     color: #5fc37a;
 }
 
-main {
+main 
+{
     margin-left: 200px;
     margin-right: 200px;
 }
 
-body {
+body 
+{
     font-family: Helvetica, sans-serif;
     color: #f3c95e;
     background-color: #284b63;
 }
 
-footer {
+footer 
+{
     text-align: center;
 }
 
-.center {
+.center 
+{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-table tr:nth-child(even) {
+table tr:nth-child(even) 
+{
     background-color: #77b6ea;
 }
 
-table tr:nth-child(odd) {
+table tr:nth-child(odd) 
+{
     background-color: #5e92bd;
 }
 
-table tr, td {
+table tr, td 
+{
     border: 2px solid black;
     color: #0a0903;
 }
 
-input[type=text] {
+input[type=text]
+{
     border: 2px;
     border-radius: 2px;
     color: white;
@@ -50,35 +59,46 @@ input[type=text] {
     font-style: italic;
 }
 
-::placeholder {
+::placeholder 
+{
     color: #E7E7E7;
 }
 
-button {
+.calculator_keys
+{
+    display: grid;
+}
+
+button 
+{
     border-radius: 2px;
     background-color: #3c6e71;
     color: white !important;
     font-style: italic;
 }
 
-th {
+th 
+{
     border: 2px solid black;
     color: #0a0903;
 }
 
-a:link {
+a:link 
+{
     color:#bbffd4;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:visited {
+a:visited 
+{
     color:#62af7e;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:hover {
+a:hover 
+{
     color:#3cc26d;
     background-color: transparent;
     text-decoration: none;
