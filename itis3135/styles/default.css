@@ -77,19 +77,9 @@ input[type=text]
     z-index: 1;
 }
 
-.key--operator
-{
-    background-color: #eee;
-}
-
-.key--equal
-{
-    background-image: linear-gradient(to bottom, pink, pink);
-}
-
 .calculator__display
 {
-    text-align: right;
+    text-align: center;
 }
 
 .calculator
