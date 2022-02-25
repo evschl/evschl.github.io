@@ -69,15 +69,60 @@ input[type=text]
     display: grid;
 }
 
+.calculator__keys > *:active::before,
+.calculator__keys > .is-depressed::before
+{
+    content:"";
+    position: absolute;
+    z-index: 1;
+}
+
+.key--operator
+{
+    background-color: #eee;
+}
+
+.key--equal
+{
+    background-image: linear-gradient(to bottom, pink, pink);
+}
+
 .calculator__display
 {
-    display: grid;
+    text-align: right;
 }
 
 .calculator
 {
     overflow: hidden;
 }
+
+.calculator_buttons button
+{
+    cursor: pointer;
+}
+
+.myButton:hover
+{
+    background-color:#bc80ea;
+}
+
+.myButton:active
+{
+    position: relative;
+}
+
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container > p
+{
+    text-align: center;
+}
+
 
 button 
 {
