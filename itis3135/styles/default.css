@@ -64,56 +64,6 @@ input[type=text]
     color: #E7E7E7;
 }
 
-.calculator__keys
-{
-    display: grid;
-}
-
-.calculator__keys > *:active::before,
-.calculator__keys > .is-depressed::before
-{
-    content:"";
-    position: absolute;
-    z-index: 1;
-}
-
-.calculator__display
-{
-    text-align: center;
-}
-
-.calculator
-{
-    overflow: hidden;
-}
-
-.calculator_buttons button
-{
-    cursor: pointer;
-}
-
-.myButton:hover
-{
-    background-color:#bc80ea;
-}
-
-.myButton:active
-{
-    position: relative;
-}
-
-.container
-{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container > p
-{
-    text-align: center;
-}
-
-
 button 
 {
     border-radius: 2px;
