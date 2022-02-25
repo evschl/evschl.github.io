@@ -52,7 +52,6 @@ window.onload = function ()
                 }
                 
                 calculator.dataset.previousKeyType = 'number'
-                console.log('number key!')
             }
  
             if (action === 'decimal')
@@ -65,9 +64,8 @@ window.onload = function ()
                 {
                     display.textContent = '0.'
                 }
+
                 calculator.dataset.previousKeyType = 'decimal'
-            
-                console.log('decimal key!')
             }
  
             if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide')
@@ -90,8 +88,6 @@ window.onload = function ()
                 key.classList.add('is-depressed')
                 calculator.dataset.previousKeyType = 'operator'
                 calculator.dataset.operator = action
- 
-                console.log('operator key!')
             }
  
             if (action === 'clear')
@@ -110,11 +106,9 @@ window.onload = function ()
                 
                 display.textContent = 0
                 calculator.dataset.previousKeyType = 'clear'
- 
-                console.log('clear key!')
             }
 
-            if(action !== 'clear')
+            if (action !== 'clear')
             {
                 const clearButton = calculator.querySelector('[data-action=clear]')
                 clearButton.textContent = 'CE'
@@ -134,12 +128,12 @@ window.onload = function ()
                         firstValue = displayedNum
                         secondValue = calculator.dataset.modValue
                     }
+
+                    display.textContent = calculate(firstValue, operator, secondValue)
                 }
-                display.textContent = calculate(firstValue, operator, secondValue)
                 
                 calculator.dataset.modValue = secondValue
                 calculator.dataset.previousKeyType = 'calculate'
-                console.log('equal key!')
             }
         }
     })

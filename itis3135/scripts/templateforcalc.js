@@ -3,6 +3,7 @@ window.onload = function ()
     const calculate = (n1, operator, n2) => 
     {
         let result = ''
+
         if (operator === 'add') 
         {
             result = parseFloat(n1) + parseFloat(n2)
@@ -23,8 +24,8 @@ window.onload = function ()
     }
 
     const calculator = document.querySelector('.calculator')
-    const display = calculator.querySelector('.calculator__display')
     const keys = calculator.querySelector('.calculator__keys')
+    const display = calculator.querySelector('.calculator__display')
 
     keys.addEventListener('click', e => 
     {
@@ -36,8 +37,7 @@ window.onload = function ()
             const displayedNum = display.textContent
             const previousKeyType = calculator.dataset.previousKeyType
 
-            Array.from(key.parentNode.children)
-                .forEach(k => k.classList.remove('is-depressed'))
+            Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'))
 
             if (!action) 
             {
