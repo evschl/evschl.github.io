@@ -59,6 +59,10 @@ input[type=text]
     font-style: italic;
 }
 
+.calculator__keys {
+    display: grid;
+}
+
 button 
 {
     border-radius: 2px;
