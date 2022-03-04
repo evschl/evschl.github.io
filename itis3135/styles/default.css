@@ -59,9 +59,14 @@ input[type=text]
     font-style: italic;
 }
 
-.calculator__keys {
+/* Calculator Begin */
+
+.container {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+
+/* Calculator End */
 
 button 
 {
