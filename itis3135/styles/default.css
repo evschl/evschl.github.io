@@ -62,7 +62,11 @@ input[type=text]
 /* Calculator Begin */
 
 .container {
-    display: grid;
+    text-align: center;
+}
+
+.calculator {
+    border-radius: 8px;
 }
 
 /* Calculator End */
