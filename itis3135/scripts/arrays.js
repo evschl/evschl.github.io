@@ -22,8 +22,8 @@ salaries.push(100000);
 
 function addSalary()
 {
-    let name = document.getElementById("newName");
-    let salary = document.getElementById("newSalary");
+    let name = document.getElementById("newName").value;
+    let salary = document.getElementById("newSalary").value;
 
     person.push(name);
     salaries.push(salary);
