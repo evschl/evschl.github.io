@@ -50,8 +50,8 @@ function displayResults()
     }
 
     avg_salary = (sum_salaries / salaries.length);
-    document.getElementById("display_avg") = avg_salary;
-    document.getElementById("display_sum") = sum_salaries;
+    document.getElementById("display_avg").innerHTML = avg_salary;
+    document.getElementById("display_sum").innerHTML = sum_salaries;
 }
 
 function displaySalary()
