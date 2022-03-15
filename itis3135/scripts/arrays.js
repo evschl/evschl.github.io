@@ -32,6 +32,9 @@ function addSalary()
     
     person[person.length] = name;
     salaries[salaries.length] = salary;
+
+    document.getElementById("newest_person") = person[person.length - 1];
+    document.getElementById("newest_salary") = salaries[salaries.length - 1];
 }
 
 /*
