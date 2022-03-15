@@ -28,8 +28,8 @@ function addSalary()
     person.push(name);
     salaries.push(salary);
 
-    document.getElementById("newest_employee") = name;
-    document.getElementById("newest_salary") = salary;
+    document.getElementById("newest_employee").innerHTML = name;
+    document.getElementById("newest_salary").innerHTML = salary;
 }
 
 /*
