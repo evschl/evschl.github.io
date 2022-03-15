@@ -21,30 +21,43 @@ var salaries = [
     4000000,
     100000
 ];
-var sum_salaries;
-var avg_salary;
 
-function addSalary(name, salary)
+function addSalary()
 {
+    var name = "";
+    var salary = 0;
+
+    name = document.getElementById("newName");
+    salary = document.getElementById("newSalary");
+    
     person[person.length] = name;
     salaries[salaries.length] = salary;
 }
 
-/*POSSIBLE ERRORS: 
-    JS MAY NOT SUPPORT +=
+/*
+    POSSIBLE ERRORS: 
+    JS may not support +=,
+    Declaring avg_salary inside of function may cause issues,
+    Declaring sum_salary inside of function may cause issues,
+
 */
 function displayResults()
 {
+    var sum_salaries = 0;
+    var avg_salary = 0;
+    
     for (var i = 0; i < salaries.length; ++i)
     {
         sum_salaries += salaries[i];
     }
 
     avg_salary = (sum_salaries / salaries.length);
+    document.getElementById("display_avg") = avg_salary;
+    document.getElementById("display_sum") = sum_salaries;
 }
 
 function displaySalary()
 {
-    
+
 }
 
