@@ -1,44 +1,35 @@
-var person = 
-[
-    "Evan Schlee",
-    "Luke Marchesa",
-    "Coby Saints",
-    "Noah Johnson",
-    "Christopher Moltisanti",
-    "Akira Otoishi",
-    "Gale Boetticher",
-    "Elincia R. Crimea",
-    "Owen Kung"
-];
-var salaries = [
-    600000,
-    275000,
-    250000,
-    225000,
-    2000000,
-    150000,
-    5000000,
-    4000000,
-    100000
-];
+let person = new Array(); 
+person.push("Evan Schlee");
+person.push("Luke Marchesa");
+person.push("Coby Saints");
+person.push("Noah Johnson");
+person.push("Christopher Moltisanti");
+person.push("Akira Otoishi");
+person.push("Gale Boetticher");
+person.push("Elincia R. Crimea");
+person.push("Owen Kung");
+
+let salaries = new Array();
+salaries.push(600000);
+salaries.push(275000);
+salaries.push(250000);
+salaries.push(225000);
+salaries.push(2000000);
+salaries.push(150000);
+salaries.push(5000000);
+salaries.push(4000000);
+salaries.push(100000);
 
 function addSalary()
 {
-    var name = "";
-    var salary = 0;
+    let name = document.getElementById("newName");
+    let salary = document.getElementById("newSalary");
 
-    name = document.getElementById("newName");
-    salary = document.getElementById("newSalary");
-    /*
-    person[person.length] = name;
-    salaries[salaries.length] = salary;
+    person.push(name);
+    salaries.push(salary);
 
-    document.getElementById("newest_employee") = person[person.length - 1];
-    document.getElementById("newest_salary") = salaries[salaries.length - 1];
-    */
-
-    document.getElementById("newest_employee") = person[1];
-    document.getElementById("newest_salary") = salaries[1];
+    document.getElementById("newest_employee") = name;
+    document.getElementById("newest_salary") = salary;
 }
 
 /*
@@ -55,7 +46,7 @@ function displayResults()
     
     for (var i = 0; i < salaries.length; ++i)
     {
-        sum_salaries += salaries[i];
+        sum_salaries += parseFloat(salaries[i]).toFixed(0);
     }
 
     avg_salary = (sum_salaries / salaries.length);
