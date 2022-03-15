@@ -56,6 +56,15 @@ function displayResults()
 
 function displaySalary()
 {
+    for(var i = 0; i < person.length; ++i)
+    {
+        let row = document.getElementById("display_results").insertRow(i);
 
+        let table_name = row.insertCell(0);
+        table_name.innerHTML = person[i];
+
+        let table_salary = row.insertCell(1);
+        table_salary = salaries[i];
+    }
 }
 

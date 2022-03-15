@@ -21,37 +21,34 @@
 
                 Add a New Employee:
                 <br>
-
                 Name:
                 <input type="text" id="newName" placeholder="New Employee Name">
                 <br>
-
                 Salary:
                 <input type="number" id="newSalary" name="newSalary" min="1" max="10000000">
                 <br>
-
                 <button type="button" id="addSalary" onclick="addSalary()">Add Employee/Salary</button>
                 <br>
                 Newest Employee: <p id="newest_employee"></p>
                 Newest Employee's Salary: <p id="newest_salary"></p>
-
-                <br><br>
+                <br>
 
                 <button type="button" id="displayResults" onclick="displayResults()">Display Avg/Sum of Salaries</button>
                 <br>
                 Sum: <p id="display_sum"></p>
                 Avg: <p id="display_avg"></p>
+                <br>
 
-                <!-- UNSELECT WHEN YOU GET THE EMPLOYEE ADDER WORKING
-                <br>
-                Employee:
-                <br>
-                <label for="employee_selection">
-                    <select name="employee_name" id="employee_selection">
-                        <option value = "1">[Employee 1] COME BACK TO THIS</option>
-                    </select>
-                </label>
-                -->
+                Employee Table:
+                <div class="table_div">
+                    <table class="centered-table" id="employee_table">
+                        <thead>
+                            <tr>Name:</tr>
+                            <tr>Salary:</tr>
+                        </thead>
+                        <tbody id="display_results"></tbody>
+                    </table>
+                </div>
 
             </main>
 
