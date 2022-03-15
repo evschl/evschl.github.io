@@ -46,7 +46,7 @@ function displayResults()
     
     for (var i = 0; i < salaries.length; ++i)
     {
-        sum_salaries += parseFloat(salaries[i]).toFixed(2);
+        sum_salaries += parseInt(salaries[i]);
     }
 
     avg_salary = (sum_salaries / salaries.length);
