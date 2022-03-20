@@ -60,10 +60,10 @@ function displaySalary()
     {
         let row = document.getElementById("display_results").insertRow(i);
 
-        let table_name = row.insertCell(i - 1);
+        let table_name = row.insertCell(i);
         table_name.innerHTML = person[i];
 
-        let table_salary = row.insertCell((2 * i) - 1);
+        let table_salary = row.insertCell(i);
         table_salary = salaries[i];
     }
 }
