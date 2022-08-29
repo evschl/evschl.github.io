@@ -1,7 +1,8 @@
 html {
     font-family: 'Courier New', Courier, monospace;
     background-color: #610f7f;
-    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 img {
