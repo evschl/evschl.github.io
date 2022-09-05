@@ -1,6 +1,8 @@
 html {
     font-family: 'Courier New', Courier, monospace;
     background-color: peru;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 header {
