@@ -1,33 +1,18 @@
-html {
+body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #610f7f;
     margin-left: 200px;
     margin-right: 200px;
     color: #fcb07e;
     font-weight: bold;
-}
-
-head {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
+main {
+    text-align: left;
 }
 
 .pagename {
-    text-align: center;
-}
-
-nav {
-    text-align: center;
-}
-
-header {
-    text-align: center;
-}
-
-footer {
     text-align: center;
 }
 
