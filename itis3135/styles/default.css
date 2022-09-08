@@ -1,3 +1,4 @@
+/*Begin Major Tag Styling*/
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #610f7f;
@@ -12,6 +13,12 @@ main {
     text-align: left;
 }
 
+.pagename {
+    text-align: center;
+}
+/*End Major Tag Styling*/
+
+/*Begin Table Styling*/
 table, th, td {
     border: 1px solid;
 }
@@ -31,14 +38,12 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #801fa3;
 }
+/*End Table Styling*/
 
+/*Begin Image Styling*/
 img {
     margin-left: auto;
     margin-right: auto; 
-}
-
-.pagename {
-    text-align: center;
 }
 
 .ratImage {
@@ -47,7 +52,9 @@ img {
     display: block;
     filter: drop-shadow(10px 10px 10px black)
 }
+/*End Image Styling*/
 
+/*Begin Link Styling*/
 a:link, a:visited {
     color: #BAFEA0;
 }
@@ -55,3 +62,4 @@ a:link, a:visited {
 a:hover {
     color: #6BF734;
 }
+/*End Link Styling*/
