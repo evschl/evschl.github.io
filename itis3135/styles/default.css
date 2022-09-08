@@ -47,10 +47,7 @@ form {
     border-radius: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #c55ac5;
-}
-
-.resetSubmit {
-    background-color: #138ba7;
+    color: #359c35;
 }
 
 /*End Form Styling*/
