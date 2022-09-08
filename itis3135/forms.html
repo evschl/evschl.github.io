@@ -42,19 +42,19 @@
 
             <form action="#">
                 <!--Name-->
-                <figure>
+                <figure class="nameInput">
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name"><br>
                 </figure>
 
                 <!--Phone Num-->
-                <figure>
+                <figure class="phoneNumberInput">
                     <label for="phoneNum">Phone Number:</label><br>
                     <input type="number" id="phoneNum" name="phoneNum"><br>
                 </figure>
 
                 <!--Checkboxes-->
-                <figure>
+                <figure class="checkboxInput">
                     <figcaption text-decoration="underline">A few icebreakers!</figcaption>
                     <label for="leftCountry">I've been outside of the United States </label>
                     <input type="checkbox" id="leftCountry" name="leftCountry" value="iLeft"><br>
@@ -71,7 +71,7 @@
                     sides between the checkbox/radio elements, I'm just 
                     testing out making them on different sides.
                 -->
-                <figure>
+                <figure class="radioInput">
                     <figcaption text-decoration="underline">Where are you in your degree?</figcaption>
                     <input type="radio" id="freshman" name="year" value="Freshman">
                     <label for="freshman"> Freshman</label><br>
@@ -85,7 +85,7 @@
                 <br>
 
                 <!--Dropdown-->
-                <figure>
+                <figure class="dropdownInput">
                     <label for="favoriteThing">Which is your favorite?</label>
                     <select name="favoriteThing" id="favoriteThing">
                         <option value="videoGames">Video Games</option>
@@ -97,8 +97,10 @@
                 <br>
 
                 <!--Reset/Submit Buttons-->
-                <input type="submit">
-                <input type="reset">
+                <figure class="resetSubmit">
+                    <input type="submit">
+                    <input type="reset">
+                </figure>
             </form>
         </main>
 
