@@ -46,10 +46,11 @@ form {
     padding: 5px;
     border-radius: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c55ac5;
 }
 
 .resetSubmit {
-    background-color: #2e9ab2;
+    background-color: #138ba7;
 }
 
 /*End Form Styling*/
