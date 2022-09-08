@@ -40,6 +40,15 @@ tr:nth-child(odd) {
 }
 /*End Table Styling*/
 
+/*Begin Form Styling*/
+form {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: auto;
+}
+
+/*End Form Styling*/
+
 /*Begin Image Styling*/
 img {
     margin-left: auto;
