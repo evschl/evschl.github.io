@@ -12,9 +12,8 @@ main {
     text-align: left;
 }
 
-table {
-    outline: ivory;
-    width: 2px;
+table, th, td {
+    border: 1px solid;
 }
 
 img {
