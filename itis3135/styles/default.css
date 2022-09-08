@@ -24,11 +24,11 @@ th {
     background-color: #310840;
 }
 
-td:nth-child(even) {
+tr:nth-child(even) {
     background-color: #691787;
 }
 
-td:nth-child(odd) {
+tr:nth-child(odd) {
     background-color: #801fa3;
 }
 
