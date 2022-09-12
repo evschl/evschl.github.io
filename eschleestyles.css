@@ -3,6 +3,14 @@
     src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 }
 
+main {
+    text-align: left;
+}
+
+.pagename {
+    text-align: center;
+}
+
 body {
     background-color: green;
     font-family: unccFont;
