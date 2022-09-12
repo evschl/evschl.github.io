@@ -1,0 +1,9 @@
+@font-face {
+    font-family: unccFont;
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+}
+
+body {
+    background-color: green;
+    font-family: unccFont;
+}
