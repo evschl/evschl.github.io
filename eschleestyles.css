@@ -6,4 +6,6 @@
 body {
     background-color: green;
     font-family: unccFont;
+    font-weight: bold;
+    color: black;
 }
