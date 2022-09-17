@@ -46,6 +46,11 @@ tr:nth-child(odd) {
     text-decoration: underline;
     font-size: 30px;
 }
+
+.sectionheader {
+    text-align: center;
+    text-decoration: underline;
+}
 /*End Custom Class Styling*/
 
 /*Begin Form Styling*/
