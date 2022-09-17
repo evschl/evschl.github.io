@@ -40,6 +40,14 @@ tr:nth-child(odd) {
 }
 /*End Table Styling*/
 
+/*Begin Custom Class Styling*/
+.principle {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 30px;
+}
+/*End Custom Class Styling*/
+
 /*Begin Form Styling*/
 form {
     border: 1px solid;
