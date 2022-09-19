@@ -1,8 +1,5 @@
 alert("Welcome to my page! Give me money.");
 
-//Initialized Variables
-today = new Date();
-
 /*
 var money = 0;
 
@@ -13,6 +10,7 @@ alert("Thank you for $" + money + "!");
 */
 
 function displayDateTime() {
+    today = new Date();
     document.writeln("Today's Date");
     document.writeln(today.toDateString());
     document.writeln("<br>");
