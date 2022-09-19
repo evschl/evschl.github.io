@@ -1,6 +1,6 @@
+/*
 alert("Welcome to my page! Give me money.");
 
-/*
 var money = 0;
 
 while(money < 500) {
@@ -9,5 +9,7 @@ while(money < 500) {
 alert("Thank you for $" + money + "!");
 */
 
-today = new Date();
-document.getElementById("dateTime").innerHTML = today;
+function dateTime() {
+    today = new Date();
+    document.getElementById("dateTime").innerHTML = today;
+}
