@@ -11,5 +11,5 @@ alert("Thank you for $" + money + "!");
 
 function dateTime() {
     today = new Date();
-    document.print(today.getHours());
+    document.println(today.getHours());
 }
