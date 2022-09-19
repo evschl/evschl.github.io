@@ -48,7 +48,13 @@
                 &diams; Testing JavaScript &diams;
             </h2>
             
-            <script>displayDate();</script>
+            <h3>
+                It is currently
+                <script>
+                    var today = new Date();
+                    document.write(today.toDateString());
+                </script>
+            </h3>
         <br>
 
         <footer>
