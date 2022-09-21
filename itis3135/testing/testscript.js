@@ -14,9 +14,9 @@ function displayDateTime(){
     //let year = today.getYear();
     //let month = today.getMonth();
     //let date = today.getDate();
-    let hour = today.getHours();
+    //let hour = today.getHours();
     //let minute = today.getMinutes();
-    //let second = today.getSeconds();
-    document.getElementById('hour') = hour;
+    let second = today.getSeconds();
+    document.getElementById('second') = second;
     setTimeout(displayDateTime, 1000);
 }
