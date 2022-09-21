@@ -18,17 +18,19 @@ function displayDateTime()
     let hour = today.getHours();
     //let minute = today.getMinutes();
     //let second = today.getSeconds();
-    let meridian = "PLACEHOLDER";
+    //let meridian = "PLACEHOLDER";
 
-    
+    let whereInIf = "Does not process if statement";
     if(hour >= 13)
     {
         hour = hour - 12;
-        meridian = "PM";
+        //meridian = "PM";
+        whereInIf = "Hour >= 13"
     }
     else
     {
-        meridian = "AM";
+        //meridian = "AM";
+        whereInIf = "Hour < 13";
     }
 
     /*
@@ -58,7 +60,7 @@ function displayDateTime()
     /*
     let clockText = hour + ":" + minute + ":" + second + " " + meridian;
     */
-    let clockText = hour;
+    let clockText = whereInIf;
 
     //document.getElementById('dateDisplay').innerHTML = dateText;
     document.getElementById('clockDisplay').innerHTML = clockText;
