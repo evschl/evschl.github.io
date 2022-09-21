@@ -12,13 +12,13 @@ alert("Thank you for $" + money + "!");
 function displayDateTime() 
 {
     let today = new Date();
-    let year = today.getYear();
-    let month = today.getMonth();
-    let date = today.getDate();
+    //let year = today.getYear();
+    //let month = today.getMonth();
+    //let date = today.getDate();
     let hour = today.getHours();
-    let minute = today.getMinutes();
-    let second = today.getSeconds();
-    let meridian = "PLACEHOLDER";
+    //let minute = today.getMinutes();
+    //let second = today.getSeconds();
+    //let meridian = "PLACEHOLDER";
 
     /*
     if(hour >= 13)
@@ -49,7 +49,7 @@ function displayDateTime()
     }
     */
 
-    let monthsAsText = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    //let monthsAsText = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
  
     //let dateText = "Today is " + monthsAsText[month] + " " + date + ", " + year;
     //let clockText = hour + ":" + minute + ":" + second + " " + meridian;
