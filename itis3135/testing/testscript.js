@@ -16,18 +16,18 @@ function displayDateTime()
     //let month = today.getMonth();
     //let date = today.getDate();
     let hour = today.getHours();
-    //let minute = today.getMinutes();
-    //let second = today.getSeconds();
-    //let meridian = "PLACEHOLDER";
+    let minute = today.getMinutes();
+    let second = today.getSeconds();
+    let meridian = "PLACEHOLDER";
 
     if(hour >= 13)
     {
         hour = hour - 12;
-        //meridian = "PM";
+        meridian = "PM";
     }
     else
     {
-        //meridian = "AM";
+        meridian = "AM";
     }
 
     /*
@@ -54,10 +54,8 @@ function displayDateTime()
     
     /*
     let dateText = "Today is " + monthsAsText[month] + " " + date + ", " + year;
-    /*
-    let clockText = hour + ":" + minute + ":" + second + " " + meridian;
     */
-    let clockText = hour;
+    let clockText = hour + ":" + minute + ":" + second + " " + meridian;
 
     //document.getElementById('dateDisplay').innerHTML = dateText;
     document.getElementById('clockDisplay').innerHTML = clockText;
