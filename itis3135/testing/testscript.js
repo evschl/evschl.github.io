@@ -23,11 +23,11 @@ function displayDateTime()
     if(hour >= 13)
     {
         hour = hour - 12;
-        meridian = "PM";
+        hour = hour + "PM";
     }
     else
     {
-        meridian = "AM";
+        hour = hour + "AM";
     }
 
     /*
