@@ -47,10 +47,10 @@ function displayDateTime()
         date = date + "th";
     }
 
-    var monthsAsText = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    let monthsAsText = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
  
-    var dateText = "Today is " + monthsAsText[month + 1] + " " + date + ", " + year;
-    var clockText = hour + ":" + minute + ":" + second + " " + meridian;
+    let dateText = "Today is " + monthsAsText[month + 1] + " " + date + ", " + year;
+    let clockText = hour + ":" + minute + ":" + second + " " + meridian;
 
     document.getElementById('dateDisplay').innerHTML = dateText;
     document.getElementById('clockDisplay').innerHTML = clockText;
