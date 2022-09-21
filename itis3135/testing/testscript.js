@@ -20,6 +20,7 @@ function displayDateTime()
     let second = today.getSeconds();
     let meridian = "PLACEHOLDER";
 
+    /*
     if(hour >= 13)
     {
         hour -= 12;
@@ -46,7 +47,8 @@ function displayDateTime()
     {
         date = date + "th";
     }
-
+    */
+   
     let monthsAsText = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
  
     let dateText = "Today is " + monthsAsText[month - 1] + " " + date + ", " + year;
