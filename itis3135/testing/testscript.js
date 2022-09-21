@@ -55,9 +55,8 @@ function displayDateTime()
     /*
     let dateText = "Today is " + monthsAsText[month] + " " + date + ", " + year;
     */
-    let clockText = hour + ":" + minute + ":" + second + " " + meridian;
 
     //document.getElementById('dateDisplay').innerHTML = dateText;
-    document.getElementById('clockDisplay').innerHTML = clockText;
+    document.getElementById('clockDisplay').innerHTML = hour + ":" + minute + ":" + second + " " + meridian;
     setTimeout(displayDateTime, 1000);
 }
