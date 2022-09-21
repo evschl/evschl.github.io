@@ -48,13 +48,14 @@ function displayDateTime()
         date = date + "th";
     }
     */
-   
+
     let monthsAsText = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
  
-    let dateText = "Today is " + monthsAsText[month - 1] + " " + date + ", " + year;
-    let clockText = hour + ":" + minute + ":" + second + " " + meridian;
+    //let dateText = "Today is " + monthsAsText[month - 1] + " " + date + ", " + year;
+    //let clockText = hour + ":" + minute + ":" + second + " " + meridian;
+    let clockText = hour;
 
-    document.getElementById('dateDisplay').innerHTML = dateText;
+    //document.getElementById('dateDisplay').innerHTML = dateText;
     document.getElementById('clockDisplay').innerHTML = clockText;
     setTimeout(displayDateTime, 1000);
 }
