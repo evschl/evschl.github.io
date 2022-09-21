@@ -23,11 +23,21 @@ function displayDateTime()
     if(hour >= 13)
     {
         hour = hour - 12;
-        hour = hour + "PM";
+        meridian = "PM";
     }
     else
     {
-        hour = hour + "AM";
+        meridian = "AM";
+    }
+
+    if(minute < 10)
+    {
+        minute = "0" + minute;
+    }
+
+    if(second < 10)
+    {
+        second = "0" + second;
     }
 
     /*
@@ -55,6 +65,7 @@ function displayDateTime()
     /*
     let dateText = "Today is " + monthsAsText[month] + " " + date + ", " + year;
     */
+
 
     //document.getElementById('dateDisplay').innerHTML = dateText;
     document.getElementById('clockDisplay').innerHTML = hour + ":" + minute + ":" + second + " " + meridian;
