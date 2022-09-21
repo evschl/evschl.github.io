@@ -40,7 +40,6 @@ function displayDateTime()
         second = "0" + second;
     }
 
-    /*
     if(date % 10 == 1) 
     {
         date = date + "st";
@@ -57,7 +56,6 @@ function displayDateTime()
     {
         date = date + "th";
     }
-    */
 
     /*
     let monthsAsText = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
@@ -67,7 +65,7 @@ function displayDateTime()
     */
 
 
-    //document.getElementById('dateDisplay').innerHTML = dateText;
+    document.getElementById('dateDisplay').innerHTML = date;
     document.getElementById('clockDisplay').innerHTML = hour + ":" + minute + ":" + second + " " + meridian;
     setTimeout(displayDateTime, 1000);
 }
