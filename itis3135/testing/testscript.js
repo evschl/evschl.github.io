@@ -14,7 +14,7 @@ function displayDateTime()
     let today = new Date();
     //let year = today.getYear();
     //let month = today.getMonth();
-    //let date = today.getDate();
+    let date = today.getDate();
     let hour = today.getHours();
     let minute = today.getMinutes();
     let second = today.getSeconds();
