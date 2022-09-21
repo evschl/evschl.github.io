@@ -9,13 +9,13 @@ while(money < 500) {
 alert("Thank you for $" + money + "!");
 */
 
-today = new Date();
-year = today.getYear();
-month = today.getMonth();
-date = today.getDate();
-hour = today.getHours();
-minute = today.getMinutes();
-second = today.getSeconds();
+var today = new Date();
+var year = today.getYear();
+var month = today.getMonth();
+var date = today.getDate();
+var hour = today.getHours();
+var minute = today.getMinutes();
+var second = today.getSeconds();
 
 function displayDateTime(){
     document.writeln(hour);
