@@ -10,13 +10,13 @@ alert("Thank you for $" + money + "!");
 */
 
 function displayDateTime(){
-    var today = new Date();
+    let today = new Date();
     //let year = today.getYear();
     //let month = today.getMonth();
     //let date = today.getDate();
     //let hour = today.getHours();
     //let minute = today.getMinutes();
-    var second = today.getSeconds();
+    let second = today.getSeconds();
     document.getElementById('clock').innerHTML = second;
     setTimeout(displayDateTime, 1000);
 }
