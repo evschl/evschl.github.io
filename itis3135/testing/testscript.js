@@ -10,7 +10,12 @@ alert("Thank you for $" + money + "!");
 */
 
 today = new Date();
+year = today.getYear();
+month = today.getMonth();
+date = today.getDate();
 hour = today.getHours();
+minute = today.getMinutes();
+second = today.getSeconds();
 
 function displayDateTime(){
     document.writeln(hour);
