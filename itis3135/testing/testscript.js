@@ -49,7 +49,7 @@ function displayDateTime()
 
     let monthsAsText = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
  
-    let dateText = "Today is " + monthsAsText[month + 1] + " " + date + ", " + year;
+    let dateText = "Today is " + monthsAsText[month - 1] + " " + date + ", " + year;
     let clockText = hour + ":" + minute + ":" + second + " " + meridian;
 
     document.getElementById('dateDisplay').innerHTML = dateText;
