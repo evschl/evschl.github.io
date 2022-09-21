@@ -9,14 +9,14 @@ while(money < 500) {
 alert("Thank you for $" + money + "!");
 */
 
-const today = new Date();
-let year = today.getYear();
-let month = today.getMonth();
-let date = today.getDate();
-let hour = today.getHours();
-let minute = today.getMinutes();
-let second = today.getSeconds();
-
 function displayDateTime(){
-    document.writeln(hour);
+    const today = new Date();
+    //let year = today.getYear();
+    //let month = today.getMonth();
+    //let date = today.getDate();
+    let hour = today.getHours();
+    //let minute = today.getMinutes();
+    //let second = today.getSeconds();
+    document.getElementById('hour') = hour;
+    setTimeout(displayDateTime, 1000);
 }
