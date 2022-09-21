@@ -17,6 +17,6 @@ function displayDateTime(){
     //let hour = today.getHours();
     //let minute = today.getMinutes();
     let second = today.getSeconds();
-    document.getElementById('second') = second;
+    document.getElementById('clock').innerHTML = second;
     setTimeout(displayDateTime, 1000);
 }
