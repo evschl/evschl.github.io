@@ -12,4 +12,5 @@ alert("Thank you for $" + money + "!");
 today = new Date();
 hour = today.getHour();
 
+document.writeln(hour);
 document.getElementById('displayDateTime').innerHTML = hour;
