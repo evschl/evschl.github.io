@@ -9,7 +9,8 @@ while(money < 500) {
 alert("Thank you for $" + money + "!");
 */
 
-function displayDateTime(){
+function displayDateTime() 
+{
     let today = new Date();
     //let year = today.getYear();
     //let month = today.getMonth();
