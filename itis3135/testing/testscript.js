@@ -25,7 +25,7 @@ function randomTask()
 {
     let task = new Array("Admire a squirrel", "Befriend a squirrel", "Tax Evasion", "Knit a squirrel-themed sweater (for a squirrel)", "Climb a tree");
     let randNum = Math.floor(Math.random * 5);
-    document.getElementById("displayRandomTask").innerHTML = task[1];
+    document.getElementById("displayRandomTask").innerHTML = task[randNum];
 }
 
 function calculateGas()
