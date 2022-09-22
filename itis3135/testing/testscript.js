@@ -12,8 +12,8 @@ alert("Thank you for $" + money + "!");
 function displayDateTime() 
 {
     let today = new Date();
-    //let year = today.getYear();
-    //let month = today.getMonth();
+    let year = today.getYear();
+    let month = today.getMonth();
     let date = today.getDate();
     let hour = today.getHours();
     let minute = today.getMinutes();
@@ -57,15 +57,10 @@ function displayDateTime()
         date = date + "th";
     }
 
-    /*
     let monthsAsText = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-    
-    /*
-    let dateText = "Today is " + monthsAsText[month] + " " + date + ", " + year;
-    */
 
 
-    document.getElementById('dateDisplay').innerHTML = date;
+    document.getElementById('dateDisplay').innerHTML = "Today is " + monthsAsText[month] + " " + date + ", " + year;
     document.getElementById('clockDisplay').innerHTML = hour + ":" + minute + ":" + second + " " + meridian;
     setTimeout(displayDateTime, 1000);
 }
