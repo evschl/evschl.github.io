@@ -9,10 +9,10 @@ while(money < 500) {
 alert("Thank you for $" + money + "!");
 */
 
-function testButton() 
+function displayRandomTask() 
 {
-    let output = document.getElementById("testInput").value;
-    document.getElementById("testOutput").innerHTML = output;
+    let task = new Array("Admire a squirrel", "Befriend a squirrel", "Tax Evasion", "Knit a squirrel-themed sweater (for a squirrel)", "Climb a tree");
+    document.getElementById("displayRandomTask").innerHTML = task[Math.floor(Math.random * 5)];
 }
 
 function userFeeling() 

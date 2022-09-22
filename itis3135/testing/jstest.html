@@ -48,14 +48,14 @@
             <h3 id="dateDisplay" class="date"></h3>
             <h3 id="clockDisplay" class="clock"></h3>
 
-            <figure>
-                <label for="nameMood">
+            <figure for="nameMood">
+                <label id="nameMood">
                     What's your name?
                     <br>
                     <input type="text" id="yourName" name="yourName" placeholder="Name">
                     <br>
                 </label>
-                <label for="nameMood">
+                <label id="nameMood">
                     How are you feeling?
                     <br>
                     <input type="text" id="yourMood" name="yourMood" placeholder="Good!">
@@ -63,6 +63,15 @@
                 </label>
                 <button type="submit" name="moodSubmit" id="moodSubmit" onclick="userFeeling();">Submit</button>
                 <p id="displayGreeting"></p>
+            </figure>
+
+            <figure for="randomToDo">
+                <label id="randomToDo">
+                    At a loss for what to do today? Click here to generate a random task to keep yourself occupied!
+                    <br>
+                    <button type="submit" name="toDoSubmit" id="toDoSubmit" onclick="randomTask();">Generate Random Task</button>
+                    <p id="displayRandomTask"></p>
+                </label>
             </figure>
         </main>
         
