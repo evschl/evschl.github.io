@@ -14,6 +14,7 @@ function testButton()
     let output = document.getElementById("testInput").value;
     document.getElementById("testOutput").innerHTML = output;
 }
+
 function userFeeling() 
 {
     let name = document.getElementById("yourName").value;
