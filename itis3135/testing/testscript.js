@@ -12,7 +12,8 @@ alert("Thank you for $" + money + "!");
 function displayRandomTask() 
 {
     let task = new Array("Admire a squirrel", "Befriend a squirrel", "Tax Evasion", "Knit a squirrel-themed sweater (for a squirrel)", "Climb a tree");
-    document.getElementById("displayRandomTask").innerHTML = task[Math.floor(Math.random * 5)];
+    randNum = Math.floor(Math.random * 5);
+    document.getElementById("displayRandomTask").innerHTML = Testing;
 }
 
 function userFeeling() 
