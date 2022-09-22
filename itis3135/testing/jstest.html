@@ -49,19 +49,19 @@
             <h3 id="clockDisplay" class="clock"></h3>
 
             <figure>
-                <label for="nameFeeling">
+                <label for="nameMood">
                     What's your name?
                     <br>
-                    <input type="text" id="yourName" placeholder="Name">
+                    <input type="text" id="yourName" name="yourName" placeholder="Name">
                     <br>
                 </label>
-                <label for="nameFeeling">
+                <label for="nameMood">
                     How are you feeling?
                     <br>
-                    <input type="text" id="yourMood" placeholder="Good!">
+                    <input type="text" id="yourMood" name="yourMood" placeholder="Good!">
                     <br>
                 </label>
-                <button type="submit" onclick="userFeeling();">Submit</button>
+                <button type="submit" name="moodSubmit" id="moodSubmit" value="Submit" onclick="userFeeling();"></button>
                 <p id="displayGreeting"></p>
             </figure>
         </main>
