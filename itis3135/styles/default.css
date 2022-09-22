@@ -54,6 +54,15 @@ tr:nth-child(odd) {
 .sectionheader {
     text-align: center;
 }
+
+.dateAndTime {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c55ac5;
+    color: #610f7f;
+}
 /*End Custom Class Styling*/
 
 /*Begin Form Styling*/
