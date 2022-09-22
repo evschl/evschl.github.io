@@ -12,9 +12,11 @@ alert("Thank you for $" + money + "!");
 let fibonacci = 0;
 let fCurrent = 1;
 let fLast = 0;
+let count = 0;
 
 function fibonacciGenerator() 
 {
+    count += 1;
     fibonacci = fCurrent + fLast;
     fLast = fCurrent;
     fCurrent = fibonacci;
