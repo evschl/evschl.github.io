@@ -16,6 +16,11 @@ function displayRandomTask()
     document.getElementById("displayRandomTask").innerHTML = "Testing";
 }
 
+function calculateGas()
+{
+    let
+}
+
 function userFeeling() 
 {
     let name = document.getElementById("yourName").value;

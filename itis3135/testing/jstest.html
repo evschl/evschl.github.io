@@ -44,18 +44,24 @@
             <h2 class="pagename">
                 &diams; Testing JavaScript &diams;
             </h2>
+
+            <hr>
             
+            <!--Date and Clock displays-->
             <h3 id="dateDisplay" class="date"></h3>
             <h3 id="clockDisplay" class="clock"></h3>
 
+            <hr>
+
+            <!--Text boxes that take the user's name and mood and print a message using that input-->
             <figure for="nameMood">
-                <label id="nameMood">
+                <label id="nameMood" name="name">
                     What's your name?
                     <br>
                     <input type="text" id="yourName" name="yourName" placeholder="Name">
                     <br>
                 </label>
-                <label id="nameMood">
+                <label id="nameMood" name="mood">
                     How are you feeling?
                     <br>
                     <input type="text" id="yourMood" name="yourMood" placeholder="Good!">
@@ -65,17 +71,76 @@
                 <p id="displayGreeting"></p>
             </figure>
 
+            <hr>
+            
+            <!--Button that generates a random task for the user to complete-->
             <figure for="randomToDo">
                 <label id="randomToDo">
                     At a loss for what to do today? Click here to generate a random task to keep yourself occupied!
                     <br>
                     <button type="submit" name="toDoSubmit" id="toDoSubmit" onclick="randomTask();">Generate Random Task</button>
-                    <p id="displayRandomTask"></p>
+                </label>
+                <p id="displayRandomTask"></p>
+            </figure>
+
+            <hr>
+
+            <!--Calculates the average amount of money you spend on gas every week-->
+            <figcaption id="gasCalc">Determines the number of miles</figcaption>
+            <figure for="gasCalc">
+                <label id="gasCalc" name="minutes">
+                    Enter the average number of minutes you drive per day:
+                    <br>
+                    <input type="number" id="numMinutes">
+                </label>
+                <label id="gasCalc" name="limit">
+                    Enter the average speed you travel at:
+                    <br>
+                    <input type="number" id="avgSpeed">
+                </label>
+                <label id="gasCalc" name="mileage">
+                    Enter the miles per gallon of your car:
+                    <br>
+                    <input type="number" id="gasMileage">
+                </label>
+                <label id="gasCalc" name="gas">
+                    Enter the current gas price:
+                    <br>
+                    <input type="number" id="gasPrice">
+                </label>
+                <button onclick="calculateGas();">Calculate</button>
+                <p id="displayGasSpending"></p>
+            </figure>
+
+            <hr>
+
+            <!---->
+            <figure for="#">
+                <label id="#">
+
+                </label>
+            </figure>
+
+            <hr>
+
+            <!---->
+            <figure for="#">
+                <label id="#">
+
+                </label>
+            </figure>
+
+            <hr>
+
+            <!---->
+            <figure for="#">
+                <label id="#">
+
                 </label>
             </figure>
         </main>
         
-        <br>
+        <hr>
 
         <footer>
             <nav>
