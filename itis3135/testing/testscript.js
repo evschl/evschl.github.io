@@ -24,6 +24,7 @@ function calculateGas()
     let speed = document.getElementById("avgSpeed").value;
 
     let totalPrice = ((speed / 60) * drivingMinutes) * (gasPrice / mpg) * 7;
+    totalPrice = parseFloat(totalPrice.toFixed(2));
     document.getElementById("displayGasSpending").innerHTML = "The average amount of money you spend on gas per week is: $" + totalPrice + ".";
 }
 
