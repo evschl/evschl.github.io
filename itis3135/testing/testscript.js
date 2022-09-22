@@ -11,14 +11,22 @@ alert("Thank you for $" + money + "!");
 
 function displayRandomTask() 
 {
-    //let task = new Array("Admire a squirrel", "Befriend a squirrel", "Tax Evasion", "Knit a squirrel-themed sweater (for a squirrel)", "Climb a tree");
-    //randNum = Math.floor(Math.random * 5);
-    document.getElementById("displayRandomTask").innerHTML = "Testing";
+    let task = new Array("Admire a squirrel", "Befriend a squirrel", "Tax Evasion", "Knit a squirrel-themed sweater (for a squirrel)", "Climb a tree");
+    let randNum = Math.floor(Math.random * 5);
+    document.getElementById("displayRandomTask").innerHTML = task[randNum];
 }
 
 function calculateGas()
 {
-    let
+    let gasPrice = document.getElementById("gasPrice").value;
+    let drivingMinutes = document.getElementById("numMinutes").value;
+    let mpg = document.getElementById("gasMileage").value;
+    let speed = document.getElementById("avgSpeed").value;
+
+    let milesDaily = (speed / 60) * drivingMinutes;
+    let pricePerMile = gasPrice / mpg;
+    let totalPrice = milesDaily * pricePerMile * 7;
+    document.getElementById("displayGasSpending").innerHTML = "The average amount of money you spend on gas per week is: $" + totalPrice + ".";
 }
 
 function userFeeling() 
