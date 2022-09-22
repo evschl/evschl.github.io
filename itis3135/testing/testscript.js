@@ -9,6 +9,18 @@ while(money < 500) {
 alert("Thank you for $" + money + "!");
 */
 
+let fibonacci = 0;
+let fCurrent = 1;
+let fLast = 0;
+
+function fibonacciGenerator() 
+{
+    fibonacci = fCurrent + fLast;
+    fLast = fCurrent;
+    fCurrent = fibonacci;
+    document.getElementById("displayFibonacci").innerHTML = fibonacci;
+}
+
 function randomTask() 
 {
     let task = new Array("Admire a squirrel", "Befriend a squirrel", "Tax Evasion", "Knit a squirrel-themed sweater (for a squirrel)", "Climb a tree");
