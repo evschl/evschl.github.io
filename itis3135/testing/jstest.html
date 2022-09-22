@@ -55,98 +55,100 @@
 
             <hr>
 
-            <!--Text boxes that take the user's name and mood and print a message using that input-->
-            <figure for="nameMood">
-                <label id="nameMood" name="name">
-                    What's your name?
-                    <br>
-                    <input type="text" id="yourName" name="yourName" placeholder="Name">
-                    <br>
-                </label>
-                <label id="nameMood" name="mood">
-                    How are you feeling?
-                    <br>
-                    <input type="text" id="yourMood" name="yourMood" placeholder="Good!">
-                    <br>
-                </label>
-                <button type="submit" name="moodSubmit" id="moodSubmit" onclick="userFeeling();">Submit</button>
+            <form>
+                <!--Text boxes that take the user's name and mood and print a message using that input-->
+                <figure for="nameMood">
+                    <label id="nameMood" name="name">
+                        What's your name?
+                        <br>
+                        <input type="text" id="yourName" name="yourName" placeholder="Name">
+                        <br>
+                    </label>
+                    <label id="nameMood" name="mood">
+                        How are you feeling?
+                        <br>
+                        <input type="text" id="yourMood" name="yourMood" placeholder="Good!">
+                        <br>
+                    </label>
+                    <button type="submit" name="moodSubmit" id="moodSubmit" onclick="userFeeling();">Submit</button>
                 <p id="displayGreeting"></p>
-            </figure>
+                </figure>
 
-            <hr>
+                <hr>
             
-            <!--Button that generates a random task for the user to complete-->
-            <figure for="randomToDo">
-                <label id="randomToDo">
-                    At a loss for what to do today? Click here to generate a random task to keep yourself occupied!
-                    <br>
-                    <button type="submit" name="toDoSubmit" id="toDoSubmit" onclick="randomTask();">Generate Random Task</button>
-                </label>
-                <p id="displayRandomTask"></p>
-            </figure>
+                <!--Button that generates a random task for the user to complete-->
+                <figure for="randomToDo">
+                    <label id="randomToDo">
+                        At a loss for what to do today? Click here to generate a random task to keep yourself occupied!
+                        <br>
+                        <button type="submit" name="toDoSubmit" id="toDoSubmit" onclick="randomTask();">Generate Random Task</button>
+                    </label>
+                    <p id="displayRandomTask"></p>
+                </figure>
 
-            <hr>
+                <hr>
 
-            <!--Calculates the average amount of money you spend on gas every week-->
-            <figcaption id="gasCalc" style="text-align:center;">Weekly Gas Expense Calculator</figcaption>
-            <figure for="gasCalc">
-                <label id="gasCalc" name="minutes">
-                    Enter the average number of minutes you drive per day:
+                <!--Calculates the average amount of money you spend on gas every week-->
+                <figcaption id="gasCalc" style="text-align:center;">Weekly Gas Expense Calculator</figcaption>
+                <figure for="gasCalc">
+                    <label id="gasCalc" name="minutes">
+                        Enter the average number of minutes you drive per day:
+                        <br>
+                        <input type="number" id="numMinutes">
+                        <br>
+                    </label>
+                    <label id="gasCalc" name="limit">
+                        Enter the average speed you travel at (in miles per hour):
+                        <br>
+                        <input type="number" id="avgSpeed">
+                        <br>
+                    </label>
+                    <label id="gasCalc" name="mileage">
+                        Enter the miles per gallon of your car:
+                        <br>
+                        <input type="number" id="gasMileage">
+                        <br>
+                    </label>
+                    <label id="gasCalc" name="gas">
+                        Enter the current gas price:
+                        <br>
+                        <input type="number" id="gasPrice">
+                        <br>
+                    </label>
+                    <button onclick="calculateGas();">Calculate</button>
                     <br>
-                    <input type="number" id="numMinutes">
-                    <br>
-                </label>
-                <label id="gasCalc" name="limit">
-                    Enter the average speed you travel at (in miles per hour):
-                    <br>
-                    <input type="number" id="avgSpeed">
-                    <br>
-                </label>
-                <label id="gasCalc" name="mileage">
-                    Enter the miles per gallon of your car:
-                    <br>
-                    <input type="number" id="gasMileage">
-                    <br>
-                </label>
-                <label id="gasCalc" name="gas">
-                    Enter the current gas price:
-                    <br>
-                    <input type="number" id="gasPrice">
-                    <br>
-                </label>
-                <button onclick="calculateGas();">Calculate</button>
-                <br>
-                <p id="displayGasSpending"></p>
-            </figure>
+                    <p id="displayGasSpending"></p>
+                </figure>
 
-            <hr>
+                <hr>
 
-            <!--Generates the next fibonacci number-->
-            <figcaption id="fibonacciNum">Generates the next fibonacci number</figcaption>
-            <figure for="fibonacciNum">
-                <label id="fibonacciNum">
-                    <button onclick="fibonacciGenerator();">Next Number</button>
-                    <p id="displayFibonacci"></p> 
-                </label>
-            </figure>
+                <!--Generates the next fibonacci number-->
+                <figcaption id="fibonacciNum">Generates the next fibonacci number</figcaption>
+                <figure for="fibonacciNum">
+                    <label id="fibonacciNum">
+                        <button onclick="fibonacciGenerator();">Next Number</button>
+                        <p id="displayFibonacci"></p> 
+                    </label>
+                </figure>
 
-            <hr>
+                <hr>
 
-            <!---->
-            <figure for="#">
-                <label id="#">
+                <!---->
+                <figure for="#">
+                    <label id="#">
 
-                </label>
-            </figure>
+                    </label>
+                </figure>
 
-            <hr>
+                <hr>
 
-            <!--Textarea-->
-            <figure for="">
-                <label id="">
+                <!--Textarea-->
+                <figure for="">
+                    <label id="">
                     
-                </label>
-            </figure>
+                    </label>
+                </figure>
+            </form>
         </main>
         
         <hr>
