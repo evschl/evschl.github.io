@@ -9,7 +9,9 @@ while(money < 500) {
 alert("Thank you for $" + money + "!");
 */
 function userFeeling() {
-    document.getElementById("displayGreeting").innerHTML = "Welcome to the Earnest Squirrels, " + document.getElementById("yourName").innerHTML + "! We're glad OR SORRY that you're feeling " + document.getElementById("yourMood") + ".";
+    let name = document.getElementById("yourName").value;
+    let mood = document.getElementById("yourMood").value;
+    document.getElementById("displayGreeting").innerHTML = "Welcome to the Earnest Squirrels, " + name + "! We're glad OR SORRY that you're feeling " + mood + ".";
 }
 
 function displayDateTime() 
