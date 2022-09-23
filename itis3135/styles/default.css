@@ -48,6 +48,7 @@ tr:nth-child(odd) {
 .principle {
     font-weight: bold;
     font-style: italic;
+    text-decoration: none;
     font-size: 30px;
 }
 
