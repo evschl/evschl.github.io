@@ -20,7 +20,7 @@ function fibonacciGenerator()
     fibonacci = fCurrent + fLast;
     fLast = fCurrent;
     fCurrent = fibonacci;
-    document.getElementById("displayFibonacci").innerHTML = fibonacci;
+    document.getElementById("displayFibonacci").innerHTML = "#" + count + ": " + fibonacci;
 }
 
 function randomTask() 
