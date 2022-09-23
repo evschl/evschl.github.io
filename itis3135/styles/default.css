@@ -47,7 +47,7 @@ tr:nth-child(odd) {
 /*Begin Custom Class Styling*/
 .principle {
     font-weight: bold;
-    text-decoration: underline;
+    font-style: italic;
     font-size: 30px;
 }
 

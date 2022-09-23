@@ -120,6 +120,7 @@ function userFeeling()
 {
     let name = document.getElementById("yourName").value;
     let mood = document.getElementById("yourMood").value;
+    
     document.getElementById("displayGreeting").innerHTML = "Welcome to the Earnest Squirrels, " + name + "! We're glad OR SORRY that you're feeling " + mood + ".";
 }
 
