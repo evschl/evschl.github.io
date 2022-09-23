@@ -14,6 +14,13 @@ let fCurrent = 1;
 let fLast = 0;
 let count = 0;
 
+function hexGenerator()
+{
+    let red = document.getElementById("red");
+    let green = document.getElementById("green");
+    let blue = document.getElementById("blue");
+}
+
 function calcDistance()
 {
     x1 = document.getElementById("x1").value;
