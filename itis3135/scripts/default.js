@@ -82,6 +82,7 @@ function calcDistance()
     z2 = document.getElementById("z2").value;
 
     distance = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2) + Math.pow((z2 - z1), 2));
+
     document.getElementById("displayDistance").innerHTML = parseFloat(distance.toFixed(2));
 }
 
@@ -91,6 +92,7 @@ function fibonacciGenerator()
     fibonacci = fCurrent + fLast;
     fLast = fCurrent;
     fCurrent = fibonacci;
+
     document.getElementById("displayFibonacci").innerHTML = "#" + count + ": " + fibonacci;
 }
 
@@ -98,6 +100,7 @@ function randomTask()
 {
     let task = new Array("Admire a squirrel", "Befriend a squirrel", "Tax Evasion", "Knit a squirrel-themed sweater (for a squirrel)", "Climb a tree");
     let randNum = Math.floor(Math.random() * 5);
+
     document.getElementById("displayRandomTask").innerHTML = task[randNum];
 }
 
@@ -109,8 +112,8 @@ function calculateGas()
     let speed = document.getElementById("avgSpeed").value;
 
     let totalPrice = ((speed / 60) * drivingMinutes) * (gasPrice / mpg) * 7;
-    totalPrice = parseFloat(totalPrice.toFixed(2));
-    document.getElementById("displayGasSpending").innerHTML = "The average amount of money you spend on gas per week is: $" + totalPrice + ".";
+
+    document.getElementById("displayGasSpending").innerHTML = "The average amount of money you spend on gas per week is: $" + parseFloat(totalPrice.toFixed(2)); + ".";
 }
 
 function userFeeling() 
