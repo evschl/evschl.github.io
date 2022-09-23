@@ -27,22 +27,22 @@ function hexGenerator()
         {
             if(blue.checked == true)
             {
-                document.getElementById("displayHex").innerHTML = "#FFFFFF";
+                document.getElementById("displayHex").innerHTML = "White, #FFFFFF";
             }
             else
             {
-                document.getElementById("displayHex").innerHTML = "#FFFF00";
+                document.getElementById("displayHex").innerHTML = "Yellow, #FFFF00";
             }
         }
         else
         {
             if(blue.checked == true)
             {
-                document.getElementById("displayHex").innerHTML = "#FF00FF";
+                document.getElementById("displayHex").innerHTML = "Magenta, #FF00FF";
             }
             else
             {
-                document.getElementById("displayHex").innerHTML = "#FF0000";
+                document.getElementById("displayHex").innerHTML = "Red, #FF0000";
             }
         }
     }
@@ -52,22 +52,22 @@ function hexGenerator()
         {
             if(blue.checked == true)
             {
-                document.getElementById("displayHex").innerHTML = "#00FFFF";
+                document.getElementById("displayHex").innerHTML = "Cyan, #00FFFF";
             }
             else
             {
-                document.getElementById("displayHex").innerHTML = "#00FF00";
+                document.getElementById("displayHex").innerHTML = "Green, #00FF00";
             }
         }
         else
         {
             if(blue.checked == true)
             {
-                document.getElementById("displayHex").innerHTML = "#0000FF";
+                document.getElementById("displayHex").innerHTML = "Blue, #0000FF";
             }
             else
             {
-                document.getElementById("displayHex").innerHTML = "#000000";
+                document.getElementById("displayHex").innerHTML = "Black, #000000";
             }
         }
     }
