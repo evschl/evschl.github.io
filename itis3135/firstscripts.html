@@ -105,11 +105,45 @@
 
                 <hr>
 
-                <!---->
-                <figure for="#">
-                    <label id="#">
-
+                <!--Distance between two points-->
+                <figcaption id="distanceBetween">Enter two coordinates to determine the distance between them.</figcaption>
+                <figure for="distanceBetween">
+                    <label id="distanceBetween">
+                        X1: 
+                        <br>
+                        <input type="number" id="x1">
                     </label>
+                    <label id="distanceBetween">
+                        Y1:
+                        <br>
+                        <input type="number" id="y1">
+                    </label>
+                    <label id="distanceBetween">
+                        Z1:
+                        <br>
+                        <input type="number" id="z1">
+                    </label>
+
+                    <br><br>
+
+                    <label id="distanceBetween">
+                        X2: 
+                        <br>
+                        <input type="number" id="x2">
+                    </label>
+                    <label id="distanceBetween">
+                        Y2:
+                        <br>
+                        <input type="number" id="y2">
+                    </label>
+                    <label id="distanceBetween">
+                        Z2:
+                        <br>
+                        <input type="number" id="z2">
+                    </label>
+
+                    <button type="button" onclick="calcDistance();">Calculate Distance</button>
+                    <p id="displayDistance"></p>
                 </figure>
 
                 <hr>

@@ -14,6 +14,17 @@ let fCurrent = 1;
 let fLast = 0;
 let count = 0;
 
+function calcDistance()
+{
+    x1 = document.getElementById("x1").value;
+    x2 = document.getElementById("x2").value;
+    y1 = document.getElementById("y1").value;
+    y2 = document.getElementById("y2").value;
+    z1 = document.getElementById("z1").value;
+    z2 = document.getElementById("z2").value;
+    document.getElementById("displayDistance").innerHTML = ((Math.pow((x2 - x1), 2)) + Math.sqrt((Math.pow((y2 - y1), 2)) + (Math.pow((z2 - z1), 2))));
+}
+
 function fibonacciGenerator() 
 {
     count += 1;
