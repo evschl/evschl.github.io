@@ -14,7 +14,7 @@ let fCurrent = 1;
 let fLast = 0;
 let count = 0;
 
-function hexGenerator()
+function generateHex()
 {
     
     let red = document.getElementById("red");
