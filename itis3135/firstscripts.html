@@ -42,7 +42,7 @@
                         <input type="text" id="yourMood" name="yourMood" placeholder="Good!">
                         <br>
                     </label>
-                    <button name="moodSubmit" id="moodSubmit" onclick="userFeeling();">Greet me!</button>
+                    <button type="button" name="moodSubmit" id="moodSubmit" onclick="userFeeling();">Greet me!</button>
                 <p id="displayGreeting"></p>
                 </figure>
 
@@ -53,7 +53,7 @@
                     <label id="randomToDo">
                         At a loss for what to do today? Click here to generate a random task to keep yourself occupied!
                         <br>
-                        <button name="toDoSubmit" id="toDoSubmit" onclick="randomTask();">Generate Random Task</button>
+                        <button type="button" name="toDoSubmit" id="toDoSubmit" onclick="randomTask();">Generate Random Task</button>
                     </label>
                     <p id="displayRandomTask"></p>
                 </figure>
@@ -87,7 +87,7 @@
                         <input type="number" id="gasPrice">
                         <br>
                     </label>
-                    <button onclick="calculateGas();">Calculate</button>
+                    <button type="button" onclick="calculateGas();">Calculate</button>
                     <br>
                     <p id="displayGasSpending"></p>
                 </figure>
@@ -98,7 +98,7 @@
                 <figcaption id="fibonacciNum">Generates the next fibonacci number</figcaption>
                 <figure for="fibonacciNum">
                     <label id="fibonacciNum">
-                        <button onclick="fibonacciGenerator();">Next Number</button>
+                        <button type="button" onclick="fibonacciGenerator();">Next Number</button>
                         <p id="displayFibonacci"></p> 
                     </label>
                 </figure>
