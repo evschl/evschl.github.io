@@ -16,9 +16,61 @@ let count = 0;
 
 function hexGenerator()
 {
+    
     let red = document.getElementById("red");
     let green = document.getElementById("green");
     let blue = document.getElementById("blue");
+
+    if(red.checked == true)
+    {
+        if(green.checked == true)
+        {
+            if(blue.checked == true)
+            {
+                document.getElementById("displayHex").innerHTML = "#FFFFFF";
+            }
+            else
+            {
+                document.getElementById("displayHex").innerHTML = "#FFFF00";
+            }
+        }
+        else
+        {
+            if(blue.checked == true)
+            {
+                document.getElementById("displayHex").innerHTML = "#FF00FF";
+            }
+            else
+            {
+                document.getElementById("displayHex").innerHTML = "#FF0000";
+            }
+        }
+    }
+    else 
+    {
+        if(green.checked == true)
+        {
+            if(blue.checked == true)
+            {
+                document.getElementById("displayHex").innerHTML = "#00FFFF";
+            }
+            else
+            {
+                document.getElementById("displayHex").innerHTML = "#00FF00";
+            }
+        }
+        else
+        {
+            if(blue.checked == true)
+            {
+                document.getElementById("displayHex").innerHTML = "#0000FF";
+            }
+            else
+            {
+                document.getElementById("displayHex").innerHTML = "#000000";
+            }
+        }
+    }
 }
 
 function calcDistance()
