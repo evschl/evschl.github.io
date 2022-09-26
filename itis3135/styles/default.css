@@ -56,8 +56,15 @@ tr:nth-child(odd) {
     text-align: center;
 }
 
+.dropdown-whole {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown-content {
-    
+    display: none;
+    position: absolute;
+    z-index: 1;
 }
 
 /*End Custom Class Styling*/
