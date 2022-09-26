@@ -5,7 +5,7 @@ alert("Welcome to the Earnest Squirrels!");
 while(polygon < 0 || polygon > 10)
 {
     polygon = prompt("Can't remember the name of a polygon? Enter a number (1-10), and you will be given the name of the polygon with that many sides!");
-    Math.round(Math.abs(polygon));
+    polygon = Math.round(Math.abs(polygon));
 }
 
 if(polygon == 1) 
