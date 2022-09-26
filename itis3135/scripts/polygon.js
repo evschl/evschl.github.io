@@ -2,10 +2,9 @@ let polygon = 100;
 
 alert("Welcome to the Earnest Squirrels!");
 
-while(prompt < 0 || prompt > 10)
+while(polygon < 0 || prompt > 10)
 {
-    polygon = prompt("Can't remember the name of a polygon? Enter a number (1-10), and you will be given the name of the polygon with that many sides!");
-    polygon = Math.round(Math.abs(polygon));
+    polygon = Math.round(Math.abs(prompt("Can't remember the name of a polygon? Enter a number (1-10), and you will be given the name of the polygon with that many sides!")));
 }
 
 if(polygon == 1) 
