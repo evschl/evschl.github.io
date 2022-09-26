@@ -61,6 +61,11 @@ tr:nth-child(odd) {
     display: inline-block;
 }
 
+.dropdown-button {
+    padding: 16px;
+    border: none;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -71,6 +76,10 @@ tr:nth-child(odd) {
 .dropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
