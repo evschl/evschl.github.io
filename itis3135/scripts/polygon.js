@@ -1,6 +1,7 @@
 let polygon = 100;
 
 alert("Welcome to the Earnest Squirrels!");
+polygon = prompt("Polygon");
 
 while(polygon < 0 || prompt > 10)
 {
