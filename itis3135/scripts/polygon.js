@@ -8,7 +8,6 @@ while(polygon < 1 || polygon > 10)
     polygon = Math.round(Math.abs(polygon));
 }
 
-function getShape() {
     if(polygon == 1) 
     {
         alert("The polygon with 1 side is known as a \"Henagon\"!");
@@ -53,4 +52,3 @@ function getShape() {
     {
         alert("How did you get here?");
     }
-}
