@@ -86,7 +86,11 @@ tr:nth-child(odd) {
 }
 
 .dropdown-content a:hover {
-    
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
 .dropdown:hover .dropdown-content {
