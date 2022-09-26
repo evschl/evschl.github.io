@@ -85,6 +85,10 @@ tr:nth-child(odd) {
     display: block;
 }
 
+.dropdown-content a:hover {
+    
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
