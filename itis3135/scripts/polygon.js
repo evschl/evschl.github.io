@@ -3,7 +3,7 @@ let polygon = 100;
 alert("Welcome to the Earnest Squirrels!");
 
 function validateEntry(entry) {
-    while(entry < 1 || entry > 10) {
+    while(entry < 1 || entry > 10 || typeof entry != 'number') {
         entry = validateEntry(prompt("Can't remember the name of a polygon? Enter a number (1-10), and you will be given the name of the polygon with that many sides!"));
     }
 
