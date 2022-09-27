@@ -110,6 +110,10 @@ tr:nth-child(odd) {
     font-style: italic;
 }
 
+.between-elements-main {
+    border: dashed;
+}
+
 /*End Custom Class Styling*/
 
 /*Begin Form Styling*/
