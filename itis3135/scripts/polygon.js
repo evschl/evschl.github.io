@@ -1,5 +1,6 @@
 alert("Welcome to the Earnest Squirrels!");
 
+//Validates the entry
 function validateEntry(entry) {
     while(entry < 1 || entry > 10 || isNaN(entry)) {
         entry = validateEntry(prompt("Can't remember the name of a polygon? Enter a number (1-10), and you will be given the name of the polygon with that many sides!"));
@@ -8,6 +9,7 @@ function validateEntry(entry) {
     return entry;
 }
 
+//Prints an alert with the name and number of sides of the polygon
 function getShape(sides) {
     if(sides == 1) 
     {
@@ -55,7 +57,10 @@ function getShape(sides) {
     }
 }
 
+//Takes user input
 let polygon = validateEntry(prompt("Can't remember the name of a polygon? Enter a number (1-10), and you will be given the name of the polygon with that many sides!"));
+//Takes the absolute value of, and also rounds the number the user enters
 polygon = Math.round(Math.abs(polygon));
 
+//Calls getShape function, passing the validated user-entered number
 getShape(polygon);
