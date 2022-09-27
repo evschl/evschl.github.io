@@ -97,6 +97,12 @@ tr:nth-child(odd) {
     display: block;
 }
 
+.polygonCaption
+{
+    text-align: center;
+    font-style: italic;
+}
+
 /*End Custom Class Styling*/
 
 /*Begin Form Styling*/
