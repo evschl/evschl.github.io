@@ -69,7 +69,7 @@ tr:nth-child(odd) {
     border: none;
 }
 
-.dropdownbutton:hover {
+.dropdown-button:hover {
     color: #e4a700;
 }
 
@@ -93,11 +93,11 @@ tr:nth-child(odd) {
     background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-button {
+.dropdown-whole:hover .dropdown-button {
     background-color: #3e8e41;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-whole:hover .dropdown-content {
     display: block;
 }
 
