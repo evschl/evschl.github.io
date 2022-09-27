@@ -63,10 +63,12 @@ tr:nth-child(odd) {
 
 .dropdown-button {
     background-color: #04AA6D;
-    color: white;
-    padding: 16px;
+    color: ivory;
+    padding: 10px 5px;
     font-size: 16px;
-    border: none;
+    font-style: italic;
+    border-style: outset;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .dropdown-button:hover {
@@ -76,7 +78,7 @@ tr:nth-child(odd) {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: ivory;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
