@@ -63,7 +63,7 @@ tr:nth-child(odd) {
 
 .dropdown-button {
     background-color: #04AA6D;
-    color: ivory;
+    color: rgb(255, 255, 180);
     padding: 10px 5px;
     font-size: 16px;
     font-style: italic;
@@ -72,13 +72,13 @@ tr:nth-child(odd) {
 }
 
 .dropdown-button:hover {
-    color: #e4a700;
+    color: #ffcf4b;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: ivory;
+    background-color: rgb(255, 255, 180);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -93,7 +93,7 @@ tr:nth-child(odd) {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: rgb(255, 255, 180);
 }
 
 .dropdown-whole:hover .dropdown-button {
