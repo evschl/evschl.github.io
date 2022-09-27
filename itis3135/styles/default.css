@@ -69,6 +69,10 @@ tr:nth-child(odd) {
     border: none;
 }
 
+.dropdownbutton:hover {
+    color: #e4a700;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -89,7 +93,7 @@ tr:nth-child(odd) {
     background-color: #ddd;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropdown-button {
     background-color: #3e8e41;
 }
 
