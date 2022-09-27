@@ -135,11 +135,18 @@ img {
     margin-right: auto; 
 }
 
+.polygon-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
 .ratImage {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    filter: drop-shadow(10px 10px 10px black)
+    filter: drop-shadow(10px 10px 10px black);
 }
 /*End Image Styling*/
 
