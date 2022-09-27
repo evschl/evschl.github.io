@@ -1,5 +1,3 @@
-let polygon = 100;
-
 alert("Welcome to the Earnest Squirrels!");
 
 function validateEntry(entry) {
@@ -57,7 +55,7 @@ function polygonToString(sides) {
     }
 }
 
-polygon = validateEntry(prompt("Can't remember the name of a polygon? Enter a number (1-10), and you will be given the name of the polygon with that many sides!"));
+let polygon = validateEntry(prompt("Can't remember the name of a polygon? Enter a number (1-10), and you will be given the name of the polygon with that many sides!"));
 polygon = Math.round(Math.abs(polygon));
 
 polygonToString(polygon);
