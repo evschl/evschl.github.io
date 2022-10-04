@@ -3,6 +3,7 @@ const keys = calculator.querySelector('.calculator_keys');
 
 keys.addEventListener('click', e => {
     if(e.target.matches('button')) {
+        /*
         const key = e.target;
         const action = key.dataset.action;
 
@@ -30,10 +31,10 @@ keys.addEventListener('click', e => {
         if(action === 'calculate') {
             console.log('equal key!');
         }
+        */
     }
 })
 
-/*
 const key = e.target;
 const action = key.dataset.action;
 
@@ -61,4 +62,3 @@ if(action === 'clear') {
 if(action === 'calculate') {
     console.log('equal key!');
 }
-*/
