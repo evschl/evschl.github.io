@@ -1,3 +1,6 @@
+//WHERE AM I? COPY AND PASTE THE BELOW TEXT TO SEE WHAT STEP YOU LEFT OFF AT
+//To do this, we check if the previousKeyType is calculate before performing calculations with operator keys.
+
 const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.calculator_keys');  
 
@@ -39,7 +42,12 @@ keys.addEventListener('click', e =>
 
         if(!action) 
         {
-            if(displayedNum === '0' || previousKeyType === 'operator')
+            if
+            (
+                displayedNum === '0' || 
+                previousKeyType === 'operator' ||
+                previousKeyType === 'calculate'
+            )
             {
                 display.textContent = keyContent;
             }
@@ -47,7 +55,7 @@ keys.addEventListener('click', e =>
             {
                 display.textContent = displayedNum + keyContent;
             }
-            calculator.dataset.previousKey = 'number';
+            calculator.dataset.previousKeyType = 'number';
         }
 
         if
@@ -89,17 +97,21 @@ keys.addEventListener('click', e =>
             {
                 display.textContent = displayedNum + '.';
             }
-            else if(previousKeyType === 'operator')
+            else if
+            (
+                previousKeyType === 'operator' ||
+                previousKeyType === 'calculate'
+            )
             {
                 display.textContent = '0.';
             }
-            calculator.dataset.previousKey = 'decimal';
+            calculator.dataset.previousKeyType = 'decimal';
         }
 
         if(action === 'clear') 
         {
             console.log('clear key!');
-            calculator.dataset.previousKey = 'clear';
+            calculator.dataset.previousKeyType = 'clear';
         }
 
         if(action === 'calculate') 
@@ -110,10 +122,16 @@ keys.addEventListener('click', e =>
 
             if(firstValue)
             {
+                if(previousKeyType === 'calculate')
+                {
+                    firstValue = displayedNum;
+                    secondValue = calculator.dataset.modValue;
+                }
                 display.textContent = calculate(firstValue, operator, secondValue);
             }
 
-            calculator.dataset.previousKey = 'calculate';
+            calculator.dataset.modValue = secondValue;
+            calculator.dataset.previousKeyType = 'calculate';
         }
     }
 })
