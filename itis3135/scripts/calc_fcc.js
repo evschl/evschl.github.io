@@ -47,30 +47,60 @@ keys.addEventListener('click', e =>
             {
                 display.textContent = displayedNum + keyContent;
             }
+            calculator.dataset.previousKey = 'number';
         }
 
-        if(
+        if
+        (
             action === 'add' ||
             action === 'subtract' ||
             action === 'multiply' ||
             action === 'divide'
         ) 
         {
+            const firstValue = calculator.dataset.firstValue;
+            const operator = calculator.dataset.operator;
+            const secondValue = displayedNum;
+
+            if
+            (
+                firstValue && 
+                operator &&
+                previousKeyType !== 'operator'
+            )
+            {
+                const calcValue = calculate(firstValue, operator, secondValue);
+                display.textContent = calcValue;
+                calculator.dataset.firstValue = calcValue;
+            }
+            else
+            {
+                calculator.dataset.firstValue = displayedNum;
+            }
+            
             key.classList.add('is-depressed');
             calculator.dataset.previousKeyType = 'operator';
-
             calculator.dataset.firstValue = displayedNum;
             calculator.dataset.operator = action;
         }
 
         if(action === 'decimal') 
         {
-            display.textContent = displayedNum + '.';
+            if(!displayedNum.includes('.'))
+            {
+                display.textContent = displayedNum + '.';
+            }
+            else if(previousKeyType === 'operator')
+            {
+                display.textContent = '0.';
+            }
+            calculator.dataset.previousKey = 'decimal';
         }
 
         if(action === 'clear') 
         {
             console.log('clear key!');
+            calculator.dataset.previousKey = 'clear';
         }
 
         if(action === 'calculate') 
@@ -80,6 +110,8 @@ keys.addEventListener('click', e =>
             const secondValue = displayedNum;
 
             display.textContent = calculate(firstValue, operator, secondValue);
+
+            calculator.dataset.previousKey = '';
         }
     }
 })
