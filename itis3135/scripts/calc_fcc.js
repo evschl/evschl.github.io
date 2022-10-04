@@ -1,5 +1,3 @@
-alert("JS File is working!");
-
 const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.calculator_keys');
 
