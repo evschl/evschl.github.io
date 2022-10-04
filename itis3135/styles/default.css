@@ -114,6 +114,9 @@ tr:nth-child(odd) {
     border: dashed;
 }
 
+.calculator_keys {
+    display: grid;
+}
 /*End Custom Class Styling*/
 
 /*Begin Form Styling*/
