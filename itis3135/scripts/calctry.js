@@ -99,5 +99,5 @@ function buttonPress(btnVal) {
         prevAction = "add";
     }
 
-    document.getElementById(calculatorDisplay).innerHTML = calcDisplay;
+    document.getElementById(calculatorDisplay).innerHTML = calcDisplay.toString();
 }
