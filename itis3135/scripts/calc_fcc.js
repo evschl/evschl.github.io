@@ -21,6 +21,8 @@ const calculate = (n1, operator, n2) =>
     {
         result = n1 / n2;
     }
+
+    return result;
 }
 
 keys.addEventListener('click', e => 
