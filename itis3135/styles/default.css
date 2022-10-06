@@ -121,7 +121,7 @@ tr:nth-child(odd) {
 }
 
 .calculator_display {
-    border-radius: 5px 0px;
+    border-radius: 5px 5px 0px 0px;
     background-color: #c55ac5;
     text-align: right;
     font-family: Georgia, 'Times New Roman', Times, serif;
