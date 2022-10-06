@@ -127,6 +127,8 @@ tr:nth-child(odd) {
     height: 50px;
     border-style: outset;
     background-color: rgb(242, 242, 76);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
 }
 
 .calculator button:hover {
