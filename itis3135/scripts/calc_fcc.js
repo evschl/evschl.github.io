@@ -3,29 +3,28 @@
 
 const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.calculator_keys');  
+const display = document.querySelector('.calculator_display');
 
 const calculate = (n1, operator, n2) =>
 {
-    let result = '';
-
+    const firstNum = parseFloat(n1);
+    const secondNum = parseFloat(n2);
     if(operator === 'add')
     {
-        result = parseFloat(n1) + parseFloat(n2);
+        return firstNum + secondNum;
     }
     else if(operator === 'subtract')
     {
-        result = parseFloat(n1) - parseFloat(n2);
+        return firstNum - secondNum;
     }
     else if(operator === 'multiply')
     {
-        result = parseFloat(n1) * parseFloat(n2);
+        return firstNum * secondNum;
     }
     else if(operator === 'divide')
     {
-        result = parseFloat(n1) / parseFloat(n2);
+        return firstNum / secondNum;
     }
-
-    return result;
 }
 
 keys.addEventListener('click', e => 
@@ -39,6 +38,12 @@ keys.addEventListener('click', e =>
         const previousKeyType = calculator.dataset.previousKeyType;
 
         Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'));
+
+        if(action !== 'clear')
+        {
+            const clearButton = calculator.querySelector('[data-action=clear]');
+            clearButton.textContent = 'CE';
+        }
 
         if(!action) 
         {
@@ -74,7 +79,8 @@ keys.addEventListener('click', e =>
             (
                 firstValue && 
                 operator &&
-                previousKeyType !== 'operator'
+                previousKeyType !== 'operator' &&
+                previousKeyType !== 'calculate'
             )
             {
                 const calcValue = calculate(firstValue, operator, secondValue);
@@ -110,7 +116,19 @@ keys.addEventListener('click', e =>
 
         if(action === 'clear') 
         {
-            console.log('clear key!');
+            if(key.textContent === 'AC')
+            {
+                calculator.dataset.firstValue = '';
+                calculator.dataset.modValuie = '';
+                calculator.dataset.operator = '';
+                calculator.dataset.previousKeyType = '';
+            }
+            else
+            {
+                key.textContent = 'AC';
+            }
+
+            display.textContent = 0;
             calculator.dataset.previousKeyType = 'clear';
         }
 

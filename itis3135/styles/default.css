@@ -117,6 +117,10 @@ tr:nth-child(odd) {
 .calculator_keys {
     display: grid;
 }
+
+.calculator_display {
+    border-radius: 5px 0px;
+}
 /*End Custom Class Styling*/
 
 /*Begin Form Styling*/
