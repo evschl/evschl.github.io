@@ -131,6 +131,7 @@ tr:nth-child(odd) {
 .key-equal {
     display: grid;
     grid-row: 5;
+    grid-column: 1 / 5;
 }
 /*End Custom Class Styling*/
 
