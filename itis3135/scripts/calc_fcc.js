@@ -1,10 +1,3 @@
-//WHERE AM I? COPY AND PASTE THE BELOW TEXT TO SEE WHAT STEP YOU LEFT OFF AT
-//To do this, we check if the previousKeyType is calculate before performing calculations with operator keys.
-
-const calculator = document.querySelector('.calculator');
-const keys = calculator.querySelector('.calculator_keys');  
-const display = document.querySelector('.calculator_display');
-
 window.onload = function()
 {
 const calculate = (n1, operator, n2) =>
@@ -28,6 +21,10 @@ const calculate = (n1, operator, n2) =>
         return firstNum / secondNum;
     }
 }
+
+const calculator = document.querySelector('.calculator');
+const keys = calculator.querySelector('.calculator_keys');  
+const display = document.querySelector('.calculator_display');
 
 keys.addEventListener('click', e => 
 {
