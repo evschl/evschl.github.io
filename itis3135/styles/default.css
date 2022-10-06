@@ -129,8 +129,8 @@ tr:nth-child(odd) {
 
 .calculator {
     border: 2px solid ivory;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 .key-equal {
