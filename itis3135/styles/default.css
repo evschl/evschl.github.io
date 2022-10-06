@@ -121,6 +121,7 @@ tr:nth-child(odd) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
+    background-color: rgb(242, 242, 76);
 }
 
 .calculator button {
