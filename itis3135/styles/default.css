@@ -56,6 +56,7 @@ tr:nth-child(odd) {
     text-align: center;
 }
 
+/* BEGIN DROPDOWN STYLING */
 .dropdown-whole {
     position: relative;
     display: inline-block;
@@ -103,6 +104,7 @@ tr:nth-child(odd) {
 .dropdown-whole:hover .dropdown-content {
     display: block;
 }
+/* END DROPDOWN STYLING */
 
 .polygon-caption
 {
@@ -114,6 +116,7 @@ tr:nth-child(odd) {
     border: dashed;
 }
 
+/* BEGIN CALCULATOR STYLES */
 .calculator_keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -122,6 +125,11 @@ tr:nth-child(odd) {
 
 .calculator button {
     height: 50px;
+    border-style: outset;
+}
+
+.calculator button:hover {
+    background-color:rgb(255, 255, 180);
 }
 
 .calculator_display {
@@ -142,6 +150,8 @@ tr:nth-child(odd) {
     grid-row: 5;
     grid-column: 1 / 5;
 }
+/* END CALCULATOR STYLES */
+
 /*End Custom Class Styling*/
 
 /*Begin Form Styling*/
