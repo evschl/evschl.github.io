@@ -7,28 +7,6 @@ const display = document.querySelector('.calculator_display');
 
 window.onload = function()
 {
-    const calculate = (n1, operator, n2) =>
-    {
-        const firstNum = parseFloat(n1);
-        const secondNum = parseFloat(n2);
-        if(operator === 'add')
-        {
-            return firstNum + secondNum;
-        }
-        else if(operator === 'subtract')
-        {
-            return firstNum - secondNum;
-        }
-        else if(operator === 'multiply')
-        {
-            return firstNum * secondNum;
-        }
-        else if(operator === 'divide')
-        {
-            return firstNum / secondNum;
-        }
-    }
-}
 const calculate = (n1, operator, n2) =>
 {
     const firstNum = parseFloat(n1);
@@ -177,3 +155,4 @@ keys.addEventListener('click', e =>
         }
     }
 })
+}
