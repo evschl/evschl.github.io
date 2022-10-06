@@ -116,10 +116,22 @@ tr:nth-child(odd) {
 
 .calculator_keys {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
 }
 
 .calculator_display {
     border-radius: 5px 0px;
+}
+
+.calculator {
+    border-radius: 10px;
+}
+
+.key-equal {
+    display: grid;
+    grid-row: -2;
+    grid-row: 2 / span 4;
 }
 /*End Custom Class Styling*/
 
