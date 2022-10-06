@@ -122,16 +122,15 @@ tr:nth-child(odd) {
 
 .calculator_display {
     border-radius: 5px 5px 0px 0px;
-    border-color: ivory;
     background-color: #562856;
     text-align: right;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .calculator {
-    border-radius: 10px;
-    border-color: ivory;
-    background-color:#3e8e41;
+    border: 2px solid ivory;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .key-equal {
