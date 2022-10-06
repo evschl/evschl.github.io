@@ -5,6 +5,30 @@ const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.calculator_keys');  
 const display = document.querySelector('.calculator_display');
 
+window.onload = function()
+{
+    const calculate = (n1, operator, n2) =>
+    {
+        const firstNum = parseFloat(n1);
+        const secondNum = parseFloat(n2);
+        if(operator === 'add')
+        {
+            return firstNum + secondNum;
+        }
+        else if(operator === 'subtract')
+        {
+            return firstNum - secondNum;
+        }
+        else if(operator === 'multiply')
+        {
+            return firstNum * secondNum;
+        }
+        else if(operator === 'divide')
+        {
+            return firstNum / secondNum;
+        }
+    }
+}
 const calculate = (n1, operator, n2) =>
 {
     const firstNum = parseFloat(n1);
