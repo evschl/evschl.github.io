@@ -91,4 +91,18 @@ abbr {
   cursor: pointer;
 }
 
+h3 {
+  background-color: black;
+  padding: 8px;
+  color: ivory;
+}
 
+a:link, a:visited {
+  color: #c9ffb3;
+  font-weight:bold;
+}
+
+a:hover {
+  color: #6BF734;
+  font-weight:bold;
+}
