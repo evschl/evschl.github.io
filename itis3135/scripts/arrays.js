@@ -8,8 +8,20 @@ function addSalary(salary)
 
 }
 
-function displayResults() {
-
+function displayResults() 
+{
+    var total = 0;
+    highest = 0;
+    for(var i = 0; i < salary.length; ++i)
+    {
+        total += salary[i];
+        if(highest < salary[i])
+        {
+            highest = salary[i];
+        }
+    }
+    var avg = total / salary.length;
+    document.getElementById("results").innerHTML = avg;
 }
 
 function displaySalary(salary) 
