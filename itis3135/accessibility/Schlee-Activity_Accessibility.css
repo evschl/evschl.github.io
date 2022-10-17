@@ -31,7 +31,7 @@ body {
 td,
 th {
   border: 1px solid black;
-
+  margin: 15px;
   padding: 8px;
   background-color:#262626;
   color:powderblue;
@@ -44,8 +44,8 @@ th {
   padding-bottom: 5px;
   text-align: left;
   background-color:#262626;
- 
-  color:black;
+  font-weight: bold;
+  color:pink;
 }
 
 table.center {
