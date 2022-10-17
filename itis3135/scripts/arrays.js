@@ -11,7 +11,7 @@ function addSalary(salary)
 function displayResults() 
 {
     var total = 0;
-    highest = 0;
+    var highest = 0;
     for(var i = 0; i < salary.length; ++i)
     {
         total += salary[i];
@@ -21,7 +21,8 @@ function displayResults()
         }
     }
     var avg = total / salary.length;
-    document.getElementById("results").innerHTML = avg;
+    document.getElementById("average").innerHTML = avg;
+    document.getElementById("highest").innerHTML = highest;
 }
 
 function displaySalary(salary) 
