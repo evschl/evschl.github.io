@@ -25,7 +25,7 @@ function displayResults()
     document.getElementById("highest").innerHTML = highest;
 }
 
-function displaySalary(salary) 
+function displaySalary() 
 {
     
 }
