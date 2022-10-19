@@ -1,7 +1,7 @@
 alert("Script is working!");
 
-const person = [];
-const salary = [];
+const person = new Array();
+const salary = new Array();
 
 function addSalary(newEmployee/*, newSalary*/) 
 {
