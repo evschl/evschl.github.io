@@ -3,10 +3,11 @@ alert("Script is working!");
 const person = [];
 const salary = [];
 
-function addSalary(newEmployee, newSalary) 
+function addSalary(newEmployee/*, newSalary*/) 
 {
     person.push(newEmployee);
-    salary.push(newSalary);
+    //salary.push(newSalary);
+    return 0;
 }
 
 function displayResults() 
