@@ -12,7 +12,10 @@ function addSalary()
     person.push(employeeName);
     salary.push(employeeSalary);
 
-    document.getElementById("addStatus").innerHTML = "Added " + employeeName + " with a salary of $" + employeeSalary + " at index " + index + "!";
+    var statusMessage = "Added " + employeeName + " with a salary of $" + employeeSalary + " at index " + index + "!";
+    console.log(statusMessage);
+
+    document.getElementById("addStatus").innerHTML = statusMessage;
 }
 
 function displayResults() 
