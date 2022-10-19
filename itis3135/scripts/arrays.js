@@ -3,18 +3,17 @@ alert("Script is working!");
 const person = new Array();
 const salary = new Array();
 
-function addSalary(newEmployee/*, newSalary*/) 
+function addSalary() 
 {
-    person.push(newEmployee);
-    //salary.push(newSalary);
-    return 0;
+    person.push(document.getElementById('employeeName').value);
+    salary.push(parseInt(document.getElementById('employeeSalary').value));
 }
 
 function displayResults() 
 {
     var total = 0;
     var highest = 0;
-    for(var i = 0; i < salary.length; ++i)
+    for(var i in salary)
     {
         total += salary[i];
         if(highest < salary[i])
@@ -22,7 +21,7 @@ function displayResults()
             highest = salary[i];
         }
     }
-    var avg = total / salary.length;
+    var avg = (total / salary.length).toFixed(2);
     document.getElementById("average").innerHTML = avg;
     document.getElementById("highest").innerHTML = highest;
     return 0;
@@ -30,26 +29,13 @@ function displayResults()
 
 function displaySalary() 
 {
-    var x = document.createElement("TABLE");
-    x.setAttribute("id", "myTable");
-    document.body.appendChild(x);
-
-    var y = document.createElement("TR");
-    y.setAttribute("id", "myTr");
-    document.getElementById("myTable").appendChild(y);
-
-    var z = document.createElement("TD");
-    var t = document.createTextNode("cell");
-    z.appendChild(t);
-    document.getElementById("myTr").appendChild(z);
-
-    
-    /*
-    for(let x in person)
+    document.getElementById('employeeTable').innerHTML = "";
+    for(var i in person)
     {
-        //person[x]
-        //salary[x]
-        //Add info to array
+        var employeeDetails = document.getElementById('employeeTable').insertRow(i);
+        var nameInTable = employeeDetails.insertCell(0);
+        var salaryInTable = employeeDetails.insertCell(1);
+        nameInTable.innerHTML = person[i];
+        salaryInTable.innerHTML = salary[i];
     }
-    */
 }
