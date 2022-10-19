@@ -32,8 +32,10 @@ function displayResults()
         }
     }
     var avg = (total / salary.length).toFixed(2);
-    document.getElementById("average").innerHTML = avg;
-    document.getElementById("highest").innerHTML = highest;
+    var avgMessage = "The average salary is $" + avg;
+    var highestMessage = "The highest salary is $" + highest;
+    document.getElementById("average").innerHTML = avgMessage;
+    document.getElementById("highest").innerHTML = highestMessage;
     return 0;
 }
 
