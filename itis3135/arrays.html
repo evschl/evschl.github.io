@@ -20,7 +20,7 @@
             <hr>
 
             <label for="Employee">Select an Employee to add to the table!</label>
-            <select name="Employee" id="employeeName" aria-required="true">
+            <select name="Employee" id="employeeName" class="dropdownInput" aria-required="true">
                 <option value="Employee" id="default">[Select]</option>
                 <option value="Employee" id="sol">Sol Horthman</option>
                 <option value="Employee" id="ness">Ness Parcheesi</option>
@@ -31,16 +31,18 @@
                 <option value="Employee" id="stefanie">Stefanie Burnett</option>
                 <option value="Employee" id="maisy">Maisy Prudent</option>
             </select>
+            <br>
 
             <label for="Salary">Now add a salary for them!</label>
             $<input type="number" aria-required="true" id="employeeSalary" placeholder="EX: 10,000">
+            <br>
 
-            <button onclick="addSalary('employeeName');">Add Salary</button>
+            <button onclick="addSalary('employeeName');">Add Salary</button><br>
             <!--
                 <button onclick="addSalary('employeeName, employeeSalary');">Add Salary</button>
             -->
-            <button onclick="displayResults();">Display Results</button>
-            <button onclick="displaySalary();">Display Salary</button>
+            <button onclick="displayResults();">Display Results</button><br>
+            <button onclick="displaySalary();">Display Salary</button><br>
 
         </main>
 
