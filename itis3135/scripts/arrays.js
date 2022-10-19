@@ -13,6 +13,7 @@ function addSalary()
     salary.push(employeeSalary);
 
     var statusMessage = "Added " + employeeName + " with a salary of $" + employeeSalary + " at index " + index + "!";
+    ++index;
     console.log(statusMessage);
 
     document.getElementById("addStatus").innerHTML = statusMessage;
