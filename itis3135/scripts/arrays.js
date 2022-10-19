@@ -5,8 +5,13 @@ const salary = new Array();
 
 function addSalary() 
 {
-    person.push(document.getElementById('employeeName').value);
-    salary.push(parseInt(document.getElementById('employeeSalary').value));
+    employeeName = document.getElementById('employeeName').value
+    employeeSalary = parseInt(document.getElementById('employeeSalary').value)
+
+    person.push(employeeName);
+    salary.push(employeeSalary);
+
+    document.getElementById("addStatus").innerHTML = "Added " + employeeName + " with a salary of $" + employeeSalary + "!";
 }
 
 function displayResults() 
