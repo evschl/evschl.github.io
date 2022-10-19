@@ -2,6 +2,7 @@ alert("Script is working!");
 
 const person = new Array();
 const salary = new Array();
+var index = 0;
 
 function addSalary() 
 {
@@ -11,7 +12,7 @@ function addSalary()
     person.push(employeeName);
     salary.push(employeeSalary);
 
-    document.getElementById("addStatus").innerHTML = "Added " + employeeName + " with a salary of $" + employeeSalary + "!";
+    document.getElementById("addStatus").innerHTML = "Added " + employeeName + " with a salary of $" + employeeSalary + " at index " + index + "!";
 }
 
 function displayResults() 
