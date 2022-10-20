@@ -48,6 +48,6 @@ function displaySalary()
         var nameInTable = employeeDetails.insertCell(0);
         var salaryInTable = employeeDetails.insertCell(1);
         nameInTable.innerHTML = person[i];
-        salaryInTable.innerHTML = salary[i];
+        salaryInTable.innerHTML = "$" + salary[i];
     }
 }
