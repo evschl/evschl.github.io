@@ -41,7 +41,6 @@ function displayResults()
 
 function displaySalary() 
 {
-    document.getElementById('employeeTable').innerHTML = "";
     for(var i in person)
     {
         var employeeDetails = document.getElementById('employeeTable').insertRow(i);
