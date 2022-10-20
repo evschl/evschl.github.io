@@ -3,21 +3,39 @@ alert("Script is working!");
 const person = new Array();
 const salary = new Array();
 var index = 0;
-//var hasExecuted = false;
 
 function addSalary() 
 {
+    var statusMessage = "The addSalary function has not been run yet."
+    
     employeeName = document.getElementById('employeeName').value
     employeeSalary = parseInt(document.getElementById('employeeSalary').value)
 
-    person.push(employeeName);
-    salary.push(employeeSalary);
-
-    var statusMessage = "Added " + employeeName + " with a salary of $" + employeeSalary + " at index " + index + "!";
-    ++index;
+    if(employeeSalary == isNaN)
+    {
+        statusMessage = "Please enter a salary for " + employeeName + ".";
+        document.getElementById("addStatus").innerHTML = statusMessage;
+    } 
+    else 
+    {
+        for(var i in person)
+        {
+            if(employeeName == person[i])
+            {
+                salary[i] = employeeSalary;
+                statusMessage = "Updated " + employeeName + "\'s salary to " + employeeSalary + ".";
+            }
+            else
+            {
+                person.push(employeeName);
+                salary.push(employeeSalary);
+                statusMessage = "Added " + employeeName + " with a salary of $" + employeeSalary + " at index " + index + "!";
+                ++index;
+            }
+        }
+        document.getElementById("addStatus").innerHTML = statusMessage;
+    }
     console.log(statusMessage);
-
-    document.getElementById("addStatus").innerHTML = statusMessage;
 }
 
 function displayResults() 
@@ -30,9 +48,11 @@ function displayResults()
         if(highest < salary[i])
         {
             highest = salary[i];
+            console.log(highest);
         }
     }
     var avg = (total / salary.length).toFixed(2);
+    console.log(avg);
     var avgMessage = "The average salary is $" + avg;
     var highestMessage = "The highest salary is $" + highest;
     document.getElementById("average").innerHTML = avgMessage;
@@ -42,17 +62,6 @@ function displayResults()
 
 function displaySalary() 
 {
-    /*
-    if(!hasExecuted)
-    {
-        var employeeDetails = document.getElementById('employeeTable').insertRow(i);
-        var nameHead = employeeDetails.createTHead(0);
-        var salaryHead = employeeDetails.createTHead(1);
-        nameHead.innerHTML = "Name:";
-        salaryHead.innerHTML = "Salary:";
-        hasExecuted = true;
-    }
-    */
     for(var i in person)
     {
         var employeeDetails = document.getElementById('employeeTableData').insertRow(i);
