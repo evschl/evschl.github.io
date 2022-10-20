@@ -6,10 +6,10 @@ var index = 0;
 
 function addSalary() 
 {
-    var statusMessage = "The addSalary function has not been run yet."
+    var statusMessage = "The addSalary function has not been run yet.";
     
-    employeeName = document.getElementById('employeeName').value
-    employeeSalary = parseInt(document.getElementById('employeeSalary').value)
+    employeeName = document.getElementById('employeeName').value;
+    employeeSalary = parseInt(document.getElementById('employeeSalary').value);
 
     if(employeeSalary == isNaN)
     {
