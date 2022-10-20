@@ -160,6 +160,17 @@ tr:nth-child(odd) {
 }
 /* END CALCULATOR STYLES */
 
+/* BEGIN FADE-IN STYLES */
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+/* END FADE-IN STYLES */
+
 /*End Custom Class Styling*/
 
 /*Begin Form Styling*/

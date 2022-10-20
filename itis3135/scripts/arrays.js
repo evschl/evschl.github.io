@@ -1,3 +1,6 @@
+document.head.className = "visible";
+document.body.className = "visible";
+
 const person = new Array();
 const salary = new Array();
 var index = 0;
