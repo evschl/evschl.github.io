@@ -3,6 +3,7 @@ alert("Script is working!");
 const person = new Array();
 const salary = new Array();
 var index = 0;
+var hasExecuted = false;
 
 function addSalary() 
 {
@@ -41,6 +42,15 @@ function displayResults()
 
 function displaySalary() 
 {
+    if(!hasExecuted)
+    {
+        var employeeDetails = document.getElementById('employeeTable').insertRow(i);
+        var nameHead = employeeDetails.insertCell(0);
+        var salaryHead = employeeDetails.insertCell(1);
+        nameHead.innerHTML = "Name:";
+        salaryHead.innerHTML = "Salary:";
+        hasExecuted = true;
+    }
     for(var i in person)
     {
         var employeeDetails = document.getElementById('employeeTable').insertRow(i);
