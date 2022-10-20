@@ -11,9 +11,11 @@ function addSalary()
     employeeName = document.getElementById('employeeName').value;
     employeeSalary = parseInt(document.getElementById('employeeSalary').value);
 
-    if(employeeSalary == isNaN)
+    if(employeeSalary == isNaN || employeeSalary == "" || employeeName == "")
     {
-        statusMessage = "Please enter a salary for " + employeeName + ".";
+        statusMessage = "Please enter a name and salary.";
+        document.getElementById("addStatus").innerHTML = statusMessage;
+        return 0;
     } 
     else 
     {
@@ -23,18 +25,16 @@ function addSalary()
             {
                 salary[i] = employeeSalary;
                 statusMessage = "Updated " + employeeName + "\'s salary to " + employeeSalary + ".";
-            }
-            else
-            {
-                person.push(employeeName);
-                salary.push(employeeSalary);
-                statusMessage = "Added " + employeeName + " with a salary of $" + employeeSalary + " at index " + index + "!";
-                ++index;
+                document.getElementById("addStatus").innerHTML = statusMessage;
+                return 0;
             }
         }
+        person.push(employeeName);
+        salary.push(employeeSalary);
+        statusMessage = "Added " + employeeName + " with a salary of $" + employeeSalary + " at index " + index + "!";
+        document.getElementById("addStatus").innerHTML = statusMessage;
+        ++index;
     }
-    document.getElementById("addStatus").innerHTML = statusMessage;
-    console.log(statusMessage);
 }
 
 function displayResults() 
