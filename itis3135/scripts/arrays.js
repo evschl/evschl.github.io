@@ -41,22 +41,31 @@ function displayResults()
 {
     var total = 0;
     var highest = 0;
-    for(var i in salary)
+
+    if(salary.length === 0 || person.length === 0)
     {
-        total += salary[i];
-        if(highest < salary[i])
-        {
-            highest = salary[i];
-            console.log(highest);
-        }
+        statusMessage = "Nothing in the array yet!";
+        document.getElementById("addStatus").innerHTML = statusMessage;
     }
-    var avg = (total / salary.length).toFixed(2);
-    console.log(avg);
-    var avgMessage = "The average salary is $" + avg;
-    var highestMessage = "The highest salary is $" + highest;
-    document.getElementById("average").innerHTML = avgMessage;
-    document.getElementById("highest").innerHTML = highestMessage;
-    return 0;
+    else
+    {
+        for(var i in salary)
+        {
+            total += salary[i];
+            if(highest < salary[i])
+            {
+                highest = salary[i];
+                console.log(highest);
+            }
+        }
+        var avg = (total / salary.length).toFixed(2);
+        console.log(avg);
+        var avgMessage = "The average salary is $" + avg;
+        var highestMessage = "The highest salary is $" + highest;
+        document.getElementById("average").innerHTML = avgMessage;
+        document.getElementById("highest").innerHTML = highestMessage;
+        return 0;
+    }
 }
 
 function displaySalary() 
