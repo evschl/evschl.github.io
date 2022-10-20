@@ -21,7 +21,7 @@ function addSalary()
     {
         for(var i in person)
         {
-            if(employeeName == person[i])
+            if(employeeName === person[i])
             {
                 salary[i] = employeeSalary;
                 statusMessage = "Updated " + employeeName + "\'s salary to $" + employeeSalary + ".";
