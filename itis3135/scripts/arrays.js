@@ -70,17 +70,20 @@ function displayResults()
 
 function displaySalary() 
 {
-    if(person.length === 0) 
+    if(person.length === 0 || salary.length === 0) 
     {
         statusMessage = "Nothing to display in the table yet!";
         document.getElementById("addStatus").innerHTML = statusMessage;
     }
-    for(var i in person)
+    else
     {
-        var employeeDetails = document.getElementById('employeeTableData').insertRow(i);
-        var nameInTable = employeeDetails.insertCell(0);
-        var salaryInTable = employeeDetails.insertCell(1);
-        nameInTable.innerHTML = person[i];
-        salaryInTable.innerHTML = "$" + salary[i];
+        for(var i in person)
+        {
+            var employeeDetails = document.getElementById('employeeTableData').insertRow(i);
+            var nameInTable = employeeDetails.insertCell(0);
+            var salaryInTable = employeeDetails.insertCell(1);
+            nameInTable.innerHTML = person[i];
+            salaryInTable.innerHTML = "$" + salary[i];
+        }
     }
 }
