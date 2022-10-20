@@ -11,7 +11,7 @@ function addSalary()
     employeeName = document.getElementById('employeeName').value;
     employeeSalary = parseInt(document.getElementById('employeeSalary').value);
 
-    if(employeeSalary == isNaN || employeeSalary == "" || employeeName == "")
+    if(employeeSalary === isNaN || employeeSalary === "" || employeeName === "[Select]")
     {
         statusMessage = "Please enter a name and salary.";
         document.getElementById("addStatus").innerHTML = statusMessage;
