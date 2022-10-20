@@ -24,7 +24,7 @@ function addSalary()
             if(employeeName == person[i])
             {
                 salary[i] = employeeSalary;
-                statusMessage = "Updated " + employeeName + "\'s salary to " + employeeSalary + ".";
+                statusMessage = "Updated " + employeeName + "\'s salary to $" + employeeSalary + ".";
                 document.getElementById("addStatus").innerHTML = statusMessage;
                 return 0;
             }
