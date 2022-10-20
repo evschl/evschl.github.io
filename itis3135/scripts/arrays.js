@@ -14,7 +14,6 @@ function addSalary()
     if(employeeSalary == isNaN)
     {
         statusMessage = "Please enter a salary for " + employeeName + ".";
-        document.getElementById("addStatus").innerHTML = statusMessage;
     } 
     else 
     {
@@ -33,8 +32,8 @@ function addSalary()
                 ++index;
             }
         }
-        document.getElementById("addStatus").innerHTML = statusMessage;
     }
+    document.getElementById("addStatus").innerHTML = statusMessage;
     console.log(statusMessage);
 }
 
