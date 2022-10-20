@@ -4,12 +4,19 @@ const person = new Array();
 const salary = new Array();
 var index = 0;
 
+window.onload = function()
+{
+    document.getElementById("employeeName").focus();
+}
+
 function addSalary() 
 {
     var statusMessage = "The addSalary function has not been run yet.";
-    
+
     employeeName = document.getElementById('employeeName').value;
     employeeSalary = parseInt(document.getElementById('employeeSalary').value);
+
+    document.getElementById("employeeName").focus();
 
     if(isNaN(employeeSalary) || employeeSalary === "" || employeeName === "[Select]")
     {
