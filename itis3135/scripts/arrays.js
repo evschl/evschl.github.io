@@ -45,8 +45,8 @@ function displaySalary()
     if(!hasExecuted)
     {
         var employeeDetails = document.getElementById('employeeTable').insertRow(i);
-        var nameHead = employeeDetails.insertCell(0);
-        var salaryHead = employeeDetails.insertCell(1);
+        var nameHead = employeeDetails.createTHead(0);
+        var salaryHead = employeeDetails.createTHead(1);
         nameHead.innerHTML = "Name:";
         salaryHead.innerHTML = "Salary:";
         hasExecuted = true;
