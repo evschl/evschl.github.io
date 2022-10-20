@@ -70,6 +70,11 @@ function displayResults()
 
 function displaySalary() 
 {
+    if(person.length === 0) 
+    {
+        statusMessage = "Nothing to display in the table yet!";
+        document.getElementById("addStatus").innerHTML = statusMessage;
+    }
     for(var i in person)
     {
         var employeeDetails = document.getElementById('employeeTableData').insertRow(i);
