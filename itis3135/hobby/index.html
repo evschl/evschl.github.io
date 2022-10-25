@@ -15,13 +15,34 @@
             h1 {
                 margin: 10px;
             }
-            footer {
-                display: flex;
+            nav {
+                background-color:blanchedalmond;
+                display: block;
+                text-align: center;
+                padding: 15px;
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
             }
         </style>
 
         <script>
+            window.onscroll = function() {
+                stickyNav();
+            };
 
+            var footNav = document.getElementById("footNav");
+            var makeStick = footNav.offsetTop;
+
+            function stickyNav() {
+                if(window.pageYOffset >= makeStick) {
+                    footNav.classList.add("sticky");
+                } else {
+                    footNav.classList.remove("sticky");
+                }
+            }
         </script>
         <title>Gen 3 Living Dex Hobby Site</title>
         <link rel="icon" type="image/x-icon" href="images/hobbyIcon.png">
@@ -36,26 +57,23 @@
                 <h1>
                     Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
                 </h1>
-                <h1>
+                <h2>
                     Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
-                </h1>
-                <h1>
+                </h2>
+                <h3>
                     Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
-                </h1>
-                <h1>
+                </h3>
+                <h4>
                     Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
-                </h1>
-                <h1>
-                    Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
-                </h1>
-                <h1>
-                    Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
-                </h1>
-                
+                </h4>
             </main>
 
             <footer>
-                
+                <nav class="footNav">
+                    Lorem ipsum dolor sit amet.
+                     || 
+                    JKHBHIJKHILJJNK
+                </nav>            
             </footer>
         </div>
         <div class="hide" id="starting1">
