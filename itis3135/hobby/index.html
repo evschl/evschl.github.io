@@ -2,17 +2,20 @@
 <html lang="en">
     <head>
         <style>
-            body {
+            body 
+            {
                 background-image: url("images/HobbySiteBackground.png");
                 margin: 5% 12% 5% 12%;
             }
-            main {
+            main 
+            {
                 background-color: hsla(0, 100%, 70%, 0.8);
                 border-radius: 15px;
                 border-style: solid;
                 border-color: black;
             }
-            .footNav {
+            .footNav 
+            {
                 position: fixed;
                 left: 15%;
                 right: 15%;
@@ -29,22 +32,42 @@
                 font-family: 'Playfair Display', serif;
                 font-weight: bold;
             }
-            .pageContent {
+            .pageContent 
+            {
                 margin: 15px;
             }
+            .titleText 
+            {
+                display: inline;
+            }
         </style>
-
+            
         <script>
-
+            function changePage(pageId) 
+            {
+                pageArray = document.getElementsByClassName("page");
+                for(let i in pageNameArray)
+                {
+                    if(pageArray[i].id == pageId)
+                    {
+                        pageArray[i].style.display = "block";
+                    }
+                    else
+                    {
+                        pageArray[i].style.display = "none";
+                    }
+                }
+            }
         </script>
         <title>Hobby Site || Evan Schlee || ITIS 3135</title>
         <link rel="icon" type="image/x-icon" href="images/hobbyIcon.png">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="hide" id="home"> 
+        <!--Page 1-->
+        <div id="p1StartingOut" class="page"> 
             <header>
-
+                <h2 class="titleText">Starting Out</h2>
             </header>
 
             <main>
@@ -80,30 +103,204 @@
                 </nav>          
             </footer>
         </div>
-        <div class="hide" id="starting1">
-            <header>
 
+        <!--Page 2-->
+        <div id="p2DifficultCatches" class="page"> 
+            <header>
+                <h2 class="titleText">Difficult Catches</h2>
             </header>
 
             <main>
-
+                <div class="pageContent">
+                    <h1>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h1>
+                    <h2>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h2>
+                    <h3>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h4>
+                </div>
             </main>
 
             <footer>
-
+                <nav class="footNav">
+                    <a href="#">Starting Out</a>
+                     &#10155; 
+                    <a href="#">Difficult Catches</a>
+                     &#10155;
+                    <a href="#">Again and Again</a>
+                     &#10155;
+                    <a href="#">The Paywall</a>
+                     &#10155;
+                    <a href="#">Unscrupulous Activities</a>
+                     &#10155;
+                    <a href="#">The Next Leg</a>
+                </nav>          
             </footer>
         </div>
-        <div class="hide" id="onePerFile2">
-            <header>
 
+        <!--Page 3-->
+        <div id="p3AgainAndAgain" class="page">
+            <header>
+                <h2 class="titleText">Difficult Catches</h2>
             </header>
 
             <main>
-
+                <div class="pageContent">
+                    <h1>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h1>
+                    <h2>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h2>
+                    <h3>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h4>
+                </div>
             </main>
 
             <footer>
+                <nav class="footNav">
+                    <a href="#">Starting Out</a>
+                     &#10155; 
+                    <a href="#">Difficult Catches</a>
+                     &#10155;
+                    <a href="#">Again and Again</a>
+                     &#10155;
+                    <a href="#">The Paywall</a>
+                     &#10155;
+                    <a href="#">Unscrupulous Activities</a>
+                     &#10155;
+                    <a href="#">The Next Leg</a>
+                </nav>          
+            </footer>
+        </div>
 
+        <!--Page 4-->
+        <div id="p4ThePaywall" class="page">
+            <header>
+                <h2 class="titleText">The Paywall</h2>
+            </header>
+
+            <main>
+                <div class="pageContent">
+                    <h1>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h1>
+                    <h2>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h2>
+                    <h3>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h4>
+                </div>
+            </main>
+
+            <footer>
+                <nav class="footNav">
+                    <a href="#">Starting Out</a>
+                     &#10155; 
+                    <a href="#">Difficult Catches</a>
+                     &#10155;
+                    <a href="#">Again and Again</a>
+                     &#10155;
+                    <a href="#">The Paywall</a>
+                     &#10155;
+                    <a href="#">Unscrupulous Activities</a>
+                     &#10155;
+                    <a href="#">The Next Leg</a>
+                </nav>          
+            </footer>
+        </div>
+
+        <!--Page 5-->
+        <div id="p5UnscrupulousActivities" class="page">
+            <header>
+                <h2 class="titleText">Unscrupulous Activities</h2>
+            </header>
+
+            <main>
+                <div class="pageContent">
+                    <h1>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h1>
+                    <h2>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h2>
+                    <h3>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h4>
+                </div>
+            </main>
+
+            <footer>
+                <nav class="footNav">
+                    <a href="#">Starting Out</a>
+                     &#10155; 
+                    <a href="#">Difficult Catches</a>
+                     &#10155;
+                    <a href="#">Again and Again</a>
+                     &#10155;
+                    <a href="#">The Paywall</a>
+                     &#10155;
+                    <a href="#">Unscrupulous Activities</a>
+                     &#10155;
+                    <a href="#">The Next Leg</a>
+                </nav>          
+            </footer>
+        </div>
+
+        <!--Page 6-->
+        <div id="p6TheNextLeg" class="page">
+            <header>
+                <h2 class="titleText">The Next Leg</h2>
+            </header>
+
+            <main>
+                <div class="pageContent">
+                    <h1>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h1>
+                    <h2>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h2>
+                    <h3>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h3>
+                    <h4>
+                        Lorem ipsum dolor sit amet. Ut nulla voluptatem sit aliquam commodi quo veritatis laudantium aut molestiae corrupti eos quasi odit qui autem nisi eos nobis aliquam. Sed tempora facere ut eius optio ad incidunt fugiat vel dolores dolor eos accusantium sint qui placeat voluptatem est blanditiis distinctio. Ea expedita voluptas eos nostrum fugit distinctio error sit vitae Quis. Aut facere laboriosam et omnis quaerat vel quia voluptatem sed aperiam soluta aut tempore galisum in dicta earum.
+                    </h4>
+                </div>
+            </main>
+
+            <footer>
+                <nav class="footNav">
+                    <a href="#">Starting Out</a>
+                     &#10155; 
+                    <a href="#">Difficult Catches</a>
+                     &#10155;
+                    <a href="#">Again and Again</a>
+                     &#10155;
+                    <a href="#">The Paywall</a>
+                     &#10155;
+                    <a href="#">Unscrupulous Activities</a>
+                     &#10155;
+                    <a href="#">The Next Leg</a>
+                </nav>          
             </footer>
         </div>
     </body>
