@@ -49,7 +49,7 @@
         <script>
             alert("Script is running");
 
-
+            let currPage = 0;
             function checkEnds(id)
             {
                 if(id == 0) 
@@ -68,12 +68,21 @@
                     document.getElementById("rightButtons").display = "inline";
                 }
             }
-            function nextPage(pageId)
+            function nextPage()
             {
                 pageArray = document.getElementsByClassName("page");
                 for(let i in pageArray)
                 {
-                    
+                    ++currPage;
+                    if(pageArray[i] == currPage) 
+                    {
+                        pageArray[i].style.display = "block";
+                        checkEnds(i);
+                    }
+                    else
+                    {
+                        pageArray[i].style.display = "none";
+                    }
                 }
             }
             function changePage(pageId) 
@@ -82,10 +91,11 @@
                 console.log(pageArray);
                 for(let i in pageArray)
                 {
-                    if(pageArray[i].id == pageId)
+                    if(pageArray[i] == currPage)
                     {
                         pageArray[i].style.display = "block";
                         checkEnds(i);
+                        currPage = i;
                     }
                     else
                     {
@@ -98,7 +108,7 @@
         <link rel="icon" type="image/x-icon" href="images/hobbyIcon.png">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     </head>
-    <body onload="changePage('p1StartingOut');">
+    <body onload="changePage(0);">
         <!--Page 1-->
         <div id="p1StartingOut" class="page"> 
             <header>
