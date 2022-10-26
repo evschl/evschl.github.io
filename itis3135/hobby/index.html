@@ -67,11 +67,12 @@
                     document.getElementById("rightButtons").display = "inline";
                 }
             }
+            
             function nextPage()
             {
 
             }
-            /*
+            
             function changePage(pageId) 
             {
                 pageArray = document.getElementsByClassName("page");
@@ -82,24 +83,6 @@
                         alert("The pageId for this page is " + i + ".");
                         pageArray[i].style.display = "block";
                         checkEnds(i);
-                    }
-                    else
-                    {
-                        pageArray[i].style.display = "none";
-                    }
-                }
-            }
-            */
-            function changePage(pageId)
-            {
-                pageArray = document.getElementsByClassName("page");
-                for(let i in pageArray)
-                {
-                    if(pageArray[i] == parseInt(pageId))
-                    {
-                        currPage = i;
-                        checkEnds(i);
-                        pageArray[i].style.display = "block";
                     }
                     else
                     {
