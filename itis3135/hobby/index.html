@@ -67,7 +67,7 @@
                     document.getElementById("rightButtons").display = "inline";
                 }
             }
-            
+
             function nextPage()
             {
 
@@ -80,7 +80,6 @@
                 {
                     if(pageArray[i].id == pageId)
                     {
-                        alert("The pageId for this page is " + i + ".");
                         pageArray[i].style.display = "block";
                         checkEnds(i);
                     }
@@ -265,6 +264,12 @@
         </div>
         
         <nav class="footNav">
+            <div class="leftButtons">
+                <a href="#">First</a> 
+                 &#10155;
+                <a href="#">Prev</a> 
+                 &#10155;
+            </div> 
             <a href="#" onclick="changePage('0');">Starting Out</a>
              &#10155; 
             <a href="#" onclick="changePage('1');">Difficult Catches</a>
@@ -276,6 +281,12 @@
             <a href="#" onclick="changePage('4');">Unscrupulous Activities</a>
              &#10155;
             <a href="#" onclick="changePage('5');">The Next Leg</a>
+            <div class="rightButtons">
+                <a href="#">Next</a> 
+                 &#10155;
+                <a href="#">Last</a> 
+                 &#10155;
+            </div> 
         </nav>     
     </body>
 </html>
