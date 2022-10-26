@@ -74,7 +74,7 @@
                 for(let i in pageArray)
                 {
                     ++currPage;
-                    if(pageArray[i] == currPage) 
+                    if(pageArray[i].id == currPage) 
                     {
                         pageArray[i].style.display = "block";
                         checkEnds(i);
@@ -91,7 +91,7 @@
                 console.log(pageArray);
                 for(let i in pageArray)
                 {
-                    if(pageArray[i] == currPage)
+                    if(pageArray[i].id == pageId)
                     {
                         pageArray[i].style.display = "block";
                         checkEnds(i);
