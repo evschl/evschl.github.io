@@ -47,32 +47,37 @@
         </style>
             
         <script>
+            /*
             function checkEnds(i)
             {
+                left = document.getElementsByClass("left");
                 if(i == '0')
                 {
                     alert("In checkEnds function i==0 case");
-                    document.getElementById("leftButtons").display = "none";
-                    document.getElementById("rightButtons").display = "inline";
+                    document.getElementById("left").display = "none";
+                    document.getElementById("right").display = "block";
                 }
                 else if(i == '5')
                 {
                     alert("In checkEnds function i==5 case");
-                    document.getElementById("leftButtons").display = "inline";
-                    document.getElementById("rightButtons").display = "none";
+                    document.getElementById("left").display = "block";
+                    document.getElementById("right").display = "none";
                 }
                 else
                 {
                     alert("In checkEnds function else case");
-                    document.getElementById("leftButtons").display = "inline";
-                    document.getElementById("rightButtons").display = "inline";
+                    document.getElementById("left").display = "block";
+                    document.getElementById("right").display = "block";
                 }
             }
+            */
 
+            /*
             function nextPage()
             {
 
             }
+            */
             
             function changePage(pageId) 
             {
@@ -82,7 +87,7 @@
                     if(pageArray[i].id == pageId)
                     {
                         pageArray[i].style.display = "block";
-                        checkEnds(pageId);
+                        //checkEnds(pageId);
                     }
                     else
                     {
@@ -265,12 +270,6 @@
         </div>
         
         <nav class="footNav">
-            <div id="leftButtons">
-                <a href="#">First</a> 
-                 &#10155;
-                <a href="#">Prev</a> 
-                 &#10155;
-            </div> 
             <a href="#" onclick="changePage('0');">Starting Out</a>
              &#10155; 
             <a href="#" onclick="changePage('1');">Difficult Catches</a>
@@ -282,12 +281,6 @@
             <a href="#" onclick="changePage('4');">Unscrupulous Activities</a>
              &#10155;
             <a href="#" onclick="changePage('5');">The Next Leg</a>
-            <div id="rightButtons">
-                <a href="#">Next</a> 
-                 &#10155;
-                <a href="#">Last</a> 
-                 &#10155;
-            </div> 
         </nav>     
     </body>
 </html>
