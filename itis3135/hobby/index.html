@@ -48,9 +48,11 @@
             
         <script>
             alert("Script is running");
+            let currPage = 0;
             function changePage(pageId) 
             {
                 pageArray = document.getElementsByClassName("page");
+                console.log(pageArray);
                 for(let i in pageArray)
                 {
                     if(pageArray[i].id == pageId)
