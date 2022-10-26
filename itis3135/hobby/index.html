@@ -49,7 +49,6 @@
         <script>
             function checkEnds(i)
             {
-                pageArray = document.getElementsByClassName("page");
                 if(i == '0')
                 {
                     document.getElementById("leftButtons").display = "none";
@@ -69,7 +68,7 @@
 
             function nextPage()
             {
-                
+
             }
             
             function changePage(pageId) 
@@ -263,7 +262,7 @@
         </div>
         
         <nav class="footNav">
-            <div class="leftButtons">
+            <div id="leftButtons">
                 <a href="#">First</a> 
                  &#10155;
                 <a href="#">Prev</a> 
@@ -280,7 +279,7 @@
             <a href="#" onclick="changePage('4');">Unscrupulous Activities</a>
              &#10155;
             <a href="#" onclick="changePage('5');">The Next Leg</a>
-            <div class="rightButtons">
+            <div id="rightButtons">
                 <a href="#">Next</a> 
                  &#10155;
                 <a href="#">Last</a> 
