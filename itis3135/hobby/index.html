@@ -48,7 +48,34 @@
             
         <script>
             alert("Script is running");
-            let currPage = 0;
+
+
+            function checkEnds(id)
+            {
+                if(id == 0) 
+                {
+                    document.getElementById("leftButtons").display = "none";
+                    document.getElementById("rightButtons").display = "inline";
+                }
+                else if(id == 5)
+                {
+                    document.getElementById("leftButtons").display = "inline";
+                    document.getElementById("rightButtons").display = "none";
+                }
+                else
+                {
+                    document.getElementById("leftButtons").display = "inline";
+                    document.getElementById("rightButtons").display = "inline";
+                }
+            }
+            function nextPage(pageId)
+            {
+                pageArray = document.getElementsByClassName("page");
+                for(let i in pageArray)
+                {
+                    
+                }
+            }
             function changePage(pageId) 
             {
                 pageArray = document.getElementsByClassName("page");
@@ -58,6 +85,7 @@
                     if(pageArray[i].id == pageId)
                     {
                         pageArray[i].style.display = "block";
+                        checkEnds(i);
                     }
                     else
                     {
