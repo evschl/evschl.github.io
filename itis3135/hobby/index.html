@@ -47,6 +47,7 @@
         </style>
             
         <script>
+            let currPage = 0;
             function checkEnds(i)
             {
                 pageArray = document.getElementsByClassName("page");
@@ -70,6 +71,7 @@
             {
 
             }
+            /*
             function changePage(pageId) 
             {
                 pageArray = document.getElementsByClassName("page");
@@ -87,14 +89,28 @@
                     }
                 }
             }
+            */
+            function changePage(pageId)
+            {
+                pageArray = document.getElementsByClassName("page");
+                for(let i in pageArray)
+                {
+                    if(pageArray[i] == parseInt(pageId))
+                    {
+                        currPage = i;
+                        checkEnds(i);
+                        pageArray[i].style.display = "block";
+                    }
+                }
+            }
         </script>
         <title>Hobby Site || Evan Schlee || ITIS 3135</title>
         <link rel="icon" type="image/x-icon" href="images/hobbyIcon.png">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     </head>
-    <body onload="changePage('p1StartingOut');">
+    <body onload="changePage('0');">
         <!--Page 1-->
-        <div id="p1StartingOut" class="page"> 
+        <div id='0' class="page"> 
             <header>
                 <h2 class="titleText">Starting Out</h2>
             </header>
@@ -122,7 +138,7 @@
         </div>
 
         <!--Page 2-->
-        <div id="p2DifficultCatches" class="page"> 
+        <div id='1' class="page"> 
             <header>
                 <h2 class="titleText">Difficult Catches</h2>
             </header>
@@ -150,7 +166,7 @@
         </div>
 
         <!--Page 3-->
-        <div id="p3AgainAndAgain" class="page">
+        <div id='2' class="page">
             <header>
                 <h2 class="titleText">Again And Again</h2>
             </header>
@@ -178,7 +194,7 @@
         </div>
 
         <!--Page 4-->
-        <div id="p4ThePaywall" class="page">
+        <div id='3' class="page">
             <header>
                 <h2 class="titleText">The Paywall</h2>
             </header>
@@ -206,7 +222,7 @@
         </div>
 
         <!--Page 5-->
-        <div id="p5UnscrupulousActivities" class="page">
+        <div id='4' class="page">
             <header>
                 <h2 class="titleText">Unscrupulous Activities</h2>
             </header>
@@ -234,7 +250,7 @@
         </div>
 
         <!--Page 6-->
-        <div id="p6TheNextLeg" class="page">
+        <div id='5' class="page">
             <header>
                 <h2 class="titleText">The Next Leg</h2>
             </header>
