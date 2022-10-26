@@ -47,16 +47,15 @@
         </style>
             
         <script>
-            let currPage = 0;
             function checkEnds(i)
             {
                 pageArray = document.getElementsByClassName("page");
-                if(pageArray[i].id == pageArray[0].id)
+                if(i == '0')
                 {
                     document.getElementById("leftButtons").display = "none";
                     document.getElementById("rightButtons").display = "inline";
                 }
-                else if(id == 5)
+                else if(i == '5')
                 {
                     document.getElementById("leftButtons").display = "inline";
                     document.getElementById("rightButtons").display = "none";
@@ -70,7 +69,7 @@
 
             function nextPage()
             {
-
+                
             }
             
             function changePage(pageId) 
@@ -81,7 +80,7 @@
                     if(pageArray[i].id == pageId)
                     {
                         pageArray[i].style.display = "block";
-                        checkEnds(i);
+                        checkEnds(pageId);
                     }
                     else
                     {
