@@ -47,12 +47,10 @@
         </style>
             
         <script>
-            alert("Script is running");
-
-            let currPage = 0;
-            function checkEnds(id)
+            function checkEnds(i)
             {
-                if(id == 0) 
+                pageArray = document.getElementsByClassName("page");
+                if(pageArray[i].id == pageArray[0].id)
                 {
                     document.getElementById("leftButtons").display = "none";
                     document.getElementById("rightButtons").display = "inline";
@@ -70,32 +68,18 @@
             }
             function nextPage()
             {
-                pageArray = document.getElementsByClassName("page");
-                for(let i in pageArray)
-                {
-                    ++currPage;
-                    if(pageArray[i].id == currPage) 
-                    {
-                        pageArray[i].style.display = "block";
-                        checkEnds(i);
-                    }
-                    else
-                    {
-                        pageArray[i].style.display = "none";
-                    }
-                }
+
             }
             function changePage(pageId) 
             {
                 pageArray = document.getElementsByClassName("page");
-                console.log(pageArray);
                 for(let i in pageArray)
                 {
                     if(pageArray[i].id == pageId)
                     {
+                        alert("The pageId for this page is " + i + ".");
                         pageArray[i].style.display = "block";
                         checkEnds(i);
-                        currPage = i;
                     }
                     else
                     {
