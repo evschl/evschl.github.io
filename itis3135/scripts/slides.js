@@ -12,6 +12,4 @@ function startSlideshow()
     .end()
     .appendTo('.slides');
 }
-
-startSlideshow();
 //LEFT OFF AT: Inside our function we will use jQuery to fade between slides at the speed of the animationSpeed variable:
