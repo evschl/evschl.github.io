@@ -1,16 +1,28 @@
-body 
-{
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
+/* vvvvv BEGIN FONT IMPORTS vvvvv */
 @font-face
 {
     font-family: Beleren2016-Bold;
     src: url(Beleren2016-Bold.ttf);
+}
+/* ^^^^^ END FONT IMPORTS ^^^^^ */
+
+/* vvvvv BEGIN MAIN TAG STYLING vvvvv */
+body 
+{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 h1 
 {
     font-family: Beleren2016-Bold;
 }
+/* ^^^^^ END MAIN TAG STYLING ^^^^^ */
+
+/* vvvvv BEGIN CUSTOM CLASS STYLES vvvvv */
+
+    /* vvvvv BEGIN NAVBAR STYLING vvvvv */
+
+    /* ^^^^^ END NAVBAR STYLING ^^^^^ */
+
+/* ^^^^^ END CUSTOM CLASS STYLES ^^^^^ */
