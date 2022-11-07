@@ -1,8 +1,14 @@
 /* vvvvv BEGIN FONT IMPORTS vvvvv */
 @font-face
 {
-    font-family: Beleren2016-Bold;
-    src: url(Beleren2016-Bold.ttf);
+    font-family: Beleren;
+    src: url(fonts/Beleren2016-Bold.ttf);
+}
+
+@font-face
+{
+    font-family: Goudy;
+    src: url(fonts/GoudyMediaevalRegular.ttf);
 }
 /* ^^^^^ END FONT IMPORTS ^^^^^ */
 
@@ -20,9 +26,14 @@ header
     background-color: #ff7a0e;
 }
 
+nav
+{
+    font-family: Goudy;
+}
+
 h1 
 {
-    font-family: Beleren2016-Bold;
+    font-family: Beleren;
 }
 /* ^^^^^ END MAIN TAG STYLING ^^^^^ */
 
