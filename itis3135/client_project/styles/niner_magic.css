@@ -24,7 +24,7 @@ COLOR PALETTE:
 body 
 {
     margin: 50px 20% 50px 20%;
-    background-image: linear-gradient(to right, #005035, #f1e6b2, #005035);
+    background-image: linear-gradient(to right, #005035 20%, #f1e6b2 60%, #005035 20%);
 }
 
 
