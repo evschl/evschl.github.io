@@ -1,3 +1,11 @@
+/*
+COLOR PALETTE:
+    White ---------- #f1e6b2;
+    Blue ----------- #44a1a0;
+    Black (Gray) --- #7f7f7f;
+    Red (Orange) --- #ff7a0e;
+    Green ---------- #005035; 
+
 /* vvvvv BEGIN FONT IMPORTS vvvvv */
 @font-face
 {
@@ -16,7 +24,7 @@
 body 
 {
     margin: 50px 20% 50px 20%;
-    background-color: #005035;
+    background-image: linear-gradient(to right, #005035, #f1e6b2, #005035);
 }
 
 
@@ -24,7 +32,7 @@ header
 {
     padding: 10px;
     border-style: solid;
-    border-radius: -5px;
+    border-radius: 5px;
     background-color: #ff7a0e;
 }
 
@@ -33,7 +41,13 @@ nav
     font-family: Goudy;
 }
 
-h1 
+h1
+{
+    font-family: Beleren;
+    color: f1e6b2;
+}
+
+main
 {
     font-family: Beleren;
     background-color: #f1e6b2;
