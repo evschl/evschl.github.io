@@ -1,13 +1,13 @@
 body 
 {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 @font-face
 {
     font-family: Beleren2016-Bold;
-    src:url(Beleren2016-Bold.ttf);
+    src: url(Beleren2016-Bold.ttf);
 }
 
 h1 
