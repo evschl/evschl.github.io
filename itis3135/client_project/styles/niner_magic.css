@@ -35,6 +35,13 @@ header
     background-color: #ff7a0e;
 }
 
+main
+{
+    font-family: Beleren;
+    background-color: #f1e6b2;
+    margin: 50px 20% 50px 20%;
+}
+
 nav
 {
     font-family: Goudy;
@@ -46,11 +53,9 @@ h1
     color: f1e6b2;
 }
 
-main
+h2 
 {
-    font-family: Beleren;
-    background-color: #f1e6b2;
-    margin: 50px 20% 50px 20%;
+    font-weight: bold;
 }
 /* ^^^^^ END MAIN TAG STYLING ^^^^^ */
 
