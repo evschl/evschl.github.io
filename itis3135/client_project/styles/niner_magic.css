@@ -72,6 +72,7 @@ img
         border-width: 5px;
         border-color: darkslategrey;
         display: inline-block;
+        padding: 5px 10px 5px 10px;
     }
     a:hover {
         border-width: 10px;
