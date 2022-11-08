@@ -62,7 +62,21 @@ h2
 /* vvvvv BEGIN CUSTOM CLASS STYLES vvvvv */
 
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
-
+    a .home {
+        color: #f1e6b2;
+    }
+    a .events {
+        color: #44a1a0;
+    }
+    a .learnteach {
+        color: #7f7f7f;
+    }
+    a .cube {
+        color: #ff7a0e;
+    }
+    a .meetus {
+        color: #005035;
+    }
     /* ^^^^^ END NAVBAR STYLING ^^^^^ */
 
 /* ^^^^^ END CUSTOM CLASS STYLES ^^^^^ */
