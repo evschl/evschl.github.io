@@ -6,6 +6,7 @@ COLOR PALETTE:
     Red (Orange) --- #ff7a0e;
     Green ---------- #005035; 
 
+
 /* vvvvv BEGIN FONT IMPORTS vvvvv */
 @font-face
 {
@@ -21,10 +22,14 @@ COLOR PALETTE:
 /* ^^^^^ END FONT IMPORTS ^^^^^ */
 
 /* vvvvv BEGIN MAIN TAG STYLING vvvvv */
+html
+{
+    background-color: #005035;
+}
+
 body 
 {
-    margin: 50px 20% 50px 20%;
-    background: linear-gradient(to right, #005035, #005035, #f1e6b2, #f1e6b2, #005035, #005035);
+    background:#f1e6b2;
 }
 
 
@@ -51,6 +56,7 @@ main
 {
     font-family: Beleren;
     background-color: #f1e6b2;
+    margin: 50px 20% 50px 20%;
 }
 /* ^^^^^ END MAIN TAG STYLING ^^^^^ */
 
