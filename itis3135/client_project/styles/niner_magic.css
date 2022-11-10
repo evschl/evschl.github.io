@@ -66,13 +66,9 @@ img
 
 /* vvvvv BEGIN CUSTOM CLASS STYLES vvvvv */
 
-.hide
+.displayArchetypeInfo
 {
     display: none;
-}
-.shown
-{
-    display: block;
 }
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
     a {
