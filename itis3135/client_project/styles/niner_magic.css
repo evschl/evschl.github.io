@@ -66,6 +66,14 @@ img
 
 /* vvvvv BEGIN CUSTOM CLASS STYLES vvvvv */
 
+.hide
+{
+    display: none;
+}
+.shown
+{
+    display: block;
+}
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
     a {
         border-style: solid;
