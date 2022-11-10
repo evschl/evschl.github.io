@@ -93,6 +93,12 @@ img
     a .meetus {
         color: #005035;
     }
+
+    .manasymbol
+    {
+        vertical-align: middle;
+        position: relative;
+    }
     /* ^^^^^ END NAVBAR STYLING ^^^^^ */
 
 /* ^^^^^ END CUSTOM CLASS STYLES ^^^^^ */
