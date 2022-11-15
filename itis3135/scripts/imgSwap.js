@@ -14,9 +14,9 @@ $(document).ready(function()
                 $("#caption").fadeOut(1000);
                 $("#main_image").fadeOut(1000, function () 
                 {
-                        $("#main_image").attr("src", $(this).attr("href"));
+                        $("#main_image").attr("src", evt.currentTarget.attr("href"));
                         $("#main_image").fadeIn(1000);
-                        $("#caption").text($(this).attr("title"));
+                        $("#caption").text(evt.currentTarget.attr("title"));
                         $("#caption").fadeIn(1000);
                 })
 
