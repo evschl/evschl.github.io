@@ -35,6 +35,10 @@ th {
     background-color: #310840;
 }
 
+li {
+    display: inline;
+}
+
 tr:nth-child(even) {
     background-color: #691787;
 }
