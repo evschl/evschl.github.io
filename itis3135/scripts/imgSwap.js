@@ -11,12 +11,13 @@ $(document).ready(function()
         // set up the event handlers for each link
         $("#image_list a").click(function(evt) 
         {
+                const targeted = evt.currentTarget;
                 $("#caption").fadeOut(1000);
                 $("#main_image").fadeOut(1000, function () 
                 {
-                        $("#main_image").attr("src", evt.currentTarget.attr("href"));
+                        $("#main_image").attr("src", targeted.href);
                         $("#main_image").fadeIn(1000);
-                        $("#caption").text(evt.currentTarget.attr("title"));
+                        $("#caption").text(targeted.title);
                         $("#caption").fadeIn(1000);
                 })
 
