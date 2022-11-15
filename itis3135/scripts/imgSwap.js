@@ -1,7 +1,13 @@
 $(document).ready(function() {
 
-
         // preload the image for each link
+        $("#image_list li").click(
+                function() 
+                {
+                        $(this).toggleClass("minus");
+                        $(this).next().slideToggle(1000);
+                }
+        );
 
         // set up the event handlers for each link
 
