@@ -1,16 +1,26 @@
-$(document).ready(function() {
+$(document).ready(function() 
+{
 
         // preload the image for each link
-        $("#image_list a").each(function() {
+        $("#image_list a").each(function() 
+        {
                 var swappedImage = new Image();
                 swappedImage.src = $(this).attr("href");
         });
 
         // set up the event handlers for each link
-        $("#image_list a").click(function(evt) {
-                $("#main_image").fadeOut(1000);
+        $("#image_list a").click(function(evt) 
+        {
                 $("#caption").fadeOut(1000);
+                $("#main_image").fadeOut(1000, function () 
+                {
+                        $("#main_image").attr("src", $(this).attr("href"));
+                        $("#main_image").fadeIn(1000);
+                        $("#caption").text($(this.attr("title")));
+                        $("#caption").fadeIn(1000);
+                })
 
+                /*
                 var imageURL = $(this).attr("href");
                 $("#main_image").attr("src", imageURL);
         
@@ -19,6 +29,7 @@ $(document).ready(function() {
 
                 $("#main_image").fadeIn(1000);
                 $("#caption").fadeIn(1000);
+                */
 
                 // cancel the default action of each link
                 evt.preventDefault();
