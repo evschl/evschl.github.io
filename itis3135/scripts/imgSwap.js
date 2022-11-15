@@ -16,7 +16,7 @@ $(document).ready(function()
                 {
                         $("#main_image").attr("src", $(this).attr("href"));
                         $("#main_image").fadeIn(1000);
-                        $("#caption").text($(this.attr("title")));
+                        $("#caption").text($(this).attr("title"));
                         $("#caption").fadeIn(1000);
                 })
 
