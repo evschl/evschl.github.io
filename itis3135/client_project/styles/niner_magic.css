@@ -76,6 +76,12 @@ img
     vertical-align: middle;
     position: relative;
 }
+
+.eventContainer {
+    border: solid;
+    border-color: #ff7a0e;
+    border-radius: 5px;
+}
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
     nav a {
         border-style: solid;
