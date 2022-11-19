@@ -81,6 +81,7 @@ img
     border: solid;
     border-color: #ff7a0e;
     border-radius: 5px;
+    display: inline;
 }
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
     nav a {
