@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="styles/niner_magic.css">
         <link rel="icon" type="image/x-icon" href="images/ninerMagicIcon.png">
+        <script src="scripts/events.js"></script>
         <title>Events // Niner Magic</title>
     </head>
     <body>
@@ -27,10 +28,12 @@
             <hr>
 
             <!--TODO: STYLE EVENT CONTAINER 11/19/22 1:12PM-->
-            <div id="eventContainer">
+            <div id="eventContainer" onload="setDateTime();">
                 <h2>Tuesday Casual</h2>
+                <h3 id="nextTues">Next: N/A</h3>
                 <p>
-                    <ul>Popular Formats
+                    <h3>Popular Formats</h3>
+                    <ul>
                         <li>Commander</li>
                         <li>Pauper</li>
                     </ul>
@@ -38,6 +41,7 @@
             </div>
             <div id="eventContainer">
                 <h2>Thursday Cube</h2>
+                <h3 id="nextThur">Next: N/A</h3>
                 <p>
 
                 </p>
