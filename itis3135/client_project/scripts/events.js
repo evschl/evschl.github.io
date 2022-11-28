@@ -3,9 +3,9 @@ let dayOfWeek = date.getDay();
 
 function getNextDay(eventDay)
 {
-    if((eventDay - dayOfWeek) >= 4)
+    if(eventDay < dayOfWeek)
     {
-        return (7 - eventDay - dayOfWeek);
+        return (7 - (dayOfWeek - eventDay));
     }
     else
     {
