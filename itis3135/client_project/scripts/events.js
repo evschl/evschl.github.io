@@ -4,6 +4,6 @@ function setNextDates() {
     eventArray = document.getElementsByClassName("eventContainer");
     for(let i in eventArray)
     {
-        alert(i);
+        alert(i.toString());
     }
 }
