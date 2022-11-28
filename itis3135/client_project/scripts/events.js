@@ -31,7 +31,6 @@ function daysAwayString(n)
 
 function setNextDates() 
 {
-    let numDaysAway = 0;
     eventArray = document.getElementsByClassName("dayContainer");
     for(let i in eventArray)
     {
