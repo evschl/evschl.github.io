@@ -1,2 +1,4 @@
+
 const date = new Date();
-document.getElementById("nextTues").innerHTML = date.getDay().toString();
+alert(date.getDay().toString());
+//document.getElementById("nextTues").innerHTML = date.getDay().toString();
