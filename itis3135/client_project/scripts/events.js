@@ -32,38 +32,36 @@ function daysAwayString(n)
 function setNextDates() 
 {
     let numDaysAway = 0;
-    let awayString = "null";
-    eventArray = document.getElementsByClassName("eventContainer");
+    eventArray = document.getElementsByClassName("dayContainer");
     for(let i in eventArray)
     {
         if(eventArray[i].id == "sun") 
         {
-            numDaysAway = getNextDay(0);
+            document.getElementById("sun").innerHTML = daysAwayString(getNextDay(0));
         }
         if(eventArray[i].id == "mon") 
         {
-            numDaysAway = getNextDay(1);
+            document.getElementById("mon").innerHTML = daysAwayString(getNextDay(1));
         }
         if(eventArray[i].id == "tue") 
         {
-            numDaysAway = getNextDay(2);
+            document.getElementById("tue").innerHTML = daysAwayString(getNextDay(2));
         }
         if(eventArray[i].id == "wed") 
         {
-            numDaysAway = getNextDay(3);
+            document.getElementById("wed").innerHTML = daysAwayString(getNextDay(3));
         }
         if(eventArray[i].id == "thu") 
         {
-            numDaysAway = getNextDay(4);
+            document.getElementById("thu").innerHTML = daysAwayString(getNextDay(4));
         }
         if(eventArray[i].id == "fri") 
         {
-            numDaysAway = getNextDay(5);
+            document.getElementById("fri").innerHTML = daysAwayString(getNextDay(5));
         }
         if(eventArray[i].id == "sat") 
         {
-            numDaysAway = getNextDay(6);
+            document.getElementById("sat").innerHTML = daysAwayString(getNextDay(6));
         }
-        awayString = daysAwayString(numDaysAway);
     }
 }
