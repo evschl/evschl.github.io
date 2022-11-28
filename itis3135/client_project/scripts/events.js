@@ -21,11 +21,11 @@ function daysAwayString(n)
     }
     if(n == 1) 
     {
-        return ("1 Day (Tomorrow)")
+        return ("1 Day (Tomorrow)");
     }
     if(n >= 2)
     {
-        return (n.toString() + " Days")
+        return (n.toString() + " Days");
     }
 }
 
