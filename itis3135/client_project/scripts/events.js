@@ -44,31 +44,31 @@ function setNextDates()
         {
             document.getElementById("sun").innerHTML = daysAwayString(getNextDay(0));
         }
-        if(eventArray[i].id == "mon") 
+        else if(eventArray[i].id == "mon") 
         {
             document.getElementById("mon").innerHTML = daysAwayString(getNextDay(1));
         }
-        if(eventArray[i].id == "tue") 
+        else if(eventArray[i].id == "tue") 
         {
             document.getElementById("tue").innerHTML = daysAwayString(getNextDay(2));
         }
-        if(eventArray[i].id == "wed") 
+        else if(eventArray[i].id == "wed") 
         {
             document.getElementById("wed").innerHTML = daysAwayString(getNextDay(3));
         }
-        if(eventArray[i].id == "thu") 
+        else if(eventArray[i].id == "thu") 
         {
             document.getElementById("thu").innerHTML = daysAwayString(getNextDay(4));
         }
-        if(eventArray[i].id == "fri") 
+        else if(eventArray[i].id == "fri") 
         {
             document.getElementById("fri").innerHTML = daysAwayString(getNextDay(5));
         }
-        if(eventArray[i].id == "sat") 
+        else if(eventArray[i].id == "sat") 
         {
             document.getElementById("sat").innerHTML = daysAwayString(getNextDay(6));
         }
-        if(eventArray[i].id.length == 10)
+        else
         {
             convertIdToDate(eventArray[i].id);
         }
