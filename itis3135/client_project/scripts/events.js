@@ -29,6 +29,12 @@ function daysAwayString(n)
     }
 }
 
+function convertIdToDate(n)
+{
+    let year = n.slice(6, 11);
+    alert(year);
+}
+
 function setNextDates() 
 {
     eventArray = document.getElementsByClassName("dayContainer");
@@ -61,6 +67,10 @@ function setNextDates()
         if(eventArray[i].id == "sat") 
         {
             document.getElementById("sat").innerHTML = daysAwayString(getNextDay(6));
+        }
+        else
+        {
+            convertIdToDate(eventArray[i].id);
         }
     }
 }
