@@ -73,7 +73,6 @@ function setNextDates()
         } 
         if(eventArray[i].id.length == 10)
         {
-            convertIdToDate(eventArray[i].id);
             document.getElementById(eventArray[i].id).innerHTML = daysAwayString(convertIdToDate(eventArray[i].id));
         }
     }
