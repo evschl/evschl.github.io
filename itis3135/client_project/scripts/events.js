@@ -1,5 +1,8 @@
 const date = new Date();
 let dayOfWeek = date.getDay();
+let year = 0;
+let month = 0;
+let day = 0;
 
 function getNextDay(eventDay)
 {
@@ -29,13 +32,11 @@ function daysAwayString(n)
     }
 }
 
-/*
 function convertIdToDate(n)
 {
-    let year = n.slice(6, 11);
+    year = n.slice(6, 11);
     alert(year);
 }
-*/
 
 function setNextDates() 
 {
@@ -72,7 +73,7 @@ function setNextDates()
         } 
         if(eventArray[i].id.length == 10)
         {
-            alert(eventArray[i].id);
+            convertIdToDate(eventArray[i].id);
         }
     }
 }
