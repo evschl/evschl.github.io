@@ -33,6 +33,7 @@ function convertIdToDate(n)
 {
     let year = n.slice(6, 11);
     alert(year);
+    return 0;
 }
 
 function setNextDates() 
