@@ -68,9 +68,9 @@ function setNextDates()
         {
             document.getElementById("sat").innerHTML = daysAwayString(getNextDay(6));
         }
-        else
+        if(eventArray[i].id.toString().length == 10)
         {
-            convertIdToDate(eventArray[i].id);
+            convertIdToDate(eventArray[i].id.toString());
         }
     }
 }
