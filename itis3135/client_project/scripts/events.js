@@ -34,8 +34,8 @@ function daysAwayString(n)
 
 function convertIdToDate(n)
 {
-    year = n.slice(6, 11);
-    alert(year);
+    let evtDate = new Date(n);
+    return ((evtDate.getTime() - date.getTime())/86400000);
 }
 
 function setNextDates() 
@@ -74,6 +74,7 @@ function setNextDates()
         if(eventArray[i].id.length == 10)
         {
             convertIdToDate(eventArray[i].id);
+            document.getElementById(eventArray[i].id).innerHTML = daysAwayString(convertIdToDate(eventArray[i].id));
         }
     }
 }
