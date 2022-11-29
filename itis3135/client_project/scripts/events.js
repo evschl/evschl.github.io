@@ -34,8 +34,8 @@ function daysAwayString(n)
 
 function convertIdToDate(n)
 {
-    let evtDate = new Date(n);
-    return ((evtDate.getTime() - date.getTime())/86400000);
+    const evtDate = new Date(n);
+    return (((evtDate.getTime() - date.getTime())/86400000) - (((evtDate.getTime() - date.getTime())/86400000) % 1));
 }
 
 function setNextDates() 
