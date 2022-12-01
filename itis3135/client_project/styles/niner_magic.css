@@ -93,6 +93,8 @@ img
     border-radius: 10px;
     border-style: solid;
     border-color: #7f7f7f;
+    position: relative;
+    top: -20px;
     filter: drop-shadow(0px 10px 10px black);
 }
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
