@@ -77,11 +77,17 @@ img
     position: relative;
 }
 
-.eventContainer {
+.eventContainer 
+{
     border: solid;
     border-color: #ff7a0e;
     border-radius: 5px;
     display: inline;
+}
+
+.discordLink
+{
+    float: right;
 }
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
     nav a {
