@@ -90,7 +90,8 @@ img
     float: right;
     display: inline;
     border-radius: 10px;
-    vertical-align: -50px;
+    border: solid;
+    border-color: #005035;
 }
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
     nav a {
