@@ -61,7 +61,7 @@ h2
 
 img
 {
-    float: right;
+    display: inline;
 }
 /* ^^^^^ END MAIN TAG STYLING ^^^^^ */
 
