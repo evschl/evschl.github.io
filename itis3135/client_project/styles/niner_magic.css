@@ -90,7 +90,7 @@ img
     float: right;
     display: inline;
     border-radius: 10px;
-    vertical-align: center;
+    vertical-align: middle;
 }
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
     nav a {
