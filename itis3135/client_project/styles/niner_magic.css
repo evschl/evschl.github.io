@@ -76,6 +76,13 @@ img
 {
     vertical-align: middle;
     position: relative;
+    display: inline;
+}
+
+.validators
+{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .eventContainer 
