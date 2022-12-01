@@ -93,30 +93,30 @@ img
     vertical-align: middle;
 }
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
-    nav a {
+    nav, a {
         border-style: solid;
         border-width: 5px;
         border-color: darkslategrey;
         display: inline;
         padding: 5px 10px 5px 10px;
     }
-    nav a:hover {
+    nav, a:hover {
         border-width: 10px;
         border-color: darkslateblue;
     }
-    nav a .home {
+    nav, a, .home {
         color: #f1e6b2;
     }
-    nav a .events {
+    nav, a, .events {
         color: #44a1a0;
     }
-    nav a .learnteach {
+    nav, a, .learnteach {
         color: #7f7f7f;
     }
-    nav a .cube {
+    nav, a, .cube {
         color: #ff7a0e;
     }
-    nav a .meetus {
+    nav, a, .meetus {
         color: #005035;
     }
     /* ^^^^^ END NAVBAR STYLING ^^^^^ */
