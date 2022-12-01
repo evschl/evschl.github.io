@@ -7,6 +7,7 @@
         <title>Learn Magic // Niner Magic</title>
     </head>
     <body>
+
         <header>
             <nav>
                 <img class="manasymbol" src="images/w.png" height="25px" width="25px">
@@ -20,7 +21,9 @@
                 <img class="manasymbol" src="images/g.png" height="25px" width="25px">
                 <a class="meetus" href="meetus.html">Meet Us</a>
             </nav>
+            <a target="_blank" href="https://discord.gg/RmShbbVE"><img class="discordLink" src="images/discordLink.png" height="90px" width="246px"></a>
         </header>
+
         <main>
             <h1>Learn Magic</h1>
 
@@ -40,8 +43,23 @@
                 The trick is to lay the foundation, and not to get into the difficult stuff right off the bat.<br>
             </p>
         </main>
+
         <footer>
+            <p class="validators">
+                <a href="https://validator.w3.org/check?uri=referer" style="text-decoration: none;">
+                    <img src="images/button_validation_html5.png">
+                </a>
             
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" style="text-decoration: none;">
+                    <img src="images/button_validation_css.png">
+                </a>
+            </p>
+            
+            <script>
+                document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            </script>
         </footer>
+
     </body>
 </html>
