@@ -1,5 +1,3 @@
-alert("script is loading");
-
 function display(archeId)
 {
     archeArray = document.getElementsByClassName("displayArchetypeInfo");
