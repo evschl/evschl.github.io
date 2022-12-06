@@ -118,6 +118,7 @@ img
 .archetypeContainer a:visited
 {
     text-decoration: none;
+    color: black;
 }
 
 .archetypeContainer a:link
