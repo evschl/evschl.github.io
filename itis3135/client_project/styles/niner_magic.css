@@ -103,6 +103,27 @@ img
     top: -60px;
     filter: drop-shadow(0px 10px 10px black);
 }
+
+.archetypeContainer a:hover
+{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.archetypeContainer a:active
+{
+    text-decoration: none;
+}
+
+.archetypeContainer a:visited
+{
+    text-decoration: none;
+}
+
+.archetypeContainer a:link
+{
+    text-decoration: none;
+}
     /* vvvvv BEGIN NAVBAR STYLING vvvvv */
     nav a {
         border-style: solid;
