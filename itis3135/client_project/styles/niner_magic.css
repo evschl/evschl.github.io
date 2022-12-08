@@ -81,8 +81,7 @@ title
 {
     width: 50%;
     display: block;
-    top: -5px;
-    right: 5px;
+    padding: 15px;
 }
 
 .oneArchetypeContainer
