@@ -77,11 +77,11 @@ title
     display: none;
 }
 
-.archetypeContainer
+.oneArchetypeContainer
 {
     border-style: solid;
     border-color: black;
-    background-color: #989379;
+    background-color: #AFF1A9;
     border-radius: 15px;
 }
 
@@ -142,29 +142,29 @@ title
     font-style: italic;
 }
 
-.archetypeContainer h3
+.allArchetypeContainer h3
 {
     text-align: center;
 }
 
-.archetypeContainer a:hover
+.allArchetypeContainer a:hover
 {
     font-style: italic;
     text-decoration: none;
 }
 
-.archetypeContainer a:active
+.allArchetypeContainer a:active
 {
     text-decoration: none;
 }
 
-.archetypeContainer a:visited
+.allArchetypeContainer a:visited
 {
     text-decoration: none;
     color: black;
 }
 
-.archetypeContainer a:link
+.allArchetypeContainer a:link
 {
     text-decoration: none;
 }
