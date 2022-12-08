@@ -110,6 +110,11 @@ img
     margin-left: 90px;
 }
 
+.pageContainer
+{
+    padding: 25px 25px 25px 25px;
+}
+
 .archetypeImages img
 {
     display: inline;
