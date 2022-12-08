@@ -1,3 +1,8 @@
+function loadPage()
+{
+    return false;
+}
+
 function display(archeId)
 {
     archeArray = document.getElementsByClassName("displayArchetypeInfo");
