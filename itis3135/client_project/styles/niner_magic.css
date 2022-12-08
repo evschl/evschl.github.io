@@ -104,6 +104,16 @@ img
     filter: drop-shadow(0px 10px 10px black);
 }
 
+.archetypeImages
+{
+    margin: auto;
+}
+
+.archetypeImages img
+{
+    padding: 0px 40px 40px 0px;
+}
+
 .archetypeContainer a:hover
 {
     font-style: italic;
