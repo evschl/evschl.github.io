@@ -18,6 +18,7 @@ function hide(btnId)
         if(archeArray[i].id == btnId)
         {
             archeArray[i].style.display = "none";
+            document.getElementById(archeArray[i].id).focus();
         }
     }
 }
