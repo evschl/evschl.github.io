@@ -54,13 +54,15 @@ nav
 h1
 {
     font-family: Beleren;
-    color: #7f7f7f;
+    font-size: 30px;
+    color: #2e2020;
     text-align: center;
 }
 
 h2 
 {
     font-weight: bold;
+    text-align: center;
 }
 
 img
