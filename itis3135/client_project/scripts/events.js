@@ -20,15 +20,15 @@ function daysAwayString(n)
 {
     if(n == 0) 
     {
-        return ("Today");
+        return ("Next Event: Today");
     }
     if(n == 1) 
     {
-        return ("1 Day (Tomorrow)");
+        return ("Next Event: 1 Day (Tomorrow)");
     }
     if(n >= 2)
     {
-        return (n.toString() + " Days");
+        return ("Next Event: " + n.toString() + " Days");
     }
 }
 
