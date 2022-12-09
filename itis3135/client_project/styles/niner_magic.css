@@ -62,7 +62,6 @@ h1
 h2 
 {
     font-weight: bold;
-    text-align: center;
 }
 
 h3 
@@ -84,6 +83,12 @@ title
 /* ^^^^^ END MAIN TAG STYLING ^^^^^ */
 
 /* vvvvv BEGIN CUSTOM CLASS STYLES vvvvv */
+
+.cubeLink
+{
+    display:block;
+    text-align:center;
+}
 
 .displayArchetypeInfo
 {
