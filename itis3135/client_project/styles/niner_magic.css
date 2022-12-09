@@ -41,6 +41,9 @@ main
     font-family: Beleren;
     background-color: #f1e6b2;
     margin: 50px 20% 50px 20%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
 }
 
 nav
@@ -51,7 +54,8 @@ nav
 h1
 {
     font-family: Beleren;
-    color: #f1e6b2;
+    color: #7f7f7f;
+    text-align: center;
 }
 
 h2 
