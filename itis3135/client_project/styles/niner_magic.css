@@ -85,6 +85,13 @@ title
     margin-right: auto;
 }
 
+.displayArchetypeInfo p
+{
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
 .oneArchetypeContainer
 {
     border-style: solid;
