@@ -2,7 +2,7 @@
 COLOR PALETTE:
     White ---------- #f1e6b2;
     Blue ----------- #44a1a0;
-    Black (Gray) --- #7f7f7f;
+    Black (Gray) --- #2e2020;
     Red (Orange) --- #ff7a0e;
     Green ---------- #005035; 
 
@@ -33,7 +33,8 @@ header
     border-style: solid;
     border-radius: 5px;
     background-color: #ff7a0e;
-    filter: drop-shadow(0px 10px 10px black);
+    filter: drop-shadow(0px 10px 10px #2e2020);
+    color: #2e2020;
 }
 
 main
@@ -44,6 +45,12 @@ main
     border-style: solid;
     border-color: black;
     border-radius: 15px;
+    color: #2e2020;
+}
+
+footer
+{
+    color: #2e2020;
 }
 
 nav
@@ -54,8 +61,6 @@ nav
 h1
 {
     font-family: Beleren;
-    font-size: 60px;
-    color: #2e2020;
     text-align: center;
 }
 
@@ -67,8 +72,8 @@ h2
 h3 
 {
     display: block;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 img
@@ -90,6 +95,14 @@ title
     text-align:center;
 }
 
+.pageTitle
+{
+    font-family: Beleren;
+    font-size: 60px;
+    color: #2e2020;
+    text-align: center;
+}
+
 .displayArchetypeInfo
 {
     display: none;
@@ -97,7 +110,7 @@ title
 
 .displayArchetypeInfo button
 {
-    width: 50%;
+    width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -106,17 +119,17 @@ title
 .displayArchetypeInfo p
 {
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .oneArchetypeContainer
 {
     border-style: solid;
-    border-color: black;
+    border-color: #2e2020;
     background-color: #AFF1A9;
     border-radius: 15px;
-    filter: drop-shadow(0px 10px 10px black);
+    filter: drop-shadow(0px 10px 10px #2e2020);
 }
 
 .manasymbol
@@ -148,7 +161,7 @@ title
     border-color: #7f7f7f;
     position: relative;
     top: -60px;
-    filter: drop-shadow(0px 10px 10px black);
+    filter: drop-shadow(0px 10px 10px #2e2020);
 }
 
 .archetypeImages
@@ -194,7 +207,7 @@ title
 .allArchetypeContainer a:visited
 {
     text-decoration: none;
-    color: black;
+    color: #2e2020;
 }
 
 .allArchetypeContainer a:link

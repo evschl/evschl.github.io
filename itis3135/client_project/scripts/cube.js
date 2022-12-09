@@ -3,19 +3,11 @@ function display(archeId)
     archeArray = document.getElementsByClassName("displayArchetypeInfo");
     for(let i in archeArray)
     {
-        if(archeArray[i].id == archeId)
+        if(archeArray[i].id == archeId && archeArray[i].style.display == "none")
         {
             archeArray[i].style.display = "block";
         }
-    }
-}
-
-function hide(btnId)
-{
-    archeArray = document.getElementsByClassName("displayArchetypeInfo");
-    for(let i in archeArray)
-    {
-        if(archeArray[i].id == btnId)
+        else
         {
             archeArray[i].style.display = "none";
         }
