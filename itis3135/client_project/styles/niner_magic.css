@@ -154,6 +154,13 @@ title
     margin-right: 10%;
 }
 
+.margin10
+{
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .displayArchetypeInfo
 {
     display: none;
