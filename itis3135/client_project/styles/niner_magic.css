@@ -88,6 +88,12 @@ header
     color: #2e2020;
 }
 
+p
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 main
 {
     font-family: Beleren;
